@@ -39,8 +39,9 @@ north (grid north, 0.65 deg east of true north) and z points up. Units are metre
 ## 2. The physical model (the main demonstration)
 
 **How to print it: see [`Model/bambu/README.md`](Model/bambu/README.md).** That folder already
-contains print-ready files sliced by Bambu Studio for the X1C, P1S, P2S and A1. Copy them to the
-printer's SD card or USB stick and press print. No software is needed on a university laptop.
+contains print-ready files sliced by Bambu Studio for NTU's Bambu Lab printers: the X1C in the 3D
+Printing Studio and the X1E (with AMS) in the RISE laboratory. Copy the matching folder to a
+microSD card and press print. No software is needed on a university laptop.
 
 The whole model prints on Bambu FDM printers in PLA: about 1 kg, about 32 h of printing, and
 **about GBP 20** at GBP 20/kg (the real slicer figures are in `Model/bambu/slice_report.md`).
@@ -110,8 +111,12 @@ If you add `?debug` to the URL, the page exposes `window.twin` for scripted test
 
 Open `Design/exports/heat_exchange_google_earth.kmz` in **Google Earth Pro** (it runs on
 Linux: File > Open). The model is placed at the real location and rotated for grid convergence.
-Google Earth's own 3D campus will show the existing car park underneath it. Google Earth on the
-web does not display 3D COLLADA models.
+The proposed landscape (meadow, pond, paths, retained parking) is draped over Google's 3D campus,
+so it replaces the car park. Google can't cut its own scenery away, so the odd parked van at the
+plot edge shows through as a bump. For a clean architectural-model look, untick
+**Layers > 3D Buildings** and tick the hidden "massing" and "trees" folders in the KMZ instead.
+If an old copy is in Places, delete it first. Google Earth on the web does not display 3D COLLADA
+models.
 
 ## 5. Porting to Fusion 360
 

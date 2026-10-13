@@ -53,6 +53,7 @@ SITE_SCALE = 1000            # 1:1000 site model
 SITE_PRINT_SIZE_MM = 230.0   # square edge: clears the X1C/P1S wiper corner and P2S rear zone on a 256 mm bed
 SITE_CENTRE_LOCAL = (10.0, -15.0)   # centre of printed site area, local coords
 SITE_BASE_MM = 3.0           # solid base under lowest terrain point
+SITE_SPLIT_Y_MM = -2.0       # east-west cut for the two-part site print (model mm from centre): misses the proposal and every building
 SITE_VERTICAL_EXAGGERATION = 1.0
 TREE_CANOPY_CAP_M = 18.0
 ROAD_INLAY_MM = 0.6          # depth of separate-colour road/path layer

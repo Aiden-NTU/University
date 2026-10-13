@@ -35,7 +35,7 @@ def fits(ext, bed):
 def report():
     rows = []
     for path in sorted(C.OUT_PRINT.rglob("*.stl")):
-        if "single_colour" in path.name:
+        if "single_colour" in path.name or path.parent.name == "site_halves":
             continue
         m = trimesh.load(path)
         ext = [round(e, 1) for e in m.extents]

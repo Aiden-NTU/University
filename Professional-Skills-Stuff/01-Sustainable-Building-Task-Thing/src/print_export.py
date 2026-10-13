@@ -1,6 +1,7 @@
 """Write the printable STL files.
 
 Model/print/site/        1:1000 site model, one STL per colour (load all together in Bambu Studio)
+Model/print/site_halves/ the same, cut east-west into north and south halves (one lab day each)
 Model/print/building/    1:100 lift-off building: ground floor, first floor, roof (+PV), cycle hub
 Model/print/trays_sla/   1:100 furniture trays for the Formlabs printer
 Model/print/trays_fdm/   1:100 trays of chunky plant/sanitary items for the Bambu printer
@@ -11,7 +12,7 @@ import shutil
 import building as B
 import config as C
 import site_model as S
-from geom import scaled, union
+from geom import from_arrays, scaled, to_trimesh, union
 
 BUILD_MM = 1000 / C.BUILDING_SCALE
 SITE_MM = 1000 / C.SITE_SCALE
@@ -40,6 +41,11 @@ def export_site():
             continue
         t = scaled(m, SITE_MM, (-cx, -cy, -base_z))
         files.append(_write(t, out / f"site_1to{C.SITE_SCALE}_{label}.stl"))
+        whole = from_arrays(t.vertices, t.faces)
+        for side, normal, offset in (("north", (0, 1, 0), C.SITE_SPLIT_Y_MM), ("south", (0, -1, 0), -C.SITE_SPLIT_Y_MM)):
+            half = to_trimesh(whole.trim_by_plane(normal, offset))
+            if len(half.faces):
+                files.append(_write(half, C.OUT_PRINT / "site_halves" / f"site_1to{C.SITE_SCALE}_{side}_{label}.stl"))
     single = scaled(union(list(parts.values())), SITE_MM, (-cx, -cy, -base_z))
     files.append(_write(single, out / f"site_1to{C.SITE_SCALE}_single_colour.stl"))
     return files

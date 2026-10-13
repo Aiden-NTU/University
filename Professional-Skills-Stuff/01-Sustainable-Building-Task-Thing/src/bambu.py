@@ -2,8 +2,8 @@
 
 Needs Bambu Studio from Flathub (Linux):  flatpak install --user flathub com.bambulab.BambuStudio
 
-    python src/bambu.py              # all printers in PRINTERS
-    python src/bambu.py X1C          # one printer
+    python src/bambu.py              # NTU's printers (PRINTERS)
+    python src/bambu.py X1C P1S      # named printers, from ALL_PRINTERS
 
 Writes Model/bambu/<printer>/<project>.gcode.3mf (sliced, printable straight from the printer's
 SD card / USB stick) and Model/bambu/project/<project>.3mf (unsliced, open in Bambu Studio on any
@@ -24,11 +24,29 @@ APP = "com.bambulab.BambuStudio"
 OUT = C.ROOT / "Model" / "bambu"
 PRINT = C.OUT_PRINT
 
-PRINTERS = {
+PRINTERS = {      # NTU: X1C in the 3D Printing Studio, X1E (with AMS) in the RISE laboratory
     "X1C": dict(machine="Bambu Lab X1 Carbon 0.4 nozzle", tag="X1C", filament="Bambu PLA Basic @BBL X1C"),
+    "X1E": dict(machine="Bambu Lab X1E 0.4 nozzle", tag="X1C", filament="Bambu PLA Basic @BBL X1C"),
+}
+OTHER_PRINTERS = {  # sliced only when named: python src/bambu.py P1S
     "P1S": dict(machine="Bambu Lab P1S 0.4 nozzle", tag="X1C", filament="Bambu PLA Basic @BBL P1S 0.4 nozzle"),
     "P2S": dict(machine="Bambu Lab P2S 0.4 nozzle", tag="P2S", filament="Bambu PLA Basic @BBL P2S"),
     "A1": dict(machine="Bambu Lab A1 0.4 nozzle", tag="A1", filament="Bambu PLA Basic @BBL A1"),
+}
+ALL_PRINTERS = {**PRINTERS, **OTHER_PRINTERS}
+# Other ways to print the site, left out of the whole-model totals (the plan uses the two halves).
+SITE_ALTERNATIVES = ("site_model_1to1000_4colour", "site_model_1to1000_single_colour")
+# One microSD card per campus, files numbered in the order of Model/bambu/PRINT_PLAN.md so the
+# printer's (alphabetical) file list reads as the timetable.
+CARDS = {
+    "sd_card_Clifton_RISE_X1E": ("X1E", [("01", "building_1to100_plate5_"),
+                                         ("02", "site_model_1to1000_4colour_halves_plate2_"),
+                                         ("03", "site_model_1to1000_4colour_halves_plate1_"),
+                                         ("alt", "site_model_1to1000_single_colour")]),
+    "sd_card_City_X1C": ("X1C", [("01", "building_1to100_plate4_"), ("02", "building_1to100_plate3_"),
+                                 ("03", "building_1to100_plate1_"), ("04", "furniture_trays_1to100_plate3_"),
+                                 ("05", "building_1to100_plate2_"), ("06", "furniture_trays_1to100_plate2_"),
+                                 ("07", "furniture_trays_1to100_plate1_")]),
 }
 BED = "Textured PEI Plate"
 COLOURS = {"green": "#5E9B3C", "white": "#F2F0EB", "dark_green": "#2E5A2A", "orange": "#E8913A",
@@ -53,7 +71,7 @@ def resolve(kind, name, root=None):
 
 
 def write_settings(printer, process, colours, work):
-    p = PRINTERS[printer]
+    p = ALL_PRINTERS[printer]
     machine = resolve("machine", p["machine"])
     root = profiles_dir()
     name = f"{process} @BBL {p['tag']}"
@@ -96,6 +114,19 @@ def _tray_plates(max_area=0.5 * 256 * 256):
     return plates
 
 
+def _site_half(side, parts, assemble, centre=(138, 128)):
+    """Objects for one half of the site, its parts assembled and centred on the bed."""
+    import numpy as np
+    import trimesh
+    paths = [(PRINT / "site_halves" / f.replace(f"1to{C.SITE_SCALE}_", f"1to{C.SITE_SCALE}_{side}_"), n)
+             for f, n in parts]
+    paths = [(p, n) for p, n in paths if p.exists()]
+    bounds = np.array([trimesh.load(p).bounds for p, _ in paths])
+    mid = (bounds[:, 0, :2].min(0) + bounds[:, 1, :2].max(0)) / 2
+    return [dict(path=str(p), filament=n, assemble=assemble, pos=(centre[0] - mid[0], centre[1] - mid[1]))
+            for p, n in paths]
+
+
 def projects():
     s = C.SITE_SCALE
     site_parts = [(f"site_1to{s}_1_terrain_green.stl", 1), (f"site_1to{s}_2_roads_paths_grey.stl", 2),
@@ -108,6 +139,12 @@ def projects():
             overrides={"enable_prime_tower": "0"},
             plates=[dict(name="Site 1:1000 (needs AMS, 4 colours)", arrange=False, objects=[
                 dict(path=_stl("site", f), filament=n, assemble=1, pos=(138, 118)) for f, n in site_parts])]),
+        "site_model_1to1000_4colour_halves": dict(       # each half fits one staffed lab day
+            process="0.28mm Extra Draft", colours=["green", "light_grey", "dark_green", "orange"],
+            overrides={"enable_prime_tower": "0"},
+            plates=[dict(name=f"Site {side} half (4 colours)", arrange=False,
+                         objects=_site_half(side, site_parts, i + 1))
+                    for i, side in enumerate(("north", "south"))]),
         "site_model_1to1000_single_colour": dict(
             process="0.20mm Standard", colours=["white"], overrides={},
             plates=[dict(name="Site 1:1000 (one colour, paint after)", arrange=False, objects=[
@@ -347,20 +384,30 @@ def report(results):
     lines = ["# Sliced print report (Bambu Studio)", "",
              f"Real slicer estimates, PLA at GBP {C.PLA_GBP_PER_KG:.0f}/kg, {BED}. Times include filament changes.", ""]
     for printer, projs in results.items():
-        lines += [f"## {printer} ({PRINTERS[printer]['machine']})", "",
+        lines += [f"## {printer} ({ALL_PRINTERS[printer]['machine']})", "",
                   "| File (one print job each) | What | Time | Filament | Cost |", "|---|---|---|---|---|"]
         tot_s = tot_g = 0.0
         for name, plates in projs.items():
             for p in plates:
-                if "single_colour" not in name:
+                if name not in SITE_ALTERNATIVES:
                     tot_s += p["seconds"]
                     tot_g += p["grams"]
                 lines.append(f"| `{p['file']}` | {p['plate']} | {p['seconds'] / 3600:.1f} h | {p['grams']:.0f} g | "
                              f"GBP {p['grams'] / 1000 * C.PLA_GBP_PER_KG:.2f} |")
-        lines += ["", f"**Whole model (4-colour site + building + furniture): {tot_s / 3600:.1f} h of printing, "
+        lines += ["", f"**Whole model (4-colour site in two halves + building + furniture): {tot_s / 3600:.1f} h of printing, "
                       f"{tot_g:.0f} g, about GBP {tot_g / 1000 * C.PLA_GBP_PER_KG:.2f}**", ""]
     (OUT / "slice_report.md").write_text("\n".join(lines))
     (OUT / "slice_report.json").write_text(json.dumps(results, indent=1))
+
+
+def make_cards():
+    for card, (printer, jobs) in CARDS.items():
+        dest = OUT / card
+        shutil.rmtree(dest, ignore_errors=True)
+        dest.mkdir(parents=True)
+        for num, prefix in jobs:
+            (src,) = (OUT / printer).glob(f"{prefix}*.gcode.3mf")
+            shutil.copy(src, dest / f"{num}_{src.name}")
 
 
 def build_all(printers=None):
@@ -373,6 +420,8 @@ def build_all(printers=None):
             print(f"slicing {printer} {name} ...", flush=True)
             results[printer][name] = build(printer, name, project)
     report(results)
+    if all((OUT / printer).is_dir() for printer, _ in CARDS.values()):
+        make_cards()
     shutil.rmtree(OUT / "work", ignore_errors=True)
     return results
 
