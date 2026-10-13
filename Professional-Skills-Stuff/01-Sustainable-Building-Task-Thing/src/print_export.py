@@ -57,10 +57,10 @@ def building_parts():
         "1_ground_floor": (gf, "gf"),
         "2_first_floor": (ff, "ff"),
         "3_roof": (roof, "roof"),
-        "3_roof_pv_dark_blue": (pv, "roof"),
+        "3_roof_pv_strips_dark_blue": (pv, "pv"),
         "4_cycle_hub": (union([ax["floor"], ax["walls"]]), "annex"),
         "5_cycle_hub_roof": (ax["roof"], "annex_roof"),
-        "5_cycle_hub_green_roof": (ax["green"], "annex_roof"),
+        "5_cycle_hub_green_roof": (ax["green"], "green_roof"),
     }
 
 

@@ -3,9 +3,11 @@
     python src/build_all.py            # full rebuild (downloads are cached in Site/raw)
     python src/build_all.py --skip-print
 """
+import shutil
 import sys
 import time
 
+import bambu
 import config as C
 import earth_export
 import fetch_site
@@ -31,3 +33,5 @@ if __name__ == "__main__":
     step("room schedule", schedule.write)
     step("web twin data", web_export.export_all)
     step("Google Earth KMZ", earth_export.export)
+    if "--skip-print" not in sys.argv and shutil.which("flatpak"):
+        step("Bambu Studio sliced print files", bambu.build_all)

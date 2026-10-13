@@ -32,9 +32,9 @@
    "part": "building_1to100_3_roof.stl",
    "group": "building",
    "process": "FDM PLA",
-   "amount": "271 g",
-   "gbp": 5.424402333001161,
-   "hours": 15.067784258336555,
+   "amount": "232 g",
+   "gbp": 4.646312341235487,
+   "hours": 12.906423170098574,
    "size_mm": [
     240.0,
     156.0,
@@ -43,16 +43,16 @@
    "fits": 1.0
   },
   {
-   "part": "building_1to100_3_roof_pv_dark_blue.stl",
+   "part": "building_1to100_3_roof_pv_strips_dark_blue.stl",
    "group": "building",
    "process": "FDM PLA",
-   "amount": "15 g",
-   "gbp": 0.30700183462749364,
-   "hours": 0.8527828739652601,
+   "amount": "22 g",
+   "gbp": 0.4434154750501323,
+   "hours": 1.231709652917034,
    "size_mm": [
-    219.1,
-    127.4,
-    15.2
+    218.8,
+    123.6,
+    0.8
    ],
    "fits": 1.0
   },
@@ -102,13 +102,13 @@
    "part": "site_1to1000_1_terrain_green.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "216 g",
-   "gbp": 4.3293709743090245,
-   "hours": 12.026030484191734,
+   "amount": "200 g",
+   "gbp": 3.9921934772574756,
+   "hours": 11.08942632571521,
    "size_mm": [
-    239.0,
-    239.0,
-    13.3
+    229.0,
+    229.0,
+    13.2
    ],
    "fits": 1.0
   },
@@ -116,13 +116,13 @@
    "part": "site_1to1000_2_roads_paths_grey.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "4 g",
-   "gbp": 0.07322282139829236,
-   "hours": 0.2033967261063677,
+   "amount": "3 g",
+   "gbp": 0.06959188367938834,
+   "hours": 0.19331078799830095,
    "size_mm": [
-    239.0,
-    239.0,
-    9.3
+    229.0,
+    229.0,
+    8.8
    ],
    "fits": 1.0
   },
@@ -130,12 +130,12 @@
    "part": "site_1to1000_3_existing_buildings_white.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "18 g",
-   "gbp": 0.3645349026797263,
-   "hours": 1.0125969518881286,
+   "amount": "17 g",
+   "gbp": 0.33486112702282306,
+   "hours": 0.9301697972856195,
    "size_mm": [
-    188.4,
-    145.6,
+    178.8,
+    140.6,
     14.6
    ],
    "fits": 1.0
@@ -144,13 +144,13 @@
    "part": "site_1to1000_4_trees_dark_green.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "41 g",
-   "gbp": 0.8197158249282733,
-   "hours": 2.276988402578537,
+   "amount": "35 g",
+   "gbp": 0.7067361379943916,
+   "hours": 1.9631559388733102,
    "size_mm": [
-    236.8,
-    236.8,
-    26.3
+    226.7,
+    226.7,
+    24.3
    ],
    "fits": 1.0
   },
@@ -465,12 +465,12 @@
  ],
  "totals": {
   "building": {
-   "gbp": 13.63420681908007,
-   "hours": 37.87279671966685
+   "gbp": 12.992530467737033,
+   "hours": 36.09036241038064
   },
   "site": {
-   "gbp": 5.679953315499322,
-   "hours": 15.777648098609227
+   "gbp": 5.196491418138084,
+   "hours": 14.434698383716903
   },
   "trays_fdm": {
    "gbp": 0.7990164500574961,
@@ -481,5 +481,5 @@
    "hours": 0.0
   }
  },
- "total_gbp": 32.40522793545496
+ "total_gbp": 31.28008968675068
 }

@@ -1,0 +1,610 @@
+{
+ "X1C": {
+  "site_model_1to1000_4colour": [
+   {
+    "index": 1,
+    "seconds": 41206.0,
+    "grams": 306.38,
+    "filaments": [
+     [
+      "1",
+      203.5
+     ],
+     [
+      "2",
+      39.31
+     ],
+     [
+      "3",
+      44.73
+     ],
+     [
+      "4",
+      18.85
+     ]
+    ],
+    "plate": "Site 1:1000 (needs AMS, 4 colours)",
+    "file": "site_model_1to1000_4colour.gcode.3mf"
+   }
+  ],
+  "site_model_1to1000_single_colour": [
+   {
+    "index": 1,
+    "seconds": 23391.0,
+    "grams": 247.75,
+    "filaments": [
+     [
+      "1",
+      247.75
+     ]
+    ],
+    "plate": "Site 1:1000 (one colour, paint after)",
+    "file": "site_model_1to1000_single_colour.gcode.3mf"
+   }
+  ],
+  "building_1to100": [
+   {
+    "index": 1,
+    "seconds": 16170.0,
+    "grams": 204.84,
+    "filaments": [
+     [
+      "1",
+      204.84
+     ]
+    ],
+    "plate": "Ground floor + cycle hub - white",
+    "file": "building_1to100_plate1_ground_floor_cycle_hub_white.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 14499.0,
+    "grams": 177.07,
+    "filaments": [
+     [
+      "1",
+      177.07
+     ]
+    ],
+    "plate": "First floor - white",
+    "file": "building_1to100_plate2_first_floor_white.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 13426.0,
+    "grams": 194.8,
+    "filaments": [
+     [
+      "2",
+      194.8
+     ]
+    ],
+    "plate": "Roofs - grey",
+    "file": "building_1to100_plate3_roofs_grey.gcode.3mf"
+   },
+   {
+    "index": 4,
+    "seconds": 3159.0,
+    "grams": 22.3,
+    "filaments": [
+     [
+      "3",
+      22.3
+     ]
+    ],
+    "plate": "PV strips - dark blue",
+    "file": "building_1to100_plate4_pv_strips_dark_blue.gcode.3mf"
+   },
+   {
+    "index": 5,
+    "seconds": 1032.0,
+    "grams": 9.24,
+    "filaments": [
+     [
+      "4",
+      9.24
+     ]
+    ],
+    "plate": "Green roof - green",
+    "file": "building_1to100_plate5_green_roof_green.gcode.3mf"
+   }
+  ],
+  "furniture_trays_1to100": [
+   {
+    "index": 1,
+    "seconds": 11032.0,
+    "grams": 36.91,
+    "filaments": [
+     [
+      "1",
+      36.91
+     ]
+    ],
+    "plate": "Furniture trays 1 - light grey",
+    "file": "furniture_trays_1to100_plate1_furniture_trays_1_light_grey.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 8758.0,
+    "grams": 38.76,
+    "filaments": [
+     [
+      "1",
+      38.76
+     ]
+    ],
+    "plate": "Furniture trays 2 - light grey",
+    "file": "furniture_trays_1to100_plate2_furniture_trays_2_light_grey.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 5118.0,
+    "grams": 22.13,
+    "filaments": [
+     [
+      "1",
+      22.13
+     ]
+    ],
+    "plate": "Furniture trays 3 - light grey",
+    "file": "furniture_trays_1to100_plate3_furniture_trays_3_light_grey.gcode.3mf"
+   }
+  ]
+ },
+ "P1S": {
+  "site_model_1to1000_4colour": [
+   {
+    "index": 1,
+    "seconds": 41186.0,
+    "grams": 306.15,
+    "filaments": [
+     [
+      "1",
+      203.26
+     ],
+     [
+      "2",
+      39.31
+     ],
+     [
+      "3",
+      44.73
+     ],
+     [
+      "4",
+      18.85
+     ]
+    ],
+    "plate": "Site 1:1000 (needs AMS, 4 colours)",
+    "file": "site_model_1to1000_4colour.gcode.3mf"
+   }
+  ],
+  "site_model_1to1000_single_colour": [
+   {
+    "index": 1,
+    "seconds": 23345.0,
+    "grams": 247.52,
+    "filaments": [
+     [
+      "1",
+      247.52
+     ]
+    ],
+    "plate": "Site 1:1000 (one colour, paint after)",
+    "file": "site_model_1to1000_single_colour.gcode.3mf"
+   }
+  ],
+  "building_1to100": [
+   {
+    "index": 1,
+    "seconds": 16110.0,
+    "grams": 204.6,
+    "filaments": [
+     [
+      "1",
+      204.6
+     ]
+    ],
+    "plate": "Ground floor + cycle hub - white",
+    "file": "building_1to100_plate1_ground_floor_cycle_hub_white.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 14444.0,
+    "grams": 176.83,
+    "filaments": [
+     [
+      "1",
+      176.83
+     ]
+    ],
+    "plate": "First floor - white",
+    "file": "building_1to100_plate2_first_floor_white.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 13777.0,
+    "grams": 194.56,
+    "filaments": [
+     [
+      "2",
+      194.56
+     ]
+    ],
+    "plate": "Roofs - grey",
+    "file": "building_1to100_plate3_roofs_grey.gcode.3mf"
+   },
+   {
+    "index": 4,
+    "seconds": 3098.0,
+    "grams": 22.06,
+    "filaments": [
+     [
+      "3",
+      22.06
+     ]
+    ],
+    "plate": "PV strips - dark blue",
+    "file": "building_1to100_plate4_pv_strips_dark_blue.gcode.3mf"
+   },
+   {
+    "index": 5,
+    "seconds": 971.0,
+    "grams": 9.0,
+    "filaments": [
+     [
+      "4",
+      9.0
+     ]
+    ],
+    "plate": "Green roof - green",
+    "file": "building_1to100_plate5_green_roof_green.gcode.3mf"
+   }
+  ],
+  "furniture_trays_1to100": [
+   {
+    "index": 1,
+    "seconds": 10958.0,
+    "grams": 36.67,
+    "filaments": [
+     [
+      "1",
+      36.67
+     ]
+    ],
+    "plate": "Furniture trays 1 - light grey",
+    "file": "furniture_trays_1to100_plate1_furniture_trays_1_light_grey.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 8680.0,
+    "grams": 38.52,
+    "filaments": [
+     [
+      "1",
+      38.52
+     ]
+    ],
+    "plate": "Furniture trays 2 - light grey",
+    "file": "furniture_trays_1to100_plate2_furniture_trays_2_light_grey.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 5043.0,
+    "grams": 21.89,
+    "filaments": [
+     [
+      "1",
+      21.89
+     ]
+    ],
+    "plate": "Furniture trays 3 - light grey",
+    "file": "furniture_trays_1to100_plate3_furniture_trays_3_light_grey.gcode.3mf"
+   }
+  ]
+ },
+ "P2S": {
+  "site_model_1to1000_4colour": [
+   {
+    "index": 1,
+    "seconds": 39163.0,
+    "grams": 315.93,
+    "filaments": [
+     [
+      "1",
+      205.34
+     ],
+     [
+      "2",
+      41.43
+     ],
+     [
+      "3",
+      48.82
+     ],
+     [
+      "4",
+      20.34
+     ]
+    ],
+    "plate": "Site 1:1000 (needs AMS, 4 colours)",
+    "file": "site_model_1to1000_4colour.gcode.3mf"
+   }
+  ],
+  "site_model_1to1000_single_colour": [
+   {
+    "index": 1,
+    "seconds": 23211.0,
+    "grams": 247.41,
+    "filaments": [
+     [
+      "1",
+      247.41
+     ]
+    ],
+    "plate": "Site 1:1000 (one colour, paint after)",
+    "file": "site_model_1to1000_single_colour.gcode.3mf"
+   }
+  ],
+  "building_1to100": [
+   {
+    "index": 1,
+    "seconds": 16108.0,
+    "grams": 204.51,
+    "filaments": [
+     [
+      "1",
+      204.51
+     ]
+    ],
+    "plate": "Ground floor + cycle hub - white",
+    "file": "building_1to100_plate1_ground_floor_cycle_hub_white.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 14397.0,
+    "grams": 176.73,
+    "filaments": [
+     [
+      "1",
+      176.73
+     ]
+    ],
+    "plate": "First floor - white",
+    "file": "building_1to100_plate2_first_floor_white.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 13723.0,
+    "grams": 194.47,
+    "filaments": [
+     [
+      "2",
+      194.47
+     ]
+    ],
+    "plate": "Roofs - grey",
+    "file": "building_1to100_plate3_roofs_grey.gcode.3mf"
+   },
+   {
+    "index": 4,
+    "seconds": 2987.0,
+    "grams": 21.97,
+    "filaments": [
+     [
+      "3",
+      21.97
+     ]
+    ],
+    "plate": "PV strips - dark blue",
+    "file": "building_1to100_plate4_pv_strips_dark_blue.gcode.3mf"
+   },
+   {
+    "index": 5,
+    "seconds": 1008.0,
+    "grams": 8.91,
+    "filaments": [
+     [
+      "4",
+      8.91
+     ]
+    ],
+    "plate": "Green roof - green",
+    "file": "building_1to100_plate5_green_roof_green.gcode.3mf"
+   }
+  ],
+  "furniture_trays_1to100": [
+   {
+    "index": 1,
+    "seconds": 14628.0,
+    "grams": 36.53,
+    "filaments": [
+     [
+      "1",
+      36.53
+     ]
+    ],
+    "plate": "Furniture trays 1 - light grey",
+    "file": "furniture_trays_1to100_plate1_furniture_trays_1_light_grey.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 12567.0,
+    "grams": 38.5,
+    "filaments": [
+     [
+      "1",
+      38.5
+     ]
+    ],
+    "plate": "Furniture trays 2 - light grey",
+    "file": "furniture_trays_1to100_plate2_furniture_trays_2_light_grey.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 7160.0,
+    "grams": 21.99,
+    "filaments": [
+     [
+      "1",
+      21.99
+     ]
+    ],
+    "plate": "Furniture trays 3 - light grey",
+    "file": "furniture_trays_1to100_plate3_furniture_trays_3_light_grey.gcode.3mf"
+   }
+  ]
+ },
+ "A1": {
+  "site_model_1to1000_4colour": [
+   {
+    "index": 1,
+    "seconds": 42034.0,
+    "grams": 291.71,
+    "filaments": [
+     [
+      "1",
+      198.88
+     ],
+     [
+      "2",
+      35.82
+     ],
+     [
+      "3",
+      40.33
+     ],
+     [
+      "4",
+      16.68
+     ]
+    ],
+    "plate": "Site 1:1000 (needs AMS, 4 colours)",
+    "file": "site_model_1to1000_4colour.gcode.3mf"
+   }
+  ],
+  "site_model_1to1000_single_colour": [
+   {
+    "index": 1,
+    "seconds": 25465.0,
+    "grams": 247.5,
+    "filaments": [
+     [
+      "1",
+      247.5
+     ]
+    ],
+    "plate": "Site 1:1000 (one colour, paint after)",
+    "file": "site_model_1to1000_single_colour.gcode.3mf"
+   }
+  ],
+  "building_1to100": [
+   {
+    "index": 1,
+    "seconds": 17689.0,
+    "grams": 204.59,
+    "filaments": [
+     [
+      "1",
+      204.59
+     ]
+    ],
+    "plate": "Ground floor + cycle hub - white",
+    "file": "building_1to100_plate1_ground_floor_cycle_hub_white.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 15835.0,
+    "grams": 176.82,
+    "filaments": [
+     [
+      "1",
+      176.82
+     ]
+    ],
+    "plate": "First floor - white",
+    "file": "building_1to100_plate2_first_floor_white.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 14417.0,
+    "grams": 194.56,
+    "filaments": [
+     [
+      "2",
+      194.56
+     ]
+    ],
+    "plate": "Roofs - grey",
+    "file": "building_1to100_plate3_roofs_grey.gcode.3mf"
+   },
+   {
+    "index": 4,
+    "seconds": 3272.0,
+    "grams": 22.06,
+    "filaments": [
+     [
+      "3",
+      22.06
+     ]
+    ],
+    "plate": "PV strips - dark blue",
+    "file": "building_1to100_plate4_pv_strips_dark_blue.gcode.3mf"
+   },
+   {
+    "index": 5,
+    "seconds": 1019.0,
+    "grams": 8.98,
+    "filaments": [
+     [
+      "4",
+      8.98
+     ]
+    ],
+    "plate": "Green roof - green",
+    "file": "building_1to100_plate5_green_roof_green.gcode.3mf"
+   }
+  ],
+  "furniture_trays_1to100": [
+   {
+    "index": 1,
+    "seconds": 12271.0,
+    "grams": 36.66,
+    "filaments": [
+     [
+      "1",
+      36.66
+     ]
+    ],
+    "plate": "Furniture trays 1 - light grey",
+    "file": "furniture_trays_1to100_plate1_furniture_trays_1_light_grey.gcode.3mf"
+   },
+   {
+    "index": 2,
+    "seconds": 10033.0,
+    "grams": 38.53,
+    "filaments": [
+     [
+      "1",
+      38.53
+     ]
+    ],
+    "plate": "Furniture trays 2 - light grey",
+    "file": "furniture_trays_1to100_plate2_furniture_trays_2_light_grey.gcode.3mf"
+   },
+   {
+    "index": 3,
+    "seconds": 5981.0,
+    "grams": 21.89,
+    "filaments": [
+     [
+      "1",
+      21.89
+     ]
+    ],
+    "plate": "Furniture trays 3 - light grey",
+    "file": "furniture_trays_1to100_plate3_furniture_trays_3_light_grey.gcode.3mf"
+   }
+  ]
+ }
+}

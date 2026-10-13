@@ -50,7 +50,7 @@ CARPORT_HEIGHT = 3.2
 
 # --- Print settings ---------------------------------------------------------
 SITE_SCALE = 1000            # 1:1000 site model
-SITE_PRINT_SIZE_MM = 240.0   # square plate edge (Bambu bed 256 mm)
+SITE_PRINT_SIZE_MM = 230.0   # square edge: clears the X1C/P1S wiper corner and P2S rear zone on a 256 mm bed
 SITE_CENTRE_LOCAL = (10.0, -15.0)   # centre of printed site area, local coords
 SITE_BASE_MM = 3.0           # solid base under lowest terrain point
 SITE_VERTICAL_EXAGGERATION = 1.0

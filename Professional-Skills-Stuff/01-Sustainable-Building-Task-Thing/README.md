@@ -10,10 +10,9 @@ the print files, cost estimate, room schedule, web twin and Google Earth model a
 
 | Output | Where |
 |---|---|
-| 1:1000 site model (5 colour bodies) | `Model/print/site/` |
-| 1:100 lift-off building (ground floor, first floor, roof + PV, cycle hub) | `Model/print/building/` |
-| 1:100 furniture trays, SLA and FDM | `Model/print/trays_sla/`, `Model/print/trays_fdm/` |
-| Print cost and time estimate | `Model/print/print_cost_estimate.md` |
+| **Print-ready files (just copy to the printer)** | `Model/bambu/` (see its README) |
+| Real slicer time, grams and cost | `Model/bambu/slice_report.md` |
+| Raw STLs: 1:1000 site, 1:100 building, furniture trays | `Model/print/` |
 | Room-by-room fit-out schedule (every light, chair, sensor) | `Costing/items.csv` (prices from `Costing/catalogue.csv`) |
 | Building metrics (areas, glazing ratios, PV, overhang shading) | `Design/exports/building_metrics.json` |
 | Google Earth Pro model | `Design/exports/heat_exchange_google_earth.kmz` |
@@ -39,61 +38,41 @@ north (grid north, 0.65 deg east of true north) and z points up. Units are metre
 
 ## 2. The physical model (the main demonstration)
 
-Total material estimate is **about GBP 32** against a GBP 40 budget. The breakdown is in
-`Model/print/print_cost_estimate.md`. The assumptions are PLA at GBP 20/kg and resin at GBP 160/L.
-**Ask the NTU print service what they actually charge** (some labs charge per gram, some are free
-for coursework) and update the prices in `src/config.py`.
+**How to print it: see [`Model/bambu/README.md`](Model/bambu/README.md).** That folder already
+contains print-ready files sliced by Bambu Studio for the X1C, P1S, P2S and A1. Copy them to the
+printer's SD card or USB stick and press print. No software is needed on a university laptop.
+
+The whole model prints on Bambu FDM printers in PLA: about 1 kg, about 32 h of printing, and
+**about GBP 20** at GBP 20/kg (the real slicer figures are in `Model/bambu/slice_report.md`).
+The Formlabs resin printer is not needed. Its software (PreForm) has no Linux version, and the
+furniture prints fine on a standard 0.4 mm nozzle at 0.12 mm layers. The resin-ready STLs in
+`Model/print/trays_sla/` are still there if a technician offers. **Ask the NTU print service what
+they actually charge** and update `PLA_GBP_PER_KG` in `src/config.py`.
 
 ![Building 1:100 exploded](Design/renders/print_building_1to100_exploded.png)
 
-### 2.1 Site model 1:1000 (Bambu Lab, one plate, about 16 h)
+What the parts are:
 
-1. In Bambu Studio, select **all five** `site_1to1000_[1-5]_*.stl` files and import them together.
-   When it asks *"Load these files as a single object with multiple parts?"*, answer **Yes**.
-   The parts are already aligned to each other. Do not move them individually.
-2. In the Objects list, assign a filament to each part: terrain green, roads grey, existing
-   buildings white, trees dark green, proposal orange. A single AMS has 4 slots, so if you only
-   have one, give roads and existing buildings the same light grey.
-3. Use a 0.2 mm layer height, 15% infill, no supports, and turn on *Flush into object's infill*
-   to cut purge waste. The estimate does **not** include colour-change purge waste. Expect
-   roughly another 50-150 g, so check the gram figure Bambu Studio shows after slicing.
-4. If no AMS is available, print `site_1to1000_single_colour.stl` in white and paint it by hand.
+- **Site 1:1000** (230 mm square):
+  - The terrain is real LiDAR ground level, and tree and building heights are LiDAR surface minus ground.
+  - Roads are 0.6 mm inlays.
+  - There are 4 colours if the printer has an AMS (Bambu's automatic filament changer), plus a
+    one-colour version to paint by hand.
+- **Building 1:100:**
+  - Ground floor, first floor and roof lift off each other on 1.8 mm locating pegs (with 0.4 mm hole clearance).
+  - The cycle hub has a green roof.
+  - The solar panels are three flat dark-blue strips that glue into pockets in the roof. Printing them
+    as a coloured skin on the slope would mean hundreds of filament swaps.
+  - Everything prints flat side down with no supports.
+- **Furniture trays 1:100:** each room is a 0.5 mm floor plate with its furniture fused on. Drop
+  the tray into the room when you lift the floor above off, dollhouse style.
 
-The terrain is real LiDAR ground level. Tree canopy and building heights come from LiDAR
-surface minus ground. Roads are 0.6 mm inlays flush with the terrain.
+The raw STLs are in `Model/print/`. To preview them in a browser, run `python3 -m http.server`
+in this folder and open <http://localhost:8000/Model/preview.html>. To re-slice after changing
+the design, run `python src/bambu.py`. It needs Bambu Studio from Flathub:
+`flatpak install --user flathub com.bambulab.BambuStudio`.
 
-### 2.2 Building 1:100 (Bambu Lab, about 38 h in total, can split over several printers)
-
-| File | Colour | Notes |
-|---|---|---|
-| `building_1to100_1_ground_floor.stl` | white or beige | Slab, walls, stair and partitions. Locating pegs on top |
-| `building_1to100_2_first_floor.stl` | white or beige | Peg holes underneath, pegs on top |
-| `building_1to100_3_roof.stl` + `_3_roof_pv_dark_blue.stl` | grey + dark blue | Import both together as one object with 2 parts, as in 2.1 |
-| `building_1to100_4_cycle_hub.stl` | white or beige | Sits against the east end |
-| `building_1to100_5_cycle_hub_roof.stl` + `_green_roof.stl` | grey + green | Two parts, as above |
-
-Print every part the way it was exported (flat side down), with 0.2 mm layers, 15% infill and
-**no supports**. Window heads bridge 30-40 mm, which Bambu printers handle. The pegs are 1.8 mm
-and the holes have 0.4 mm clearance. If the fit is too tight, change `HOLE_CLEARANCE_MM` in
-`config.py` and rebuild.
-
-### 2.3 Furniture trays 1:100
-
-Each room has a 0.5 mm floor plate with its furniture fused on. Drop the tray into the room
-when you lift the floor above off, dollhouse style.
-
-![Trays](Design/renders/print_furniture_trays.png)
-
-- `trays_sla/` (14 rooms, about 77 ml resin, about GBP 12) is the fine furniture: chairs, desks,
-  sofas and bike racks. Use PreForm with Grey resin and 0.1 mm layers. Lay the trays flat. If the
-  printer offers *print directly on build platform*, use it, because it saves the support resin.
-- `trays_fdm/` (7 rooms, under GBP 1) holds blocky items such as WCs, plant, server racks and
-  shelving. Print them on the Bambu with 0.12 mm layers.
-
-To preview the files before printing, run `python3 -m http.server` in this folder and open
-<http://localhost:8000/Model/preview.html>.
-
-### 2.4 Assembly for the poster event
+### Assembly for the poster event
 
 Place the site model next to the building. The orange block on the site model is the same
 building at 1:1000. Stack the ground floor, first floor and roof on their pegs, and put the cycle

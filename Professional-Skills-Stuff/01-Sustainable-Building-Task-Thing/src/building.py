@@ -280,24 +280,32 @@ def pv_layout():
 PV_MODULE_WP = 430
 
 
-def roof_print():
-    """Solid sawtooth (prints without supports) + PV skin as a separate colour body."""
+def roof_print(th=0.08, fit=0.015, groove=0.03):
+    """Single-colour solid sawtooth with a pocket on each south slope, plus flat PV strips that print
+    lying down (dark blue, module grid engraved) and glue into the pockets - no colour changes."""
     base = box(0, -OH, ROOF_Z - S, L, D, ROOF_Z)
     teeth = union([profile_x(_tooth_profile(k), 0, L) for k in range(C.N_BAYS_Y)])
-    th = 0.06
-    pv = []
+    cos = math.cos(math.radians(C.SAWTOOTH_TILT_DEG))
+    pockets, strips = [], []
     mods = pv_layout()
     for k in range(C.N_BAYS_Y):
         ys = [m for m in mods if m[2] == k]
         y0, y1 = min(m[3] for m in ys), max(m[4] for m in ys)
         x0, x1 = min(m[0] for m in ys), max(m[1] for m in ys)
-        pv.append(profile_x([(y0, _slope_z(k, y0) - th), (y1, _slope_z(k, y1) - th),
-                             (y1, _slope_z(k, y1)), (y0, _slope_z(k, y0))], x0, x1))
-    pv = union(pv)
+        pockets.append(profile_x([(y0, _slope_z(k, y0) - th), (y1, _slope_z(k, y1) - th),
+                                  (y1, _slope_z(k, y1) + 0.01), (y0, _slope_z(k, y0) + 0.01)], x0, x1))
+        run = (y1 - y0) / cos
+        oy = k * (run + 1.0)
+        strip = box(x0 + fit, oy + fit, 0, x1 - fit, oy + run - fit, th)
+        lines = {m[0] for m in ys} - {x0}
+        cuts = [box(x - groove, oy, th - 0.02, x, oy + run, th + 0.01) for x in lines]
+        cuts += [box(x0, oy + (m[3] - y0) / cos - groove / 2, th - 0.02, x1, oy + (m[3] - y0) / cos + groove / 2, th + 0.01)
+                 for m in ys if m[0] == ys[0][0] and m[3] > y0 + 1e-6]
+        strips.append(strip - union(cuts))
     # recessed north-light glazing band on each vertical face (reads as rooflights)
     recess = union([box(0.4, (k + 1) * TOOTH - 0.15, ROOF_Z + 0.25, L - 0.4, (k + 1) * TOOTH + 0.01,
                         ROOF_Z + RISE - 0.35) for k in range(C.N_BAYS_Y)])
-    return (base + teeth) - pv - recess, pv
+    return (base + teeth) - union(pockets) - recess, union(strips)
 
 
 def roof_web():
