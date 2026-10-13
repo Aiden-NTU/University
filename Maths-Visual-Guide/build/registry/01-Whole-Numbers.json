@@ -1,0 +1,166 @@
+{
+ "num": 1,
+ "order": 1,
+ "title": "Arithmetic of whole numbers",
+ "short": "Whole numbers",
+ "terms": [
+  {
+   "word": "place value",
+   "meaning": "the position of a digit tells you its size: ones, tens, hundreds...",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 2
+  },
+  {
+   "word": "digit",
+   "meaning": "one of the ten symbols 0 1 2 3 4 5 6 7 8 9",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 2
+  },
+  {
+   "word": "integer",
+   "meaning": "a whole number that may be positive, negative or zero: ..., -2, -1, 0, 1, 2, ...",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 4
+  },
+  {
+   "word": "distributive law",
+   "meaning": "a(b + c) = ab + ac: multiply each part of the bracket",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 7
+  },
+  {
+   "word": "commutative",
+   "meaning": "order doesn't matter: a + b = b + a and a \u00d7 b = b \u00d7 a (not true for \u2212 or \u00f7)",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 7
+  },
+  {
+   "word": "remainder",
+   "meaning": "what is left over when a number doesn't share out exactly",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 9
+  },
+  {
+   "word": "BODMAS",
+   "meaning": "the order to do operations: Brackets, Orders (powers), Division/Multiplication, Addition/Subtraction",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 10
+  },
+  {
+   "word": "factor",
+   "meaning": "a number that divides exactly into another: the factors of 12 are 1, 2, 3, 4, 6, 12",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 13
+  },
+  {
+   "word": "prime number",
+   "meaning": "a number bigger than 1 whose only factors are 1 and itself",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 13
+  },
+  {
+   "word": "multiple",
+   "meaning": "a number in another number's times table: 12 is a multiple of 4",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 13
+  },
+  {
+   "word": "prime factorisation",
+   "meaning": "a number written as primes multiplied together: 60 = 2 x 2 x 3 x 5",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 14
+  },
+  {
+   "word": "LCM (lowest common multiple)",
+   "meaning": "the smallest number that is in both times tables",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 14
+  },
+  {
+   "word": "HCF (highest common factor)",
+   "meaning": "the biggest number that divides exactly into both numbers",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 15
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "a+(-b)=a-b",
+   "label": "Adding a negative",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "a-(-b)=a+b",
+   "label": "Subtracting a negative",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "(-a)\\times(-b)=ab,\\quad (-a)\\times b=-ab",
+   "label": "\u00d7 and \u00f7 signs",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{a+b}{c+d}=(a+b)\\div(c+d)",
+   "label": "Fraction bar",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "(-3)^2=9,\\qquad -3^2=-9",
+   "label": "Powers of negatives",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "a+b=b+a,\\quad a\\times b=b\\times a",
+   "label": "Commutative",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "a(b+c)=ab+ac",
+   "label": "Distributive law",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "a\\times b=c\\iff c\\div b=a",
+   "label": "Division",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  },
+  {
+   "latex": "\\text{HCF}(a,b)\\times\\text{LCM}(a,b)=a\\times b",
+   "label": "HCF and LCM",
+   "ch": 1,
+   "short": "Whole numbers",
+   "page": 18
+  }
+ ],
+ "pages": 20
+}

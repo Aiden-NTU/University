@@ -1,0 +1,110 @@
+{
+ "num": 11,
+ "order": 11,
+ "title": "Simplifying algebraic expressions",
+ "short": "Simplifying",
+ "terms": [
+  {
+   "word": "like terms",
+   "meaning": "terms with exactly the same letters raised to the same powers, e.g. 3x\u00b2 and \u22125x\u00b2",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 2
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "a(b+c)=ab+ac",
+   "label": "expanding a bracket",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 5
+  },
+  {
+   "latex": "(a+b)(c+d)=ac+ad+bc+bd",
+   "label": "expanding two brackets",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 6
+  },
+  {
+   "latex": "(a+b)^2=a^2+2ab+b^2",
+   "label": "perfect square",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 8
+  },
+  {
+   "latex": "(a-b)^2=a^2-2ab+b^2",
+   "label": "perfect square (minus)",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 8
+  },
+  {
+   "latex": "(a-b)(a+b)=a^2-b^2",
+   "label": "difference of two squares",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 8
+  },
+  {
+   "latex": "3x^2-5x^2=-2x^2",
+   "label": "Collecting",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  },
+  {
+   "latex": "x+x^2,\\quad 7a+3b",
+   "label": "Unlike terms",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  },
+  {
+   "latex": "-4x\\times3x^2=-12x^3",
+   "label": "Multiplying terms",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  },
+  {
+   "latex": "(+)(+)=+,\\ (-)(-)=+,\\ (+)(-)=-",
+   "label": "Sign rules",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  },
+  {
+   "latex": "-(x-3)=-x+3",
+   "label": "Minus outside",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  },
+  {
+   "latex": "(a\\pm b)^2=a^2\\pm2ab+b^2",
+   "label": "Perfect squares",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  },
+  {
+   "latex": "(a+b)(a-b)=a^2-b^2",
+   "label": "Difference of two squares",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  },
+  {
+   "latex": "\\frac{2x+3}{x}=2+\\frac3x",
+   "label": "Dividing by x",
+   "ch": 11,
+   "short": "Simplifying",
+   "page": 12
+  }
+ ],
+ "pages": 14
+}

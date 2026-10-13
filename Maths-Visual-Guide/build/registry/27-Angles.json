@@ -1,0 +1,154 @@
+{
+ "num": 27,
+ "order": 27,
+ "title": "Angles: degrees and radians",
+ "short": "Angles",
+ "terms": [
+  {
+   "word": "angle",
+   "meaning": "an amount of turning between two directions",
+   "ch": 27,
+   "short": "Angles",
+   "page": 2
+  },
+  {
+   "word": "degree",
+   "meaning": "1/360 of a full turn, written \u00b0",
+   "ch": 27,
+   "short": "Angles",
+   "page": 2
+  },
+  {
+   "word": "right angle",
+   "meaning": "a quarter turn, 90\u00b0, marked with a little square",
+   "ch": 27,
+   "short": "Angles",
+   "page": 2
+  },
+  {
+   "word": "acute / obtuse / reflex",
+   "meaning": "less than 90\u00b0 / between 90\u00b0 and 180\u00b0 / more than 180\u00b0",
+   "ch": 27,
+   "short": "Angles",
+   "page": 2
+  },
+  {
+   "word": "anticlockwise positive",
+   "meaning": "maths angles start at the positive x-axis and turn anticlockwise; clockwise is negative",
+   "ch": 27,
+   "short": "Angles",
+   "page": 4
+  },
+  {
+   "word": "radian",
+   "meaning": "the angle made at the centre by an arc as long as the radius; 2\u03c0 radians = 360\u00b0",
+   "ch": 27,
+   "short": "Angles",
+   "page": 5
+  },
+  {
+   "word": "degree-radian conversion",
+   "meaning": "\u00d7 \u03c0/180 turns degrees into radians; \u00d7 180/\u03c0 turns radians into degrees",
+   "ch": 27,
+   "short": "Angles",
+   "page": 6
+  },
+  {
+   "word": "arc length",
+   "meaning": "the distance along the curved edge of a slice of circle: s = r\u03b8 (\u03b8 in radians)",
+   "ch": 27,
+   "short": "Angles",
+   "page": 8
+  },
+  {
+   "word": "sector area",
+   "meaning": "the area of a slice of circle: A = \u00bdr\u00b2\u03b8 (\u03b8 in radians)",
+   "ch": 27,
+   "short": "Angles",
+   "page": 8
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "^\\circ",
+   "say": "degrees",
+   "meaning": "360\u00b0 is one full turn",
+   "ch": 27,
+   "short": "Angles",
+   "page": 2
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "360^\\circ=2\\pi\\text{ rad}",
+   "label": "degrees and radians",
+   "ch": 27,
+   "short": "Angles",
+   "page": 5
+  },
+  {
+   "latex": "\\text{rad}=\\text{deg}\\times\\frac{\\pi}{180}",
+   "label": "degrees to radians",
+   "ch": 27,
+   "short": "Angles",
+   "page": 6
+  },
+  {
+   "latex": "s=\\frac{\\theta}{360}\\times2\\pi r",
+   "label": "arc length (\u03b8 in degrees)",
+   "ch": 27,
+   "short": "Angles",
+   "page": 8
+  },
+  {
+   "latex": "A=\\frac{\\theta}{360}\\times\\pi r^2",
+   "label": "sector area (\u03b8 in degrees)",
+   "ch": 27,
+   "short": "Angles",
+   "page": 8
+  },
+  {
+   "latex": "s=r\\theta",
+   "label": "arc length (\u03b8 in radians)",
+   "ch": 27,
+   "short": "Angles",
+   "page": 8
+  },
+  {
+   "latex": "A=\\tfrac12r^2\\theta",
+   "label": "sector area (\u03b8 in radians)",
+   "ch": 27,
+   "short": "Angles",
+   "page": 8
+  },
+  {
+   "latex": "\\theta_{\\text{rad}}=\\theta_{\\text{deg}}\\times\\frac{\\pi}{180}",
+   "label": "Degrees \u2192 radians",
+   "ch": 27,
+   "short": "Angles",
+   "page": 10
+  },
+  {
+   "latex": "\\theta_{\\text{deg}}=\\theta_{\\text{rad}}\\times\\frac{180}{\\pi}",
+   "label": "Radians \u2192 degrees",
+   "ch": 27,
+   "short": "Angles",
+   "page": 10
+  },
+  {
+   "latex": "s=r\\theta\\quad\\text{or}\\quad s=\\frac{\\theta}{360}\\times2\\pi r",
+   "label": "Arc length",
+   "ch": 27,
+   "short": "Angles",
+   "page": 10
+  },
+  {
+   "latex": "A=\\tfrac12r^2\\theta\\quad\\text{or}\\quad A=\\frac{\\theta}{360}\\times\\pi r^2",
+   "label": "Sector area",
+   "ch": 27,
+   "short": "Angles",
+   "page": 10
+  }
+ ],
+ "pages": 11
+}

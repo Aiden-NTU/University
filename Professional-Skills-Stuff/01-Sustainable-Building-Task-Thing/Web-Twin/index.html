@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>The Heat Exchange - NTU Clifton digital twin</title>
+  <meta name="description" content="Walk around a proposed net-zero learning hub on NTU Clifton Campus.">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body>
+  <canvas id="c"></canvas>
+
+  <div id="loading"><div class="spinner"></div><p id="loading-text">Loading Clifton Campus...</p></div>
+
+  <header id="hud">
+    <div class="title">
+      <h1>The Heat Exchange</h1>
+      <p>Net-zero learning hub, NTU Clifton Campus</p>
+    </div>
+    <button id="menu-btn" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <aside id="controls" class="panel">
+    <section>
+      <h2>View</h2>
+      <div class="seg" id="mode">
+        <button data-v="orbit" class="on">Orbit</button><button data-v="walk">Walk</button>
+      </div>
+      <label class="row">Go to
+        <select id="goto">
+          <option value="">Choose a place...</option>
+          <option value="site">Site overview</option>
+          <option value="approach">Walk: approach from campus</option>
+          <option value="entrance">Walk: main entrance</option>
+          <option value="atrium">Walk: atrium and cafe</option>
+          <option value="hall">Walk: teaching hall</option>
+          <option value="library">Walk: quiet study library (1st floor)</option>
+          <option value="cycle">Walk: cycle hub</option>
+          <option value="roof">Roof and PV</option>
+        </select>
+      </label>
+    </section>
+    <section>
+      <h2>Site</h2>
+      <div class="seg" id="phase">
+        <button data-v="existing">Existing</button><button data-v="proposed" class="on">Proposed</button>
+      </div>
+      <label class="chk"><input type="checkbox" id="show-roof" checked> Roof</label>
+      <label class="chk"><input type="checkbox" id="show-ff" checked> First floor</label>
+    </section>
+    <section>
+      <h2>Sun and shadows</h2>
+      <div class="seg" id="date">
+        <button data-v="03-20">Mar</button><button data-v="06-21" class="on">Jun</button>
+        <button data-v="09-22">Sep</button><button data-v="12-21">Dec</button>
+      </div>
+      <input type="range" id="time" min="5" max="21" step="0.25" value="13">
+      <p class="small" id="sun-label"></p>
+    </section>
+    <section id="totals"></section>
+    <p class="small credits" id="credits"></p>
+  </aside>
+
+  <div id="compass" title="North"><span>N</span></div>
+  <div id="room-chip" class="hidden"></div>
+  <aside id="room" class="panel hidden"></aside>
+  <div id="joystick" class="hidden"><div id="knob"></div></div>
+  <div id="help" class="small"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

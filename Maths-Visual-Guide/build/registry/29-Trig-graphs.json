@@ -1,0 +1,182 @@
+{
+ "num": 29,
+ "order": 29,
+ "title": "Trig functions and their graphs",
+ "short": "Trig graphs",
+ "terms": [
+  {
+   "word": "unit circle",
+   "meaning": "the circle of radius 1 centred at the origin; the point at angle \u03b8 is (cos \u03b8, sin \u03b8)",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 2
+  },
+  {
+   "word": "trig of any angle",
+   "meaning": "cos \u03b8 and sin \u03b8 are the x- and y-coordinates of the point at angle \u03b8 on the unit circle",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 2
+  },
+  {
+   "word": "CAST rule",
+   "meaning": "which trig ratios are positive in each quadrant: All (Q1), Sin (Q2), Tan (Q3), Cos (Q4)",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 3
+  },
+  {
+   "word": "reference angle",
+   "meaning": "the acute angle between the radius and the x-axis; trig of \u03b8 = \u00b1 trig of it",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 3
+  },
+  {
+   "word": "sine graph",
+   "meaning": "the wave y = sin x: starts at 0, peaks at 1 (90\u00b0), back to 0 (180\u00b0), down to \u22121 (270\u00b0), 0 at 360\u00b0",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 4
+  },
+  {
+   "word": "period",
+   "meaning": "the length of one complete cycle before a graph repeats",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 5
+  },
+  {
+   "word": "amplitude",
+   "meaning": "the height of a wave's peak above its middle line",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 5
+  },
+  {
+   "word": "cosine graph",
+   "meaning": "the wave y = cos x: the sine wave shifted \u03c0/2 left; starts at its peak, 1",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 5
+  },
+  {
+   "word": "tangent graph",
+   "meaning": "y = tan x: repeats every \u03c0, with vertical asymptotes where cos x = 0 (90\u00b0, 270\u00b0, ...)",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 6
+  },
+  {
+   "word": "trig transformations",
+   "meaning": "y = A sin(Bx) + D: A stretches the height, B squashes the period to 2\u03c0/B, D lifts it",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 8
+  },
+  {
+   "word": "factorial",
+   "meaning": "n! = n \u00d7 (n \u2212 1) \u00d7 ... \u00d7 2 \u00d7 1; e.g. 4! = 24",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 13
+  },
+  {
+   "word": "power series",
+   "meaning": "a function written as an endless sum of powers of x, like sin x = x \u2212 x\u00b3/3! + ...",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 13
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "n!",
+   "say": "n factorial",
+   "meaning": "n \u00d7 (n\u22121) \u00d7 ... \u00d7 1",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 13
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "y=A\\sin(B(x-C))+D:\\ \\text{amplitude }|A|,\\ \\text{period }\\frac{2\\pi}{B},\\ \\text{shift }C,\\ \\text{midline }D",
+   "label": "general sine wave",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 8
+  },
+  {
+   "latex": "y=A\\sin(Bx):\\ \\text{amplitude }A,\\ \\text{period }\\frac{2\\pi}{B}",
+   "label": "stretching trig graphs",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 8
+  },
+  {
+   "latex": "\\sin x=x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\dots",
+   "label": "sine series",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 13
+  },
+  {
+   "latex": "\\cos x=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\dots",
+   "label": "cosine series",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 13
+  },
+  {
+   "latex": "\\tan x=x+\\frac{x^3}{3}+\\frac{2x^5}{15}+\\dots\\ \\ (|x|<\\tfrac{\\pi}{2})",
+   "label": "tangent series",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 15
+  },
+  {
+   "latex": "(\\cos\\theta,\\ \\sin\\theta),\\qquad\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}",
+   "label": "Unit circle",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 17
+  },
+  {
+   "latex": "\\cos^2\\theta+\\sin^2\\theta=1",
+   "label": "Pythagorean identity",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 17
+  },
+  {
+   "latex": "y=A\\sin(B(x-C))+D",
+   "label": "General wave",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 17
+  },
+  {
+   "latex": "\\text{period}=\\frac{180^\\circ}{B}=\\frac{\\pi}{B}",
+   "label": "tan(Bx)",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 17
+  },
+  {
+   "latex": "D=\\frac{\\max+\\min}{2},\\quad A=\\frac{\\max-\\min}{2},\\quad B=\\frac{360^\\circ}{\\text{period}}",
+   "label": "Read off a graph",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 17
+  },
+  {
+   "latex": "\\sin x=x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\dots,\\quad\\cos x=1-\\frac{x^2}{2!}+\\frac{x^4}{4!}-\\dots",
+   "label": "Power series",
+   "ch": 29,
+   "short": "Trig graphs",
+   "page": 17
+  }
+ ],
+ "pages": 19
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Print preview - The Heat Exchange</title>
+<style>
+  body { margin: 0; background: #20262a; font: 14px system-ui, sans-serif; color: #eee; }
+  nav { position: fixed; top: 10px; left: 10px; display: flex; gap: 6px; }
+  nav a { background: #333b40; color: #eee; padding: 6px 10px; border-radius: 6px; text-decoration: none; }
+  nav a.on { background: #e8913a; color: #111; }
+  #info { position: fixed; bottom: 10px; left: 10px; opacity: .8; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+               "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/" } }
+</script>
+</head>
+<body>
+<nav><a href="?set=site">Site 1:1000</a><a href="?set=building">Building 1:100 (exploded)</a><a href="?set=trays">Furniture trays</a></nav>
+<div id="info">Serve the project folder (python -m http.server) and open /Model/preview.html. Units: mm on the print bed.</div>
+<script type="module">
+import * as THREE from 'three';
+import { STLLoader } from 'three/addons/loaders/STLLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const SET = new URLSearchParams(location.search).get('set') || 'site';
+document.querySelectorAll('nav a').forEach((a) => a.classList.toggle('on', a.href.endsWith(SET)));
+
+const P = 'print/';
+const SETS = {
+  site: [
+    ['site/site_1to1000_1_terrain_green.stl', 0x6f9f4a], ['site/site_1to1000_2_roads_paths_grey.stl', 0x9a9a9a],
+    ['site/site_1to1000_3_existing_buildings_white.stl', 0xf2f2f2], ['site/site_1to1000_4_trees_dark_green.stl', 0x2f5a2a],
+    ['site/site_1to1000_5_proposal_orange.stl', 0xe8913a],
+  ],
+  building: [
+    ['building/building_1to100_1_ground_floor.stl', 0xe9e2d4, 0], ['building/building_1to100_2_first_floor.stl', 0xe9e2d4, 60],
+    ['building/building_1to100_3_roof.stl', 0xcfcfcf, 120], ['building/building_1to100_3_roof_pv_dark_blue.stl', 0x1d2f5a, 120],
+    ['building/building_1to100_4_cycle_hub.stl', 0xe9e2d4, 0], ['building/building_1to100_5_cycle_hub_roof.stl', 0xcfcfcf, 60],
+    ['building/building_1to100_5_cycle_hub_green_roof.stl', 0x5d8f3a, 60],
+  ],
+  trays: [
+    'G01_entrance_atrium_cafe', 'G03_wellbeing_prayer_room', 'G04_flexible_teaching_hall', 'G11_cycle_hub',
+    'F01_breakout_co_working_lounge', 'F03_kitchenette', 'F04_quiet_study_library', 'F05_staff_office',
+    'F07_group_study_pod_1', 'F11_smart_building_control_room', 'F12_meeting_room',
+  ].map((n) => [`trays_sla/${n}.stl`, 0xb9c4c9]).concat(
+    ['G02_wcs_incl_accessible', 'G05_makerspace', 'G07_furniture_store', 'G08_plant_room', 'G09_edge_server_room', 'G10_showers_changing']
+      .map((n) => [`trays_fdm/${n}.stl`, 0xe9e2d4])),
+};
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(devicePixelRatio);
+renderer.setSize(innerWidth, innerHeight);
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x20262a);
+THREE.Object3D.DEFAULT_UP.set(0, 0, 1);
+const camera = new THREE.PerspectiveCamera(35, innerWidth / innerHeight, 1, 5000);
+camera.up.set(0, 0, 1);
+scene.add(new THREE.HemisphereLight(0xffffff, 0x555555, 1.6));
+const key = new THREE.DirectionalLight(0xffffff, 2.2);
+key.position.set(-200, -300, 400);
+scene.add(key);
+const controls = new OrbitControls(camera, renderer.domElement);
+
+const loader = new STLLoader();
+const group = new THREE.Group();
+scene.add(group);
+const items = await Promise.all(SETS[SET].map(async ([file, colour, lift = 0], i) => {
+  const g = await loader.loadAsync(P + file);
+  g.computeVertexNormals();
+  const m = new THREE.Mesh(g, new THREE.MeshStandardMaterial({
+    color: colour, roughness: 0.7, flatShading: true, polygonOffset: true, polygonOffsetFactor: -i, polygonOffsetUnits: -i,
+  }));
+  m.position.z = lift;
+  return m;
+}));
+if (SET === 'trays') {
+  let x = 0, y = 0, rowH = 0;
+  for (const m of items) {
+    m.geometry.computeBoundingBox();
+    const b = m.geometry.boundingBox, w = b.max.x - b.min.x, h = b.max.y - b.min.y;
+    if (x + w > 420) { x = 0; y += rowH + 12; rowH = 0; }
+    m.position.set(x - b.min.x, y - b.min.y, -b.min.z);
+    x += w + 12; rowH = Math.max(rowH, h);
+  }
+}
+items.forEach((m) => group.add(m));
+const box = new THREE.Box3().setFromObject(group), c = box.getCenter(new THREE.Vector3()), r = box.getSize(new THREE.Vector3()).length();
+controls.target.copy(c);
+const k = SET === 'building' ? 1.6 : 1;
+camera.position.set(c.x - r * 0.45 * k, c.y - r * 0.75 * k, c.z + r * 0.6 * k);
+document.body.dataset.ready = '1';
+(function loop() { controls.update(); renderer.render(scene, camera); requestAnimationFrame(loop); })();
+addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+</script>
+</body>
+</html>

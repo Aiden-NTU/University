@@ -1,0 +1,91 @@
+{
+ "num": 10,
+ "order": 10,
+ "title": "Number bases",
+ "short": "Number bases",
+ "terms": [
+  {
+   "word": "number base",
+   "meaning": "how many digits a counting system uses; each column is worth base \u00d7 the one to its right",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 3
+  },
+  {
+   "word": "binary",
+   "meaning": "base 2: counting with only the digits 0 and 1",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 3
+  },
+  {
+   "word": "bit",
+   "meaning": "a binary digit, 0 or 1",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 3
+  },
+  {
+   "word": "hexadecimal (hex)",
+   "meaning": "base 16: digits 0-9 then A-F for 10-15",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 6
+  },
+  {
+   "word": "octal",
+   "meaning": "base 8: digits 0-7",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 6
+  },
+  {
+   "word": "byte",
+   "meaning": "8 bits; can store 2\u2078 = 256 different values (0-255)",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 11
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "10110_2",
+   "say": "one-zero-one-one-zero in base two",
+   "meaning": "the subscript gives the base",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 4
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "(d_2\\,d_1\\,d_0)_b=d_2b^2+d_1b+d_0",
+   "label": "Place value in base b",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 14
+  },
+  {
+   "latex": "1+1=10_2,\\quad1+1+1=11_2",
+   "label": "Binary addition",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 14
+  },
+  {
+   "latex": "10_2-1=1",
+   "label": "Binary subtraction",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 14
+  },
+  {
+   "latex": "n\\text{ bits}\\to2^n\\text{ values}",
+   "label": "Bits and bytes",
+   "ch": 10,
+   "short": "Number bases",
+   "page": 14
+  }
+ ],
+ "pages": 16
+}

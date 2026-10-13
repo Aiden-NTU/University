@@ -1,0 +1,219 @@
+{
+ "num": 5,
+ "order": 5,
+ "title": "Measurement",
+ "short": "Measurement",
+ "terms": [
+  {
+   "word": "unit",
+   "meaning": "the fixed amount you count with: a metre, a gram, a second...",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 2
+  },
+  {
+   "word": "prefix (metric)",
+   "meaning": "a word-start like kilo- or milli- that multiplies a unit by 1000, 1/1000 ...",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 2
+  },
+  {
+   "word": "perimeter",
+   "meaning": "the total length of the boundary of a shape",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 4
+  },
+  {
+   "word": "circumference",
+   "meaning": "the perimeter of a circle",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 4
+  },
+  {
+   "word": "radius",
+   "meaning": "distance from the centre of a circle to its edge",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 4
+  },
+  {
+   "word": "diameter",
+   "meaning": "distance straight across a circle through the centre; twice the radius",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 4
+  },
+  {
+   "word": "area",
+   "meaning": "the amount of flat surface inside a shape, counted in unit squares",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 5
+  },
+  {
+   "word": "volume",
+   "meaning": "the amount of 3-D space inside a solid, counted in unit cubes",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 9
+  },
+  {
+   "word": "surface area",
+   "meaning": "the total area of all the faces of a solid",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 10
+  },
+  {
+   "word": "speed",
+   "meaning": "distance travelled per unit of time: distance \u00f7 time",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 12
+  },
+  {
+   "word": "density",
+   "meaning": "mass per unit volume: mass \u00f7 volume",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 12
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\text{cm}^2",
+   "say": "square centimetres",
+   "meaning": "a count of 1 cm x 1 cm squares",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 5
+  },
+  {
+   "latex": "\\text{cm}^3",
+   "say": "cubic centimetres",
+   "meaning": "a count of 1 cm cubes",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 9
+  },
+  {
+   "latex": "\\text{m\\,s}^{-1}",
+   "say": "metres per second",
+   "meaning": "same as m/s",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 12
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "P=2(l+w)",
+   "label": "perimeter of a rectangle",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 4
+  },
+  {
+   "latex": "C=\\pi d=2\\pi r",
+   "label": "circumference of a circle",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 4
+  },
+  {
+   "latex": "A=lw",
+   "label": "area of a rectangle",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 5
+  },
+  {
+   "latex": "A=\\tfrac12 bh",
+   "label": "area of a triangle",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 5
+  },
+  {
+   "latex": "A=\\pi r^2",
+   "label": "area of a circle",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 5
+  },
+  {
+   "latex": "A=\\tfrac12(a+b)h",
+   "label": "area of a trapezium",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 6
+  },
+  {
+   "latex": "V=lwh",
+   "label": "volume of a cuboid",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 9
+  },
+  {
+   "latex": "V=\\pi r^2 h",
+   "label": "volume of a cylinder",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 9
+  },
+  {
+   "latex": "S=2(lw+lh+wh)",
+   "label": "surface area of a cuboid",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 10
+  },
+  {
+   "latex": "\\text{speed}=\\frac{\\text{distance}}{\\text{time}}",
+   "label": "speed",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 12
+  },
+  {
+   "latex": "A=lw,\\qquad A=\\tfrac12bh",
+   "label": "Rectangle, triangle",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 15
+  },
+  {
+   "latex": "A=bh,\\qquad A=\\tfrac12(a+b)h",
+   "label": "Parallelogram, trapezium",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 15
+  },
+  {
+   "latex": "V=lwh,\\qquad V=\\pi r^2h",
+   "label": "Volume",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 15
+  },
+  {
+   "latex": "s=\\frac{d}{t},\\quad d=st,\\quad t=\\frac{d}{s}",
+   "label": "Speed",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 15
+  },
+  {
+   "latex": "\\rho=\\frac{m}{V},\\quad m=\\rho V,\\quad V=\\frac{m}{\\rho}",
+   "label": "Density",
+   "ch": 5,
+   "short": "Measurement",
+   "page": 15
+  }
+ ],
+ "pages": 17
+}

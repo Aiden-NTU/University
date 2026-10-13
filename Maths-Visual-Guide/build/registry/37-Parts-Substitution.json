@@ -1,0 +1,96 @@
+{
+ "num": 37,
+ "order": 37,
+ "title": "Integration by parts and substitution",
+ "short": "Parts & substitution",
+ "terms": [
+  {
+   "word": "integration by parts",
+   "meaning": "\u222bu (dv/dx) dx = uv \u2212 \u222bv (du/dx) dx: the product rule run backwards",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 5
+  },
+  {
+   "word": "parts formula",
+   "meaning": "\u222bu dv = uv \u2212 \u222bv du",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 5
+  },
+  {
+   "word": "LIATE",
+   "meaning": "order for choosing u in parts: Logs, Inverse trig, Algebra, Trig, Exponentials",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 7
+  },
+  {
+   "word": "tabular integration",
+   "meaning": "D/I table for repeated parts: differentiate u down to 0, integrate the other, alternate signs",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 8
+  },
+  {
+   "word": "integration by substitution",
+   "meaning": "rename an inner chunk as a new letter, swap dx for the new letter's d, integrate, swap back",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 12
+  },
+  {
+   "word": "substitution limits",
+   "meaning": "when substituting in a definite integral, convert the limits into the new letter",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 16
+  },
+  {
+   "word": "reverse chain rule",
+   "meaning": "\u222bf(g(x)) g\u2032(x) dx = F(g(x)) + C: substitution undoes the chain rule",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 16
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "\\int u\\frac{dv}{dx}\\,dx=uv-\\int v\\frac{du}{dx}\\,dx",
+   "label": "integration by parts",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 5
+  },
+  {
+   "latex": "\\int_a^bu\\frac{dv}{dx}\\,dx=\\Big[uv\\Big]_a^b-\\int_a^bv\\frac{du}{dx}\\,dx",
+   "label": "definite integration by parts",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 10
+  },
+  {
+   "latex": "\\int_a^bf(g(x))\\,g'(x)\\,dx=\\int_{g(a)}^{g(b)}f(y)\\,dy",
+   "label": "integration by substitution (y = g(x))",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 16
+  },
+  {
+   "latex": "\\int f(ax+b)\\,dx=\\frac1aF(ax+b)+C",
+   "label": "linear inside shortcut",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 17
+  },
+  {
+   "latex": "\\int\\ln x\\,dx=x\\ln x-x+C",
+   "label": "ln x",
+   "ch": 37,
+   "short": "Parts & substitution",
+   "page": 20
+  }
+ ],
+ "pages": 21
+}

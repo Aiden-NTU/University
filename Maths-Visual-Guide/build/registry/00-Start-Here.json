@@ -1,0 +1,165 @@
+{
+ "num": "Part 0",
+ "order": 0,
+ "title": "Start here: a phrasebook for the language of maths",
+ "short": "Start here",
+ "terms": [
+  {
+   "word": "equation",
+   "meaning": "a maths sentence saying two things have the same value (it has an = sign)",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 2
+  },
+  {
+   "word": "equals sign (=)",
+   "meaning": "the two sides have exactly the same value, like a balanced see-saw",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "word": "variable",
+   "meaning": "a letter standing for a number that can change",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 6
+  },
+  {
+   "word": "substitute",
+   "meaning": "replace a letter with a number and work out the value",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 7
+  },
+  {
+   "word": "formula",
+   "meaning": "a shorthand recipe connecting quantities, written with letters",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 9
+  },
+  {
+   "word": "square root",
+   "meaning": "the number which, multiplied by itself, gives the number you started with",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 3
+  },
+  {
+   "word": "squared",
+   "meaning": "multiplied by itself: 5 squared is 5 x 5",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 3
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\pi",
+   "say": "pie",
+   "meaning": "a fixed number, about 3.14159, from circles",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 10
+  },
+  {
+   "latex": "=",
+   "say": "equals",
+   "meaning": "has the same value as",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "latex": "\\neq",
+   "say": "is not equal to",
+   "meaning": "different value",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "latex": "<",
+   "say": "is less than",
+   "meaning": "smaller than",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "latex": ">",
+   "say": "is greater than",
+   "meaning": "bigger than",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "latex": "\\leq",
+   "say": "less than or equal to",
+   "meaning": "smaller or the same",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "latex": "\\geq",
+   "say": "greater than or equal to",
+   "meaning": "bigger or the same",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "latex": "\\approx",
+   "say": "approximately equal to",
+   "meaning": "roughly the same",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 4
+  },
+  {
+   "latex": "\\equiv",
+   "say": "identically equal to",
+   "meaning": "true for every possible number",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 5
+  },
+  {
+   "latex": "\\gg",
+   "say": "much greater than",
+   "meaning": "far bigger",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 5
+  },
+  {
+   "latex": "\\sqrt{\\;}",
+   "say": "square root of",
+   "meaning": "which number times itself gives this",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 3
+  },
+  {
+   "latex": "x^2",
+   "say": "x squared",
+   "meaning": "x times x",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 3
+  },
+  {
+   "latex": "x_1",
+   "say": "x one",
+   "meaning": "a name tag: the first x",
+   "ch": "Part 0",
+   "short": "Start here",
+   "page": 10
+  }
+ ],
+ "formulas": [],
+ "pages": 14
+}

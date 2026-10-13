@@ -1,0 +1,199 @@
+{
+ "num": 9,
+ "order": 9,
+ "title": "Indices (powers and roots)",
+ "short": "Indices",
+ "terms": [
+  {
+   "word": "base",
+   "meaning": "in a^n, the number a that gets multiplied by itself",
+   "ch": 9,
+   "short": "Indices",
+   "page": 2
+  },
+  {
+   "word": "exponent",
+   "meaning": "another name for the power or index",
+   "ch": 9,
+   "short": "Indices",
+   "page": 2
+  },
+  {
+   "word": "square root",
+   "meaning": "the number that, multiplied by itself, gives the original: \u221a25 = 5",
+   "ch": 9,
+   "short": "Indices",
+   "page": 3
+  },
+  {
+   "word": "standard form",
+   "meaning": "a number written as a \u00d7 10^n with 1 \u2264 a < 10",
+   "ch": 9,
+   "short": "Indices",
+   "page": 15
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "a^n",
+   "say": "a to the power n",
+   "meaning": "n copies of a multiplied together",
+   "ch": 9,
+   "short": "Indices",
+   "page": 2
+  },
+  {
+   "latex": "\\sqrt{x}",
+   "say": "the square root of x",
+   "meaning": "the positive number whose square is x",
+   "ch": 9,
+   "short": "Indices",
+   "page": 3
+  },
+  {
+   "latex": "\\sqrt[n]{x}",
+   "say": "the n-th root of x",
+   "meaning": "the number whose n-th power is x",
+   "ch": 9,
+   "short": "Indices",
+   "page": 3
+  },
+  {
+   "latex": "\\pm",
+   "say": "plus or minus",
+   "meaning": "both the + and \u2212 versions",
+   "ch": 9,
+   "short": "Indices",
+   "page": 3
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "a^m\\times a^n=a^{m+n}",
+   "label": "multiplying powers of the same base",
+   "ch": 9,
+   "short": "Indices",
+   "page": 5
+  },
+  {
+   "latex": "\\frac{a^m}{a^n}=a^{m-n}",
+   "label": "dividing powers of the same base",
+   "ch": 9,
+   "short": "Indices",
+   "page": 6
+  },
+  {
+   "latex": "(a^m)^n=a^{mn}",
+   "label": "power of a power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 7
+  },
+  {
+   "latex": "(ab)^n=a^nb^n",
+   "label": "power of a product",
+   "ch": 9,
+   "short": "Indices",
+   "page": 7
+  },
+  {
+   "latex": "a^0=1",
+   "label": "zero power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 8
+  },
+  {
+   "latex": "a^{-n}=\\frac1{a^n}",
+   "label": "negative power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 8
+  },
+  {
+   "latex": "a^{\\frac mn}=\\left(\\sqrt[n]{a}\\right)^m",
+   "label": "fractional power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 10
+  },
+  {
+   "latex": "a^n=a\\times a\\times\\cdots\\times a",
+   "label": "Power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "(ab)^n=a^nb^n,\\quad\\left(\\frac ab\\right)^n=\\frac{a^n}{b^n}",
+   "label": "Brackets",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "a^0=1\\quad(a\\neq0)",
+   "label": "Zero power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "a^{-n}=\\frac{1}{a^n},\\quad\\frac{1}{a^{-n}}=a^n",
+   "label": "Negative power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "\\left(\\frac ab\\right)^{-n}=\\left(\\frac ba\\right)^n",
+   "label": "Negative power of a fraction",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "a^{\\frac1n}=\\sqrt[n]{a},\\quad a^{\\frac mn}=\\left(\\sqrt[n]{a}\\right)^m",
+   "label": "Fraction power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "(-2)^4=16,\\ (-2)^3=-8,\\ -3^2=-9",
+   "label": "Negative base",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "\\sqrt[3]{-8}=-2",
+   "label": "Roots of negatives",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "a^p=a^q\\Rightarrow p=q",
+   "label": "Unknown power",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "x^{\\frac mn}=c\\Rightarrow x=c^{\\frac nm}",
+   "label": "Unknown base",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  },
+  {
+   "latex": "a\\times10^n,\\quad1\\le a<10",
+   "label": "Standard form",
+   "ch": 9,
+   "short": "Indices",
+   "page": 18
+  }
+ ],
+ "pages": 20
+}

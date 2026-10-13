@@ -1,0 +1,119 @@
+{
+ "num": 30,
+ "order": 30,
+ "title": "Trig identities and equations",
+ "short": "Identities & equations",
+ "terms": [
+  {
+   "word": "trig identity",
+   "meaning": "a trig statement that is true for every angle, e.g. sin\u00b2\u03b8 + cos\u00b2\u03b8 = 1",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 2
+  },
+  {
+   "word": "Pythagorean identity",
+   "meaning": "sin\u00b2\u03b8 + cos\u00b2\u03b8 = 1: Pythagoras on the unit circle",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 2
+  },
+  {
+   "word": "trig equation",
+   "meaning": "a statement like sin \u03b8 = 0.5 that is true only for particular angles",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 4
+  },
+  {
+   "word": "all solutions",
+   "meaning": "trig equations have many answers: find the calculator's one, its partner, then add or subtract whole turns",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 4
+  },
+  {
+   "word": "r sin(\u03b8 + \u03b1) form",
+   "meaning": "a sin \u03b8 + b cos \u03b8 rewritten as one wave r sin(\u03b8 + \u03b1), r = \u221a(a\u00b2 + b\u00b2), tan \u03b1 = b/a",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 8
+  },
+  {
+   "word": "compound angle formula",
+   "meaning": "sin(A + B) = sin A cos B + cos A sin B",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 8
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\sin^2\\theta",
+   "say": "sine squared theta",
+   "meaning": "(sin \u03b8)\u00b2, the sine worked out first, then squared",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 2
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\sin^2\\theta+\\cos^2\\theta=1",
+   "label": "Pythagorean identity",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 2
+  },
+  {
+   "latex": "a\\sin\\theta+b\\cos\\theta=r\\sin(\\theta+\\alpha),\\ r=\\sqrt{a^2+b^2},\\ \\alpha=\\tan^{-1}\\frac ba",
+   "label": "r sin form",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 8
+  },
+  {
+   "latex": "\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta},\\qquad\\tan^2\\theta+1=\\frac{1}{\\cos^2\\theta}",
+   "label": "tan",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 11
+  },
+  {
+   "latex": "\\theta_1,\\quad180^\\circ-\\theta_1\\ \\ (\\pi-\\theta_1)",
+   "label": "Partner: sin",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 11
+  },
+  {
+   "latex": "\\theta_1,\\quad360^\\circ-\\theta_1\\ \\ (2\\pi-\\theta_1)",
+   "label": "Partner: cos",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 11
+  },
+  {
+   "latex": "\\theta_1,\\quad\\theta_1+180^\\circ\\ \\ (\\theta_1+\\pi)",
+   "label": "Partner: tan",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 11
+  },
+  {
+   "latex": "a\\sin\\theta+b\\cos\\theta=r\\sin(\\theta+\\alpha)",
+   "label": "r sin form",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 11
+  },
+  {
+   "latex": "\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B",
+   "label": "Compound angle",
+   "ch": 30,
+   "short": "Identities & equations",
+   "page": 11
+  }
+ ],
+ "pages": 12
+}

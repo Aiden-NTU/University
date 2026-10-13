@@ -1,0 +1,203 @@
+{
+ "num": 36,
+ "order": 36,
+ "title": "Integration and areas",
+ "short": "Integration",
+ "terms": [
+  {
+   "word": "area under a curve",
+   "meaning": "the region between a graph and the x axis; it measures a total (amount, distance, probability)",
+   "ch": 36,
+   "short": "Integration",
+   "page": 2
+  },
+  {
+   "word": "trapezium rule",
+   "meaning": "estimate an area with n sloping-topped strips: h/2 \u00d7 (first + 2 \u00d7 middles + last)",
+   "ch": 36,
+   "short": "Integration",
+   "page": 3
+  },
+  {
+   "word": "strip width h",
+   "meaning": "h = (b \u2212 a) \u00f7 n: the width of each strip",
+   "ch": 36,
+   "short": "Integration",
+   "page": 3
+  },
+  {
+   "word": "integral sign \u222b",
+   "meaning": "a stretched S for 'sum': adds up infinitely many infinitely thin strips",
+   "ch": 36,
+   "short": "Integration",
+   "page": 5
+  },
+  {
+   "word": "integrand",
+   "meaning": "the function being integrated (the strip height)",
+   "ch": 36,
+   "short": "Integration",
+   "page": 5
+  },
+  {
+   "word": "limits of integration",
+   "meaning": "the start and end values of x for a definite integral",
+   "ch": 36,
+   "short": "Integration",
+   "page": 5
+  },
+  {
+   "word": "integration",
+   "meaning": "finding the area under a curve; also the reverse of differentiation",
+   "ch": 36,
+   "short": "Integration",
+   "page": 5
+  },
+  {
+   "word": "reverse power rule",
+   "meaning": "\u222b a x\u207f dx = a x\u207f\u207a\u00b9 \u00f7 (n + 1) + c, for any n except \u22121",
+   "ch": 36,
+   "short": "Integration",
+   "page": 6
+  },
+  {
+   "word": "area function",
+   "meaning": "A(x) = area under f from a fixed start up to x; its derivative is f(x)",
+   "ch": 36,
+   "short": "Integration",
+   "page": 8
+  },
+  {
+   "word": "constant of integration (+c)",
+   "meaning": "the unknown constant added to every indefinite integral",
+   "ch": 36,
+   "short": "Integration",
+   "page": 8
+  },
+  {
+   "word": "indefinite integral",
+   "meaning": "\u222b f(x) dx with no limits: a family of functions, + c",
+   "ch": 36,
+   "short": "Integration",
+   "page": 8
+  },
+  {
+   "word": "integral of 1/x",
+   "meaning": "ln|x| + c: the one power the reverse power rule can't do",
+   "ch": 36,
+   "short": "Integration",
+   "page": 9
+  },
+  {
+   "word": "standard integrals",
+   "meaning": "the basic list: k, powers, 1/x, e^(kx), sin kx, cos kx, tan x",
+   "ch": 36,
+   "short": "Integration",
+   "page": 12
+  },
+  {
+   "word": "linearity of integration",
+   "meaning": "\u222b(f \u00b1 g) = \u222bf \u00b1 \u222bg and \u222bk f = k \u222bf",
+   "ch": 36,
+   "short": "Integration",
+   "page": 12
+  },
+  {
+   "word": "definite integral",
+   "meaning": "\u222b from a to b: a number, F(b) \u2212 F(a), the (signed) area between x = a and x = b",
+   "ch": 36,
+   "short": "Integration",
+   "page": 13
+  },
+  {
+   "word": "negative area",
+   "meaning": "area below the x axis comes out negative in a definite integral",
+   "ch": 36,
+   "short": "Integration",
+   "page": 15
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\int_a^b f(x)\\,dx",
+   "say": "the integral from a to b of f of x, dee x",
+   "meaning": "the exact area under y = f(x) between x = a and x = b",
+   "ch": 36,
+   "short": "Integration",
+   "page": 5
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\int_a^b y\\,dx\\approx\\frac h2\\big(y_0+2(y_1+\\dots+y_{n-1})+y_n\\big),\\ h=\\frac{b-a}{n}",
+   "label": "trapezium rule",
+   "ch": 36,
+   "short": "Integration",
+   "page": 3
+  },
+  {
+   "latex": "\\int ax^n\\,dx=\\frac{a}{n+1}x^{n+1}+c\\ \\ (n\\ne-1)",
+   "label": "power rule for integration",
+   "ch": 36,
+   "short": "Integration",
+   "page": 6
+  },
+  {
+   "latex": "\\int\\frac1x\\,dx=\\ln|x|+c",
+   "label": "integral of 1/x",
+   "ch": 36,
+   "short": "Integration",
+   "page": 9
+  },
+  {
+   "latex": "\\int_a^bf(x)\\,dx=F(b)-F(a)",
+   "label": "definite integral",
+   "ch": 36,
+   "short": "Integration",
+   "page": 13
+  },
+  {
+   "latex": "\\int k\\,dx=kx+c",
+   "label": "Constant",
+   "ch": 36,
+   "short": "Integration",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{3}{x^2}=3x^{-2},\\quad\\sqrt x=x^{\\frac12},\\quad\\frac{1}{\\sqrt x}=x^{-\\frac12}",
+   "label": "Rewrite first",
+   "ch": 36,
+   "short": "Integration",
+   "page": 18
+  },
+  {
+   "latex": "\\int(f\\pm g)\\,dx=\\int f\\,dx\\pm\\int g\\,dx,\\qquad\\int kf\\,dx=k\\int f\\,dx",
+   "label": "Sums and multiples",
+   "ch": 36,
+   "short": "Integration",
+   "page": 18
+  },
+  {
+   "latex": "\\int e^{kx}dx=\\tfrac1ke^{kx},\\ \\int\\sin kx\\,dx=-\\tfrac1k\\cos kx,\\ \\int\\cos kx\\,dx=\\tfrac1k\\sin kx",
+   "label": "e and trig",
+   "ch": 36,
+   "short": "Integration",
+   "page": 18
+  },
+  {
+   "latex": "\\int\\tan x\\,dx=\\ln|\\sec x|+c",
+   "label": "tan",
+   "ch": 36,
+   "short": "Integration",
+   "page": 18
+  },
+  {
+   "latex": "\\frac h2\\big(y_0+2(y_1+\\dots+y_{n-1})+y_n\\big),\\ \\ h=\\frac{b-a}{n}",
+   "label": "Trapezium rule",
+   "ch": 36,
+   "short": "Integration",
+   "page": 18
+  }
+ ],
+ "pages": 20
+}

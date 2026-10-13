@@ -1,0 +1,117 @@
+{
+ "num": 35,
+ "order": 35,
+ "title": "Chain, product and quotient rules",
+ "short": "Rules",
+ "terms": [
+  {
+   "word": "higher derivatives",
+   "meaning": "differentiate repeatedly: d\u00b2y/dx\u00b2, d\u00b3y/dx\u00b3, \u2026, d\u207fy/dx\u207f",
+   "ch": 35,
+   "short": "Rules",
+   "page": 2
+  },
+  {
+   "word": "chain rule",
+   "meaning": "for a function inside a function: dy/dx = dy/dz \u00d7 dz/dx (outside rate \u00d7 inside rate)",
+   "ch": 35,
+   "short": "Rules",
+   "page": 4
+  },
+  {
+   "word": "product rule",
+   "meaning": "d(uv)/dx = v du/dx + u dv/dx",
+   "ch": 35,
+   "short": "Rules",
+   "page": 8
+  },
+  {
+   "word": "quotient rule",
+   "meaning": "d(u/v)/dx = (v du/dx \u2212 u dv/dx) \u00f7 v\u00b2",
+   "ch": 35,
+   "short": "Rules",
+   "page": 10
+  },
+  {
+   "word": "explicit / implicit function",
+   "meaning": "explicit: y = f(x); implicit: x and y mixed in one equation",
+   "ch": 35,
+   "short": "Rules",
+   "page": 12
+  },
+  {
+   "word": "implicit differentiation",
+   "meaning": "differentiate every term; each y term gets an extra \u00d7 dy/dx (chain rule); then solve for dy/dx",
+   "ch": 35,
+   "short": "Rules",
+   "page": 12
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "\\frac{dy}{dx}=\\frac{dy}{dz}\\times\\frac{dz}{dx}",
+   "label": "chain rule",
+   "ch": 35,
+   "short": "Rules",
+   "page": 4
+  },
+  {
+   "latex": "\\frac{d(uv)}{dx}=v\\frac{du}{dx}+u\\frac{dv}{dx}",
+   "label": "product rule",
+   "ch": 35,
+   "short": "Rules",
+   "page": 8
+  },
+  {
+   "latex": "\\frac{d}{dx}\\left(\\frac uv\\right)=\\frac{v\\frac{du}{dx}-u\\frac{dv}{dx}}{v^2}",
+   "label": "quotient rule",
+   "ch": 35,
+   "short": "Rules",
+   "page": 10
+  },
+  {
+   "latex": "\\frac{d^2y}{dx^2}=\\frac{d}{dx}\\left(\\frac{dy}{dx}\\right)",
+   "label": "Higher derivatives",
+   "ch": 35,
+   "short": "Rules",
+   "page": 17
+  },
+  {
+   "latex": "\\frac{dy}{dx}=\\frac{dy}{du}\\times\\frac{du}{dx}",
+   "label": "Chain rule",
+   "ch": 35,
+   "short": "Rules",
+   "page": 17
+  },
+  {
+   "latex": "\\frac{d}{dx}\\big(g(x)\\big)^n=n\\big(g(x)\\big)^{n-1}g'(x)",
+   "label": "Chain: powers",
+   "ch": 35,
+   "short": "Rules",
+   "page": 17
+  },
+  {
+   "latex": "\\frac{d}{dx}e^{g(x)}=g'(x)e^{g(x)},\\qquad\\frac{d}{dx}\\ln g(x)=\\frac{g'(x)}{g(x)}",
+   "label": "Chain: e and ln",
+   "ch": 35,
+   "short": "Rules",
+   "page": 17
+  },
+  {
+   "latex": "\\frac{d}{dx}\\sqrt{g(x)}=\\frac{g'(x)}{2\\sqrt{g(x)}}",
+   "label": "Chain: roots",
+   "ch": 35,
+   "short": "Rules",
+   "page": 17
+  },
+  {
+   "latex": "\\frac{d}{dx}\\big(kf(x)\\big)=kf'(x)",
+   "label": "Constant multiple",
+   "ch": 35,
+   "short": "Rules",
+   "page": 17
+  }
+ ],
+ "pages": 19
+}

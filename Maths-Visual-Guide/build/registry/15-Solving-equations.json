@@ -1,0 +1,154 @@
+{
+ "num": 15,
+ "order": 15,
+ "title": "Solving equations",
+ "short": "Solving equations",
+ "terms": [
+  {
+   "word": "solve",
+   "meaning": "find the value(s) of the letter that make an equation true",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 2
+  },
+  {
+   "word": "solution",
+   "meaning": "a value of the letter that makes the equation true (also called a root)",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 2
+  },
+  {
+   "word": "linear equation",
+   "meaning": "an equation where the letter appears only to the power 1 (no x\u00b2, no 1/x)",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 3
+  },
+  {
+   "word": "cross-multiply",
+   "meaning": "from a/b = c/d go straight to ad = cb; it's multiplying both sides by b and by d",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 3
+  },
+  {
+   "word": "simultaneous equations",
+   "meaning": "two (or more) equations about the same unknowns, which must all be true at once",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 5
+  },
+  {
+   "word": "elimination",
+   "meaning": "adding or subtracting whole equations so one unknown cancels out",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 5
+  },
+  {
+   "word": "substitution method",
+   "meaning": "rearrange one equation for one letter and put it into the other equation",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 7
+  },
+  {
+   "word": "independent equations",
+   "meaning": "equations that each give genuinely new information; you need as many as there are unknowns",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 8
+  },
+  {
+   "word": "quadratic equation",
+   "meaning": "an equation with x\u00b2 as the highest power, e.g. x\u00b2 + 6x + 5 = 0",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 10
+  },
+  {
+   "word": "zero product rule",
+   "meaning": "if A \u00d7 B = 0 then A = 0 or B = 0",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 10
+  },
+  {
+   "word": "quadratic formula",
+   "meaning": "x = (\u2212b \u00b1 \u221a(b\u00b2 \u2212 4ac)) / 2a, the solutions of ax\u00b2 + bx + c = 0; the roots are Chapter 12's pair with the sign flipped, divided by a",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 12
+  },
+  {
+   "word": "completing the square",
+   "meaning": "rewriting x\u00b2 + bx + c as (x + b/2)\u00b2 \u2212 (b/2)\u00b2 + c; for a \u2260 1 take a out of the x terms first. Gives vertex form a(x + p)\u00b2 + q",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 13
+  },
+  {
+   "word": "vertex form",
+   "meaning": "a quadratic written a(x + p)\u00b2 + q; its vertex (turning point) is (\u2212p, q)",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 13
+  },
+  {
+   "word": "inequality",
+   "meaning": "a statement that one side is less than (<), greater than (>), at most (\u2264) or at least (\u2265) the other; its solution is a range of values",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 17
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\pm",
+   "say": "plus or minus",
+   "meaning": "both the + version and the \u2212 version are answers",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 10
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+   "label": "quadratic formula (for ax\u00b2 + bx + c = 0)",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 12
+  },
+  {
+   "latex": "x^2+bx+c=\\left(x+\\frac b2\\right)^2-\\left(\\frac b2\\right)^2+c",
+   "label": "completing the square",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 13
+  },
+  {
+   "latex": "\\frac ab=\\frac cd\\ \\Rightarrow\\ ad=bc",
+   "label": "Cross-multiplying",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 18
+  },
+  {
+   "latex": "AB=0\\ \\Rightarrow\\ A=0\\ \\text{or}\\ B=0",
+   "label": "Zero product",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 18
+  },
+  {
+   "latex": "\\Delta=b^2-4ac",
+   "label": "Discriminant",
+   "ch": 15,
+   "short": "Solving equations",
+   "page": 18
+  }
+ ],
+ "pages": 20
+}

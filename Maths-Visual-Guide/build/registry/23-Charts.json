@@ -1,0 +1,173 @@
+{
+ "num": 23,
+ "order": 23,
+ "title": "Tables and charts",
+ "short": "Charts",
+ "terms": [
+  {
+   "word": "data",
+   "meaning": "recorded facts: measurements, counts or labels",
+   "ch": 23,
+   "short": "Charts",
+   "page": 2
+  },
+  {
+   "word": "categorical data",
+   "meaning": "data that are labels or groups (tea / coffee), not quantities",
+   "ch": 23,
+   "short": "Charts",
+   "page": 2
+  },
+  {
+   "word": "numerical data",
+   "meaning": "data that are measured or counted quantities (heights, ages)",
+   "ch": 23,
+   "short": "Charts",
+   "page": 2
+  },
+  {
+   "word": "frequency",
+   "meaning": "how many times a value (or group of values) occurs",
+   "ch": 23,
+   "short": "Charts",
+   "page": 2
+  },
+  {
+   "word": "bar chart",
+   "meaning": "separate bars (with gaps) whose heights show the frequency of each category",
+   "ch": 23,
+   "short": "Charts",
+   "page": 3
+  },
+  {
+   "word": "pie chart",
+   "meaning": "a circle cut into slices; each slice's angle is its share of 360\u00b0",
+   "ch": 23,
+   "short": "Charts",
+   "page": 3
+  },
+  {
+   "word": "histogram",
+   "meaning": "touching bars for numerical data grouped into ranges; area shows frequency",
+   "ch": 23,
+   "short": "Charts",
+   "page": 3
+  },
+  {
+   "word": "dotplot",
+   "meaning": "a number line with one dot stacked up for every data value",
+   "ch": 23,
+   "short": "Charts",
+   "page": 3
+  },
+  {
+   "word": "scatter plot",
+   "meaning": "one dot per item, placed by two measurements (x, y), to see whether they are related",
+   "ch": 23,
+   "short": "Charts",
+   "page": 3
+  },
+  {
+   "word": "frequency density",
+   "meaning": "frequency \u00f7 class width: the height of a histogram bar, so that area = frequency",
+   "ch": 23,
+   "short": "Charts",
+   "page": 7
+  },
+  {
+   "word": "class width",
+   "meaning": "the size of a group in a histogram: upper boundary minus lower boundary",
+   "ch": 23,
+   "short": "Charts",
+   "page": 7
+  },
+  {
+   "word": "stem and leaf diagram",
+   "meaning": "each value split into stem (leading digit) and leaf (last digit); leaves listed beside their stem",
+   "ch": 23,
+   "short": "Charts",
+   "page": 7
+  },
+  {
+   "word": "outlier",
+   "meaning": "a value far away from the rest of the data",
+   "ch": 23,
+   "short": "Charts",
+   "page": 8
+  },
+  {
+   "word": "positive correlation",
+   "meaning": "both measurements tend to rise together: the scatter slopes uphill",
+   "ch": 23,
+   "short": "Charts",
+   "page": 9
+  },
+  {
+   "word": "negative correlation",
+   "meaning": "one measurement tends to fall as the other rises: the scatter slopes downhill",
+   "ch": 23,
+   "short": "Charts",
+   "page": 9
+  },
+  {
+   "word": "correlation",
+   "meaning": "two measurements tend to rise (or fall) together; seen as a sloping cloud on a scatter plot",
+   "ch": 23,
+   "short": "Charts",
+   "page": 10
+  },
+  {
+   "word": "causation",
+   "meaning": "one thing actually makes the other happen",
+   "ch": 23,
+   "short": "Charts",
+   "page": 10
+  },
+  {
+   "word": "misleading graph",
+   "meaning": "a graph whose scale, shape or missing labels give a false impression",
+   "ch": 23,
+   "short": "Charts",
+   "page": 11
+  },
+  {
+   "word": "form / message / criticism",
+   "meaning": "Lecture 5's three passes for reading a graph: how it's built, what it says, what's wrong or missing",
+   "ch": 23,
+   "short": "Charts",
+   "page": 12
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "\\text{angle}=\\frac{\\text{frequency}}{\\text{total}}\\times360^\\circ",
+   "label": "Pie chart angle",
+   "ch": 23,
+   "short": "Charts",
+   "page": 14
+  },
+  {
+   "latex": "\\text{frequency}=\\frac{\\text{angle}}{360^\\circ}\\times\\text{total}",
+   "label": "Pie chart frequency",
+   "ch": 23,
+   "short": "Charts",
+   "page": 14
+  },
+  {
+   "latex": "\\text{frequency density}=\\frac{\\text{frequency}}{\\text{class width}}",
+   "label": "Frequency density",
+   "ch": 23,
+   "short": "Charts",
+   "page": 14
+  },
+  {
+   "latex": "\\text{frequency}=\\text{frequency density}\\times\\text{class width}",
+   "label": "Frequency from a histogram",
+   "ch": 23,
+   "short": "Charts",
+   "page": 14
+  }
+ ],
+ "pages": 15
+}

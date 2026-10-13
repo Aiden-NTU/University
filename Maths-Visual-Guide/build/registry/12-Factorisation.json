@@ -1,0 +1,173 @@
+{
+ "num": 12,
+ "order": 12,
+ "title": "Factorisation",
+ "short": "Factorisation",
+ "terms": [
+  {
+   "word": "factorise",
+   "meaning": "rewrite an expression as a product (things multiplied together); the reverse of expanding",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 2
+  },
+  {
+   "word": "common factor",
+   "meaning": "something that divides every term; taking it out means writing it once outside a bracket",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 3
+  },
+  {
+   "word": "factorise by grouping",
+   "meaning": "split four terms into two pairs, factorise each pair, then take out the bracket they share",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 4
+  },
+  {
+   "word": "split the middle",
+   "meaning": "for ax\u00b2 + bx + c: find two numbers that multiply to ac and add to b, use them to split bx into two terms, then factorise in pairs",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 6
+  },
+  {
+   "word": "sum-product rule",
+   "meaning": "to factorise x\u00b2 + bx + c, find two numbers that add to b and multiply to c; they go in the brackets (x + p)(x + q)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 6
+  },
+  {
+   "word": "quadratic",
+   "meaning": "an expression whose highest power is x\u00b2, like x\u00b2 + 4x + 3",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 8
+  },
+  {
+   "word": "discriminant",
+   "meaning": "\u0394 = b\u00b2 \u2212 4ac for ax\u00b2 + bx + c. A perfect square: whole-number brackets. Not a square: square-root brackets. Negative: no real brackets (and no real solutions)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 8
+  },
+  {
+   "word": "grid method (factorising)",
+   "meaning": "work out \u0394 = b\u00b2 \u2212 4ac and the pair m, n = (b \u00b1 \u221a\u0394)/2; the grid's edges are then x, n/a on the side and ax, m on top",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 8
+  },
+  {
+   "word": "doesn't factorise (with whole numbers)",
+   "meaning": "a quadratic like x\u00b2 + 4x + 2 whose \u0394 is not a perfect square: no whole-number brackets, only square-root ones. Exam questions that say \"factorise\" expect whole numbers",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 9
+  },
+  {
+   "word": "difference of two squares",
+   "meaning": "something squared minus something else squared; it always factorises as (a \u2212 b)(a + b)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 11
+  },
+  {
+   "word": "perfect square (expression)",
+   "meaning": "an expression that is a bracket times itself, a\u00b2 \u00b1 2ab + b\u00b2 = (a \u00b1 b)\u00b2, e.g. x\u00b2 + 6x + 9 = (x + 3)\u00b2",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 12
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "x^2+bx+c=(x+p)(x+q),\\quad p+q=b,\\ pq=c",
+   "label": "factorising x\u00b2 + bx + c",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 5
+  },
+  {
+   "latex": "m,\\,n=\\frac{b\\pm\\sqrt{b^2-4ac}}{2}",
+   "label": "the pair for factorising ax\u00b2 + bx + c",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 7
+  },
+  {
+   "latex": "ax^2+bx+c=\\left(x+\\frac na\\right)(ax+m)",
+   "label": "the grid formula (m, n the pair)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 7
+  },
+  {
+   "latex": "a^2-b^2=(a-b)(a+b)",
+   "label": "difference of two squares (factorising)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 11
+  },
+  {
+   "latex": "a^2\\pm2ab+b^2=(a\\pm b)^2",
+   "label": "perfect squares (factorising)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 12
+  },
+  {
+   "latex": "a^3-b^3=(a-b)(a^2+ab+b^2)",
+   "label": "difference of cubes",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 13
+  },
+  {
+   "latex": "a^3+b^3=(a+b)(a^2-ab+b^2)",
+   "label": "sum of cubes",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 13
+  },
+  {
+   "latex": "(x+p)(x+q):\\quad p+q=b,\\ \\ pq=c",
+   "label": "x\u00b2 + bx + c",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 15
+  },
+  {
+   "latex": "pq=ac,\\ \\ p+q=b:\\quad ax^2+px+qx+c",
+   "label": "ax\u00b2 + bx + c (split the middle)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 15
+  },
+  {
+   "latex": "m,\\,n=\\frac{b\\pm\\sqrt{b^2-4ac}}{2},\\quad\\left(x+\\frac na\\right)(ax+m)",
+   "label": "Grid formula (alternative)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 15
+  },
+  {
+   "latex": "\\Delta=b^2-4ac",
+   "label": "Does it factorise?",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 15
+  },
+  {
+   "latex": "ax+ay+bx+by=(a+b)(x+y)",
+   "label": "Grouping (4 terms)",
+   "ch": 12,
+   "short": "Factorisation",
+   "page": 15
+  }
+ ],
+ "pages": 17
+}

@@ -1,0 +1,110 @@
+{
+ "num": 31,
+ "order": 31,
+ "title": "Solving any triangle",
+ "short": "Triangles",
+ "terms": [
+  {
+   "word": "triangle notation",
+   "meaning": "angles A, B, C at the corners; sides a, b, c opposite them",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 2
+  },
+  {
+   "word": "scalene / isosceles / equilateral",
+   "meaning": "no equal sides / two equal sides / all three sides equal",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 2
+  },
+  {
+   "word": "angle sum of a triangle",
+   "meaning": "the three angles of any triangle add up to 180\u00b0",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 2
+  },
+  {
+   "word": "sine rule",
+   "meaning": "a/sin A = b/sin B = c/sin C: use it when you know a side and its opposite angle",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 3
+  },
+  {
+   "word": "cosine rule",
+   "meaning": "a\u00b2 = b\u00b2 + c\u00b2 \u2212 2bc cos A: use it with two sides and the angle between, or with all three sides",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 5
+  },
+  {
+   "word": "ambiguous case",
+   "meaning": "two sides and a non-included angle can give two different triangles, since sin B = sin(180\u00b0 \u2212 B)",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 8
+  },
+  {
+   "word": "area of a triangle (trig)",
+   "meaning": "\u00bd \u00d7 two sides \u00d7 sine of the angle between them",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 9
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}",
+   "label": "sine rule",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 3
+  },
+  {
+   "latex": "\\cos A=\\frac{b^2+c^2-a^2}{2bc}",
+   "label": "cosine rule (angle form)",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 5
+  },
+  {
+   "latex": "a^2=b^2+c^2-2bc\\cos A",
+   "label": "cosine rule",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 5
+  },
+  {
+   "latex": "\\text{Area}=\\tfrac12bc\\sin A",
+   "label": "area of a triangle",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 9
+  },
+  {
+   "latex": "A+B+C=180^\\circ",
+   "label": "Angle sum",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 12
+  },
+  {
+   "latex": "\\text{Area}=\\tfrac12ab\\sin C",
+   "label": "Area",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 12
+  },
+  {
+   "latex": "\\sin C=\\frac{2\\times\\text{Area}}{ab},\\qquad a=\\frac{2\\times\\text{Area}}{b\\sin C}",
+   "label": "Area backwards",
+   "ch": 31,
+   "short": "Triangles",
+   "page": 12
+  }
+ ],
+ "pages": 13
+}

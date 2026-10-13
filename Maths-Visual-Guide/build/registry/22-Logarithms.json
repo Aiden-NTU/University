@@ -1,0 +1,141 @@
+{
+ "num": 22,
+ "order": 22,
+ "title": "Logarithms",
+ "short": "Logarithms",
+ "terms": [
+  {
+   "word": "logarithm",
+   "meaning": "log_b N is the power you must raise b to, to get N; it counts how many b's multiply to N",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 2
+  },
+  {
+   "word": "base (of a log)",
+   "meaning": "the number being raised to a power, written small: the 2 in log\u2082 8",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 2
+  },
+  {
+   "word": "common log",
+   "meaning": "log to base 10, the log button: log 1000 = 3",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 3
+  },
+  {
+   "word": "natural log",
+   "meaning": "log to base e (2.718...), written ln: ln e = 1",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 3
+  },
+  {
+   "word": "log scale",
+   "meaning": "a scale where equal steps mean multiplying by the same amount (e.g. \u00d710)",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 4
+  },
+  {
+   "word": "laws of logs",
+   "meaning": "log(ab) = log a + log b, log(a/b) = log a \u2212 log b, log a\u207f = n log a (any base)",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 5
+  },
+  {
+   "word": "solving exponential equations",
+   "meaning": "take logs of both sides and use log a\u207f = n log a to bring the unknown down",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 7
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\log_b N",
+   "say": "log to the base b of N",
+   "meaning": "the power of b that gives N",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 2
+  },
+  {
+   "latex": "\\ln",
+   "say": "L-N, natural log",
+   "meaning": "log to base e",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 3
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\log(ab)=\\log a+\\log b",
+   "label": "log law: product",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 5
+  },
+  {
+   "latex": "\\log\\frac ab=\\log a-\\log b",
+   "label": "log law: quotient",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 5
+  },
+  {
+   "latex": "\\log a^n=n\\log a",
+   "label": "log law: power",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 5
+  },
+  {
+   "latex": "\\log_aN=\\frac{\\log_bN}{\\log_ba}",
+   "label": "change of base",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 7
+  },
+  {
+   "latex": "y=\\log_b x\\ \\Leftrightarrow\\ b^y=x",
+   "label": "Definition",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 13
+  },
+  {
+   "latex": "\\log_b b=1,\\qquad\\log_b1=0",
+   "label": "Special values",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 13
+  },
+  {
+   "latex": "\\log_b(b^x)=x,\\qquad b^{\\log_b x}=x",
+   "label": "Undo",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 13
+  },
+  {
+   "latex": "\\ln(e^x)=x,\\quad e^{\\ln x}=x,\\quad\\ln e=1,\\quad\\ln1=0",
+   "label": "ln and e",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 13
+  },
+  {
+   "latex": "\\log\\frac1a=-\\log a",
+   "label": "Reciprocal",
+   "ch": 22,
+   "short": "Logarithms",
+   "page": 13
+  }
+ ],
+ "pages": 14
+}

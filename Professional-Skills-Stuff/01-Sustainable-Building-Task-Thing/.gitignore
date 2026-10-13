@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+Site/raw/
+.png
+.json
+.jpg

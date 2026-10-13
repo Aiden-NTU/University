@@ -1,0 +1,244 @@
+{
+ "num": 8,
+ "order": 8,
+ "title": "Algebra: letters for numbers",
+ "short": "Algebra",
+ "terms": [
+  {
+   "word": "variable",
+   "meaning": "a letter standing for a number that can change or is not yet known",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 2
+  },
+  {
+   "word": "term",
+   "meaning": "one piece of an expression, separated from the others by + or \u2212 signs",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 4
+  },
+  {
+   "word": "coefficient",
+   "meaning": "the number multiplying a letter, e.g. 5 in 5x",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 4
+  },
+  {
+   "word": "constant",
+   "meaning": "a term with no letter: a fixed number",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 4
+  },
+  {
+   "word": "power (index, exponent)",
+   "meaning": "the small raised number: how many times to multiply by itself",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 4
+  },
+  {
+   "word": "expression",
+   "meaning": "a combination of numbers, letters and operations with no equals sign",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 4
+  },
+  {
+   "word": "equation",
+   "meaning": "a statement that two expressions are equal; true only for particular values",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 5
+  },
+  {
+   "word": "formula",
+   "meaning": "an equation linking real quantities, used by substituting values",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 5
+  },
+  {
+   "word": "identity",
+   "meaning": "an equation true for every value of the letters, written with \u2261",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 5
+  },
+  {
+   "word": "substitution",
+   "meaning": "replacing letters by given numbers, then working out the value",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 6
+  },
+  {
+   "word": "Greek letters",
+   "meaning": "letters like \u03b8, \u03c0, \u03c3 used as variables or constants with traditional meanings",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\equiv",
+   "say": "is identically equal to",
+   "meaning": "true for all values",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 5
+  },
+  {
+   "latex": "\\alpha",
+   "say": "alpha (AL-fa)",
+   "meaning": "angles; radiation (\u03b1 particles)",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\beta",
+   "say": "beta (BEE-ta)",
+   "meaning": "angles; radiation",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\gamma",
+   "say": "gamma (GAM-a)",
+   "meaning": "angles; gamma rays",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\delta,\\ \\Delta",
+   "say": "delta (DEL-ta)",
+   "meaning": "a small change (\u0394x: change in x) (Ch. 20, 34)",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\varepsilon",
+   "say": "epsilon (EP-si-lon)",
+   "meaning": "a tiny amount; errors",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\theta",
+   "say": "theta (THEE-ta)",
+   "meaning": "the most common angle letter (Ch. 27-31)",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\phi",
+   "say": "phi (FYE (or fee))",
+   "meaning": "another angle",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\lambda",
+   "say": "lambda (LAM-da)",
+   "meaning": "wavelength; eigenvalues",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\mu",
+   "say": "mu (MEW)",
+   "meaning": "the mean in statistics (Ch. 24, 26)",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\sigma,\\ \\Sigma",
+   "say": "sigma (SIG-ma)",
+   "meaning": "\u03c3: spread (Ch. 24); \u03a3: add up (Ch. 17)",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\pi",
+   "say": "pi (PIE)",
+   "meaning": "3.14159..., the circle number",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\omega",
+   "say": "omega (oh-MEE-ga)",
+   "meaning": "angular speed; spinning",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  },
+  {
+   "latex": "\\chi",
+   "say": "chi (KYE)",
+   "meaning": "the chi-squared test in statistics",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 12
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "3x=3\\times x,\\quad xy=x\\times y",
+   "label": "Hidden \u00d7",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 13
+  },
+  {
+   "latex": "\\frac{x}{2}=x\\div2",
+   "label": "Division",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 13
+  },
+  {
+   "latex": "3x^2=3\\times x\\times x,\\quad(3x)^2=9x^2",
+   "label": "Powers",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 13
+  },
+  {
+   "latex": "2(x+3)\\equiv2x+6",
+   "label": "Formula / identity",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 13
+  },
+  {
+   "latex": "(-)\\times(-)=+,\\quad(+)\\times(-)=-",
+   "label": "Sign rules",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 13
+  },
+  {
+   "latex": "(-3)^2=9,\\quad-3^2=-9,\\quad(-2)^3=-8",
+   "label": "Powers of negative numbers",
+   "ch": 8,
+   "short": "Algebra",
+   "page": 13
+  }
+ ],
+ "pages": 15
+}

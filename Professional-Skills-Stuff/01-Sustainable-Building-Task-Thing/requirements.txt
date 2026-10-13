@@ -1,0 +1,11 @@
+manifold3d==3.5.4
+numpy==2.5.4
+pillow==12.3.0
+pycollada==0.9.3
+pyproj==3.8.0
+qrcode==8.2
+rasterio==1.5.2
+requests==2.34.2
+scipy==1.18.1
+shapely==2.2.0
+trimesh==5.1.1

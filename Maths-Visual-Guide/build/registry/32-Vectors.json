@@ -1,0 +1,279 @@
+{
+ "num": 32,
+ "order": 32,
+ "title": "Vectors",
+ "short": "Vectors",
+ "terms": [
+  {
+   "word": "scalar",
+   "meaning": "a quantity with size only (speed, distance, mass, temperature)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 2
+  },
+  {
+   "word": "vector",
+   "meaning": "a quantity with size AND direction (velocity, displacement, force)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 2
+  },
+  {
+   "word": "distance",
+   "meaning": "how far you travelled in total: a scalar",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 2
+  },
+  {
+   "word": "displacement",
+   "meaning": "where you ended up compared with the start (how far and which way): a vector",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 2
+  },
+  {
+   "word": "vector notation",
+   "meaning": "an arrow over the letter, bold type, or an underline all mark a vector",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 3
+  },
+  {
+   "word": "unit vector",
+   "meaning": "a vector of length exactly 1; i, j, k point along the x, y, z axes",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 3
+  },
+  {
+   "word": "adding vectors (tip to tail)",
+   "meaning": "start each vector where the last one ended; the answer runs from the first start to the last end",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 5
+  },
+  {
+   "word": "negative of a vector",
+   "meaning": "the same arrow pointing the opposite way: every component changes sign",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 6
+  },
+  {
+   "word": "magnitude",
+   "meaning": "the length of a vector, found by Pythagoras on its components",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 6
+  },
+  {
+   "word": "scalar multiple",
+   "meaning": "k times a vector: k times as long, same direction (reversed if k is negative)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 6
+  },
+  {
+   "word": "unit vector of a",
+   "meaning": "\u00e2 = a \u00f7 |a|: the vector of length 1 pointing the same way as a",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 7
+  },
+  {
+   "word": "position vector",
+   "meaning": "the vector from the origin to a point; for A(x, y) it is xi + yj",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 7
+  },
+  {
+   "word": "direction angle",
+   "meaning": "the angle a vector makes with the positive x-axis: tan\u207b\u00b9(y/x), then the quadrant fix",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 8
+  },
+  {
+   "word": "dot product",
+   "meaning": "a\u00b7b = |a||b| cos \u03b8 = axbx + ayby (+ azbz): a scalar measuring how much two vectors point the same way",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 9
+  },
+  {
+   "word": "perpendicular vectors",
+   "meaning": "vectors at right angles; their dot product is 0",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 11
+  },
+  {
+   "word": "parallel vectors",
+   "meaning": "vectors where one is a scalar multiple of the other: b = t a",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 11
+  },
+  {
+   "word": "cross product",
+   "meaning": "a\u00d7b: a vector at right angles to a and b, of length |a||b| sin \u03b8",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 13
+  },
+  {
+   "word": "right-hand rule",
+   "meaning": "first finger along a, second finger along b, thumb gives the direction of a\u00d7b",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 13
+  },
+  {
+   "word": "3 \u00d7 3 determinant",
+   "meaning": "cover each top-row entry's row and column, take the 2 \u00d7 2 determinant left over, and combine with signs + \u2212 +",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 16
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\vec a",
+   "say": "vector a",
+   "meaning": "a vector named a (also bold a, or a underlined)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 3
+  },
+  {
+   "latex": "\\overrightarrow{AB}",
+   "say": "vector A B",
+   "meaning": "the vector that takes you from point A to point B",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 3
+  },
+  {
+   "latex": "\\mathbf i,\\ \\mathbf j,\\ \\mathbf k",
+   "say": "i, j, k",
+   "meaning": "unit vectors along x, y and z (also written with hats)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 3
+  },
+  {
+   "latex": "|\\mathbf a|",
+   "say": "the magnitude of a",
+   "meaning": "the length of vector a",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 6
+  },
+  {
+   "latex": "\\hat{\\mathbf a}",
+   "say": "a hat",
+   "meaning": "the unit vector (length 1) in the direction of a",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 7
+  },
+  {
+   "latex": "\\mathbf a\\cdot\\mathbf b",
+   "say": "a dot b",
+   "meaning": "the dot (scalar) product: a plain number",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 9
+  },
+  {
+   "latex": "\\mathbf a\\times\\mathbf b",
+   "say": "a cross b",
+   "meaning": "the cross (vector) product",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 13
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "|\\mathbf a|=\\sqrt{x^2+y^2+z^2}",
+   "label": "magnitude (length) of a vector",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 6
+  },
+  {
+   "latex": "\\hat{\\mathbf a}=\\frac{\\mathbf a}{|\\mathbf a|}",
+   "label": "unit vector in the direction of a",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 7
+  },
+  {
+   "latex": "\\overrightarrow{AB}=\\mathbf b-\\mathbf a,\\qquad \\mathbf m=\\frac{\\mathbf a+\\mathbf b}{2}",
+   "label": "position vectors: A to B, and the midpoint",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 7
+  },
+  {
+   "latex": "\\mathbf a\\cdot\\mathbf b=|\\mathbf a||\\mathbf b|\\cos\\theta",
+   "label": "dot product (angle form)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 9
+  },
+  {
+   "latex": "\\cos\\theta=\\frac{\\mathbf a\\cdot\\mathbf b}{|\\mathbf a||\\mathbf b|}",
+   "label": "angle between two vectors",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 10
+  },
+  {
+   "latex": "\\mathbf a\\cdot\\mathbf b=a_xb_x+a_yb_y+a_zb_z",
+   "label": "dot product (components)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 10
+  },
+  {
+   "latex": "|\\mathbf a\\times\\mathbf b|=|\\mathbf a||\\mathbf b|\\sin\\theta",
+   "label": "size of the cross product",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 13
+  },
+  {
+   "latex": "\\mathbf a\\times\\mathbf b=\\mathbf i(a_yb_z-a_zb_y)-\\mathbf j(a_xb_z-a_zb_x)+\\mathbf k(a_xb_y-a_yb_x)",
+   "label": "cross product (components)",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 16
+  },
+  {
+   "latex": "\\mathbf a=x\\mathbf i+y\\mathbf j+z\\mathbf k",
+   "label": "Components",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 17
+  },
+  {
+   "latex": "\\theta=\\tan^{-1}\\frac yx",
+   "label": "Direction angle",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 17
+  },
+  {
+   "latex": "\\mathbf a\\cdot\\mathbf b=a_xb_x+a_yb_y+a_zb_z=|\\mathbf a||\\mathbf b|\\cos\\theta",
+   "label": "Dot product",
+   "ch": 32,
+   "short": "Vectors",
+   "page": 17
+  }
+ ],
+ "pages": 18
+}

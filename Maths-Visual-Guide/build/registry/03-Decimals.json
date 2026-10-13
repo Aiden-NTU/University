@@ -1,0 +1,141 @@
+{
+ "num": 3,
+ "order": 3,
+ "title": "Decimal fractions",
+ "short": "Decimals",
+ "terms": [
+  {
+   "word": "decimal point",
+   "meaning": "the dot that separates whole units (left) from parts of a unit (right)",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 2
+  },
+  {
+   "word": "tenth",
+   "meaning": "one of ten equal pieces of 1; written 0.1 or 1/10",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 2
+  },
+  {
+   "word": "hundredth",
+   "meaning": "one of a hundred equal pieces of 1; written 0.01 or 1/100",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 2
+  },
+  {
+   "word": "compare decimals",
+   "meaning": "line up the dots, pad with zeros, compare digits from the left",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 3
+  },
+  {
+   "word": "recurring decimal",
+   "meaning": "a decimal whose digits repeat forever, e.g. 0.333...; shown with dots",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 10
+  },
+  {
+   "word": "decimal places (d.p.)",
+   "meaning": "the number of digits after the decimal point",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 12
+  },
+  {
+   "word": "rounding",
+   "meaning": "replacing a number with the nearest one on a coarser ruler",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 12
+  },
+  {
+   "word": "bounds",
+   "meaning": "the smallest and largest values a rounded number could really have been",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 13
+  },
+  {
+   "word": "truncate",
+   "meaning": "chop off digits after a point without rounding",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 15
+  },
+  {
+   "word": "significant figures (s.f.)",
+   "meaning": "digits counted from the first non-zero digit; how precise a number is",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 16
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "0.\\dot3",
+   "say": "nought point three recurring",
+   "meaning": "the 3 repeats forever",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 10
+  },
+  {
+   "latex": "\\approx",
+   "say": "is approximately equal to",
+   "meaning": "close to, but not exactly",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 10
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "0.abc=\\frac{abc}{1000}",
+   "label": "Decimal to fraction",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 19
+  },
+  {
+   "latex": "\\frac{a}{b}=a\\div b",
+   "label": "Fraction to decimal",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 19
+  },
+  {
+   "latex": "\\frac{a}{b}=\\frac{10a}{10b}",
+   "label": "Divide",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 19
+  },
+  {
+   "latex": "x=0.\\dot2\\dot7:\\ 100x-x=27\\Rightarrow x=\\frac{27}{99}",
+   "label": "Recurring to fraction",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 19
+  },
+  {
+   "latex": "\\text{value}-\\tfrac12\\text{step}\\le x<\\text{value}+\\tfrac12\\text{step}",
+   "label": "Bounds",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 19
+  },
+  {
+   "latex": "\\max\\frac{a}{b}=\\frac{a_{\\max}}{b_{\\min}},\\quad \\min\\frac{a}{b}=\\frac{a_{\\min}}{b_{\\max}}",
+   "label": "Bounds of a \u00f7",
+   "ch": 3,
+   "short": "Decimals",
+   "page": 19
+  }
+ ],
+ "pages": 21
+}

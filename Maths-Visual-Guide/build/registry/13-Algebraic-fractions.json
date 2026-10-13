@@ -1,0 +1,103 @@
+{
+ "num": 13,
+ "order": 13,
+ "title": "Algebraic fractions",
+ "short": "Algebraic fractions",
+ "terms": [
+  {
+   "word": "algebraic fraction",
+   "meaning": "a fraction with letters in the top, bottom or both, e.g. 3/x or (x + 1)/(x \u2212 2)",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 2
+  },
+  {
+   "word": "undefined",
+   "meaning": "has no value; a fraction is undefined when its bottom equals 0",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 2
+  },
+  {
+   "word": "cancel",
+   "meaning": "divide the top and bottom of a fraction by the same factor (something multiplying the whole top and the whole bottom)",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 5
+  },
+  {
+   "word": "lowest common denominator (LCD)",
+   "meaning": "the simplest bottom that every fraction's bottom divides into: each different factor of the bottoms, taken the most times it appears in any one bottom",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 9
+  },
+  {
+   "word": "complex fraction",
+   "meaning": "a fraction with fractions in its top or bottom, e.g. (1 + 1/x)/(1 \u2212 1/x); clear it by multiplying top and bottom by the LCD of the small fractions",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 12
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "\\frac ab\\pm\\frac cd=\\frac{ad\\pm bc}{bd}",
+   "label": "adding / subtracting fractions",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 9
+  },
+  {
+   "latex": "\\frac{x^2+3x}{x+3}=\\frac{x\\cancel{(x+3)}}{\\cancel{(x+3)}}=x",
+   "label": "Simplify",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 15
+  },
+  {
+   "latex": "a-b=-(b-a),\\qquad\\frac{a-b}{b-a}=-1",
+   "label": "Back-to-front brackets",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{x+3}{2}-\\frac{x-1}{3}=\\frac{3(x+3)-2(x-1)}{6}",
+   "label": "Subtracting",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac ab\\times\\frac cd=\\frac{ac}{bd}",
+   "label": "Multiply",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac ab\\div\\frac cd=\\frac ab\\times\\frac dc=\\frac{ad}{bc}",
+   "label": "Divide",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a+b}{c}=\\frac ac+\\frac bc,\\qquad \\frac{a}{b+c}\\ne\\frac ab+\\frac ac",
+   "label": "Splitting",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 15
+  },
+  {
+   "latex": "1-\\frac{3}{x+1}=\\frac{x+1-3}{x+1}",
+   "label": "Whole number with a fraction",
+   "ch": 13,
+   "short": "Algebraic fractions",
+   "page": 15
+  }
+ ],
+ "pages": 17
+}

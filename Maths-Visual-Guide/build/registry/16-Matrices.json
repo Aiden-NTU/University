@@ -1,0 +1,190 @@
+{
+ "num": 16,
+ "order": 16,
+ "title": "Matrices",
+ "short": "Matrices",
+ "terms": [
+  {
+   "word": "matrix",
+   "meaning": "a rectangular table of numbers in rows and columns (plural: matrices)",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 2
+  },
+  {
+   "word": "size of a matrix",
+   "meaning": "(number of rows) \u00d7 (number of columns), said \"2 by 3\"",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 2
+  },
+  {
+   "word": "entry (element)",
+   "meaning": "one number inside a matrix; a\u2082\u2083 is the one in row 2, column 3",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 2
+  },
+  {
+   "word": "subscript",
+   "meaning": "a small number or letter written low after a symbol, used as a label: a\u2081, x\u2082, a\u2082\u2083",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 2
+  },
+  {
+   "word": "scalar",
+   "meaning": "an ordinary single number (as opposed to a matrix or vector)",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 4
+  },
+  {
+   "word": "equal matrices",
+   "meaning": "matrices of the same size whose matching entries are all equal",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 4
+  },
+  {
+   "word": "matrix multiplication",
+   "meaning": "entry (i, j) of AB = row i of A paired with column j of B: multiply the pairs and add",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 5
+  },
+  {
+   "word": "commutative",
+   "meaning": "an operation where order doesn't matter (a \u00d7 b = b \u00d7 a); matrix multiplication is not",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 6
+  },
+  {
+   "word": "identity matrix",
+   "meaning": "the square matrix I with 1s down the diagonal and 0s elsewhere; AI = IA = A",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 7
+  },
+  {
+   "word": "diagonal matrix",
+   "meaning": "a square matrix whose only non-zero entries are on the top-left to bottom-right diagonal",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 7
+  },
+  {
+   "word": "matrix equation",
+   "meaning": "AX = B: a set of simultaneous equations written with one matrix of coefficients A",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 8
+  },
+  {
+   "word": "determinant",
+   "meaning": "for a 2 \u00d7 2 matrix, ad \u2212 bc; if it is 0 the matrix has no inverse",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 8
+  },
+  {
+   "word": "inverse matrix",
+   "meaning": "A\u207b\u00b9, the matrix with A\u207b\u00b9A = I; it undoes multiplying by A",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 8
+  },
+  {
+   "word": "singular matrix",
+   "meaning": "a square matrix with determinant 0; it has no inverse",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 8
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "a_{ij}",
+   "say": "a sub i j",
+   "meaning": "the entry in row i, column j of matrix A",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 2
+  },
+  {
+   "latex": "A^{-1}",
+   "say": "A inverse",
+   "meaning": "the matrix that undoes A: A\u207b\u00b9A = I",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 8
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}^{-1}=\\frac{1}{ad-bc}\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}",
+   "label": "inverse of a 2 \u00d7 2 matrix",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 8
+  },
+  {
+   "latex": "m\\times n",
+   "label": "Size",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  },
+  {
+   "latex": "k\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}=\\begin{bmatrix}ka&kb\\\\kc&kd\\end{bmatrix}",
+   "label": "Scalar multiple",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  },
+  {
+   "latex": "(m\\times n)(n\\times p)=m\\times p",
+   "label": "Size rule",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  },
+  {
+   "latex": "AB\\neq BA",
+   "label": "Order",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  },
+  {
+   "latex": "AI=IA=A",
+   "label": "Identity",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  },
+  {
+   "latex": "\\det\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}=ad-bc",
+   "label": "Determinant",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  },
+  {
+   "latex": "X=A^{-1}B",
+   "label": "Solving AX = B",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  },
+  {
+   "latex": "(TS)^{-1}=S^{-1}T^{-1}",
+   "label": "Undoing two moves",
+   "ch": 16,
+   "short": "Matrices",
+   "page": 16
+  }
+ ],
+ "pages": 17
+}

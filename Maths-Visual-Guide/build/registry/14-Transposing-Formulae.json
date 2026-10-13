@@ -1,0 +1,75 @@
+{
+ "num": 14,
+ "order": 14,
+ "title": "Transposing formulae",
+ "short": "Transposing formulae",
+ "terms": [
+  {
+   "word": "transpose",
+   "meaning": "rearrange a formula so that a different letter is on its own",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 1
+  },
+  {
+   "word": "subject of a formula",
+   "meaning": "the letter on its own on one side of the = sign",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 2
+  },
+  {
+   "word": "inverse operation",
+   "meaning": "the operation that undoes another one: minus undoes plus, divide undoes times",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 2
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "+\\leftrightarrow-,\\quad\\times\\leftrightarrow\\div,\\quad x^2\\leftrightarrow\\pm\\sqrt{x},\\quad x^3\\leftrightarrow\\sqrt[3]{x}",
+   "label": "Undo buttons",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 21
+  },
+  {
+   "latex": "y=5-2x\\ \\Rightarrow\\ 2x=5-y",
+   "label": "Minus in front",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 21
+  },
+  {
+   "latex": "P=\\frac VR\\ \\Rightarrow\\ PR=V\\ \\Rightarrow\\ R=\\frac VP",
+   "label": "Letter on the bottom",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 21
+  },
+  {
+   "latex": "\\frac ab=\\frac cd\\ \\Rightarrow\\ \\frac ba=\\frac dc",
+   "label": "Flipping",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 21
+  },
+  {
+   "latex": "yx-x=1+y\\ \\Rightarrow\\ x(y-1)=1+y",
+   "label": "Letter twice",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 21
+  },
+  {
+   "latex": "r^2=k\\Rightarrow r=\\pm\\sqrt k,\\qquad r^3=k\\Rightarrow r=\\sqrt[3]{k}",
+   "label": "Roots",
+   "ch": 14,
+   "short": "Transposing formulae",
+   "page": 21
+  }
+ ],
+ "pages": 24
+}

@@ -1,0 +1,254 @@
+{
+ "num": 24,
+ "order": 24,
+ "title": "Statistics: averages and spread",
+ "short": "Statistics",
+ "terms": [
+  {
+   "word": "mean",
+   "meaning": "add all the values and divide by how many there are (the fair-share average)",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 2
+  },
+  {
+   "word": "average",
+   "meaning": "a single typical value for a data set: mean, median or mode",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 2
+  },
+  {
+   "word": "median",
+   "meaning": "the middle value when the data are in order; position (n+1)/2",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 3
+  },
+  {
+   "word": "mode",
+   "meaning": "the most common value (or busiest group)",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 3
+  },
+  {
+   "word": "frequency table",
+   "meaning": "a table listing each value (or class) with how many times it occurs",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 6
+  },
+  {
+   "word": "midpoint (of a class)",
+   "meaning": "halfway between a class's boundaries; stands in for its values when estimating a mean",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 6
+  },
+  {
+   "word": "skewed data",
+   "meaning": "data with a long tail on one side; the mean is dragged towards the tail",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 7
+  },
+  {
+   "word": "range",
+   "meaning": "largest value minus smallest value",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 9
+  },
+  {
+   "word": "quartiles",
+   "meaning": "the values a quarter (LQ) and three quarters (UQ) of the way through the ordered data",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 9
+  },
+  {
+   "word": "interquartile range",
+   "meaning": "UQ \u2212 LQ: the spread of the middle half of the data",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 9
+  },
+  {
+   "word": "box plot",
+   "meaning": "a box from LQ to UQ with a line at the median and whiskers out to the min and max",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 9
+  },
+  {
+   "word": "deviation",
+   "meaning": "how far a value is from the mean: x \u2212 x\u0304 (negative if below)",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 10
+  },
+  {
+   "word": "sum of squares",
+   "meaning": "add up the squared deviations \u03a3(x \u2212 x\u0304)\u00b2",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 11
+  },
+  {
+   "word": "variance",
+   "meaning": "the mean of the squared deviations; \u03c3\u00b2 for a population",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 11
+  },
+  {
+   "word": "standard deviation",
+   "meaning": "the square root of the variance; a typical distance from the mean, in the data's units",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 11
+  },
+  {
+   "word": "population",
+   "meaning": "every member of the group you want to know about",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 12
+  },
+  {
+   "word": "sample",
+   "meaning": "the members you actually measured, used to estimate the population",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 12
+  },
+  {
+   "word": "Bessel's correction",
+   "meaning": "dividing by n \u2212 1 instead of n for a sample, to undo the underestimate of spread",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 12
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\bar x",
+   "say": "x bar",
+   "meaning": "the mean of a sample of x-values",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 2
+  },
+  {
+   "latex": "\\sigma",
+   "say": "sigma (lower case)",
+   "meaning": "standard deviation of a population",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 11
+  },
+  {
+   "latex": "\\mu",
+   "say": "mew",
+   "meaning": "the mean of a whole population",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 12
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\bar x=\\frac{\\sum x_i}{n}",
+   "label": "mean",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 2
+  },
+  {
+   "latex": "\\sigma^2=\\frac{\\sum(x_i-\\mu)^2}{N}",
+   "label": "population variance",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 11
+  },
+  {
+   "latex": "s=\\sqrt{\\frac{\\sum(x_i-\\bar x)^2}{n-1}}",
+   "label": "sample standard deviation",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 12
+  },
+  {
+   "latex": "\\bar x=\\frac{\\sum x}{n}",
+   "label": "Mean",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "\\text{total}=n\\times\\bar x",
+   "label": "Total from a mean",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "\\bar x=\\frac{\\sum fx}{\\sum f}",
+   "label": "Mean of a frequency table",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{n+1}{2}",
+   "label": "Median position",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{\\text{median position}+1}{2}",
+   "label": "Quartile position",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "k+d\\ \\to\\ x_k+d\\,(x_{k+1}-x_k)",
+   "label": "Fractional position",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "\\text{largest}-\\text{smallest}",
+   "label": "Range",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "\\text{IQR}=\\text{UQ}-\\text{LQ}",
+   "label": "Interquartile range",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "\\sigma^2=\\frac{\\sum(x-\\mu)^2}{N},\\qquad\\sigma=\\sqrt{\\sigma^2}",
+   "label": "Population variance and SD",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  },
+  {
+   "latex": "s=\\sqrt{\\frac{\\sum(x-\\bar x)^2}{n-1}}",
+   "label": "Sample SD",
+   "ch": 24,
+   "short": "Statistics",
+   "page": 15
+  }
+ ],
+ "pages": 16
+}

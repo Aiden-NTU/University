@@ -1,0 +1,246 @@
+{
+ "num": 7,
+ "order": 7,
+ "title": "Elementary logic",
+ "short": "Logic",
+ "terms": [
+  {
+   "word": "statement",
+   "meaning": "a sentence that is either true or false",
+   "ch": 7,
+   "short": "Logic",
+   "page": 2
+  },
+  {
+   "word": "truth value",
+   "meaning": "whether a statement is true (T, 1) or false (F, 0)",
+   "ch": 7,
+   "short": "Logic",
+   "page": 2
+  },
+  {
+   "word": "truth table",
+   "meaning": "a table listing every combination of T/F inputs and the result",
+   "ch": 7,
+   "short": "Logic",
+   "page": 3
+  },
+  {
+   "word": "exclusive or (XOR)",
+   "meaning": "true when exactly one input is true, not both",
+   "ch": 7,
+   "short": "Logic",
+   "page": 5
+  },
+  {
+   "word": "De Morgan's laws",
+   "meaning": "not(A and B) = (not A) or (not B);  not(A or B) = (not A) and (not B)",
+   "ch": 7,
+   "short": "Logic",
+   "page": 6
+  },
+  {
+   "word": "logically equivalent",
+   "meaning": "two statements with the same truth value in every row (\u2261)",
+   "ch": 7,
+   "short": "Logic",
+   "page": 7
+  },
+  {
+   "word": "tautology",
+   "meaning": "a statement that is true in every row of its truth table, e.g. A \u2228 \u00acA",
+   "ch": 7,
+   "short": "Logic",
+   "page": 7
+  },
+  {
+   "word": "contradiction",
+   "meaning": "a statement that is false in every row of its truth table, e.g. A \u2227 \u00acA",
+   "ch": 7,
+   "short": "Logic",
+   "page": 7
+  },
+  {
+   "word": "implication (if... then)",
+   "meaning": "P \u21d2 Q: false only when P is true but Q is false",
+   "ch": 7,
+   "short": "Logic",
+   "page": 8
+  },
+  {
+   "word": "converse",
+   "meaning": "the 'if' statement with its two halves swapped: Q \u21d2 P",
+   "ch": 7,
+   "short": "Logic",
+   "page": 9
+  },
+  {
+   "word": "contrapositive",
+   "meaning": "not Q \u21d2 not P; always has the same truth as P \u21d2 Q",
+   "ch": 7,
+   "short": "Logic",
+   "page": 9
+  },
+  {
+   "word": "if and only if (iff)",
+   "meaning": "P \u21d4 Q: P and Q are always both true or both false",
+   "ch": 7,
+   "short": "Logic",
+   "page": 10
+  },
+  {
+   "word": "necessary condition",
+   "meaning": "Q is necessary for P when P \u21d2 Q: P cannot happen without Q",
+   "ch": 7,
+   "short": "Logic",
+   "page": 11
+  },
+  {
+   "word": "sufficient condition",
+   "meaning": "P is sufficient for Q when P \u21d2 Q: P on its own guarantees Q",
+   "ch": 7,
+   "short": "Logic",
+   "page": 11
+  },
+  {
+   "word": "quantifier",
+   "meaning": "'for all' (\u2200) or 'there exists' (\u2203): says how many things a statement covers",
+   "ch": 7,
+   "short": "Logic",
+   "page": 12
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\neg P",
+   "say": "not P",
+   "meaning": "true exactly when P is false",
+   "ch": 7,
+   "short": "Logic",
+   "page": 2
+  },
+  {
+   "latex": "A\\wedge B",
+   "say": "A and B",
+   "meaning": "true only when both A and B are true",
+   "ch": 7,
+   "short": "Logic",
+   "page": 3
+  },
+  {
+   "latex": "A\\vee B",
+   "say": "A or B",
+   "meaning": "true when at least one of A, B is true",
+   "ch": 7,
+   "short": "Logic",
+   "page": 4
+  },
+  {
+   "latex": "A\\oplus B",
+   "say": "A x-or B (exclusive or)",
+   "meaning": "true when exactly one of A, B is true",
+   "ch": 7,
+   "short": "Logic",
+   "page": 5
+  },
+  {
+   "latex": "\\equiv",
+   "say": "is logically equivalent to",
+   "meaning": "same truth value in every row of the table",
+   "ch": 7,
+   "short": "Logic",
+   "page": 7
+  },
+  {
+   "latex": "P\\Rightarrow Q",
+   "say": "P implies Q / if P then Q",
+   "meaning": "false only when P is true and Q is false",
+   "ch": 7,
+   "short": "Logic",
+   "page": 8
+  },
+  {
+   "latex": "P\\Leftrightarrow Q",
+   "say": "P if and only if Q (iff)",
+   "meaning": "P and Q are both true or both false",
+   "ch": 7,
+   "short": "Logic",
+   "page": 10
+  },
+  {
+   "latex": "\\forall",
+   "say": "for all",
+   "meaning": "the statement holds for every value",
+   "ch": 7,
+   "short": "Logic",
+   "page": 12
+  },
+  {
+   "latex": "\\exists",
+   "say": "there exists",
+   "meaning": "at least one value makes the statement true",
+   "ch": 7,
+   "short": "Logic",
+   "page": 12
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\text{rows}=2^n",
+   "label": "rows in a truth table with n letters",
+   "ch": 7,
+   "short": "Logic",
+   "page": 5
+  },
+  {
+   "latex": "\\neg(A\\wedge B)=\\neg A\\vee\\neg B",
+   "label": "De Morgan's law",
+   "ch": 7,
+   "short": "Logic",
+   "page": 7
+  },
+  {
+   "latex": "\\neg(A\\vee B)=\\neg A\\wedge\\neg B",
+   "label": "De Morgan's law",
+   "ch": 7,
+   "short": "Logic",
+   "page": 7
+  },
+  {
+   "latex": "P\\Rightarrow Q\\equiv\\neg P\\vee Q",
+   "label": "implication as OR",
+   "ch": 7,
+   "short": "Logic",
+   "page": 8
+  },
+  {
+   "latex": "\\neg(P\\Rightarrow Q)\\equiv P\\wedge\\neg Q",
+   "label": "negating an implication",
+   "ch": 7,
+   "short": "Logic",
+   "page": 8
+  },
+  {
+   "latex": "P\\Leftrightarrow Q\\equiv(P\\Rightarrow Q)\\wedge(Q\\Rightarrow P)",
+   "label": "if and only if",
+   "ch": 7,
+   "short": "Logic",
+   "page": 10
+  },
+  {
+   "latex": "\\neg\\,\\forall x\\,P(x)\\equiv\\exists x\\,\\neg P(x)",
+   "label": "negating 'for all'",
+   "ch": 7,
+   "short": "Logic",
+   "page": 12
+  },
+  {
+   "latex": "\\neg\\,\\exists x\\,P(x)\\equiv\\forall x\\,\\neg P(x)",
+   "label": "negating 'there exists'",
+   "ch": 7,
+   "short": "Logic",
+   "page": 12
+  }
+ ],
+ "pages": 15
+}

@@ -1,0 +1,170 @@
+{
+ "num": 4,
+ "order": 4,
+ "title": "Percentage and ratio",
+ "short": "Percentage and ratio",
+ "terms": [
+  {
+   "word": "percentage (%)",
+   "meaning": "a number of pieces out of 100 equal pieces of the whole",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 2
+  },
+  {
+   "word": "multiplier",
+   "meaning": "the number you multiply by to apply a percentage change, e.g. \u00d71.1 for +10%",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 6
+  },
+  {
+   "word": "ratio",
+   "meaning": "how many parts of one thing for every so many parts of another, written a : b",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 9
+  },
+  {
+   "word": "unitary method",
+   "meaning": "scale a known pair down to 1 unit, then up to the amount you want",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 14
+  },
+  {
+   "word": "proportion",
+   "meaning": "two amounts that always stay in the same ratio",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 14
+  },
+  {
+   "word": "inverse proportion",
+   "meaning": "two amounts whose product stays the same: when one doubles, the other halves",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 16
+  },
+  {
+   "word": "concentration",
+   "meaning": "how much of a substance is in each amount of mixture, e.g. 20% or 60 g per litre",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 17
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\%",
+   "say": "per cent",
+   "meaning": "out of 100, so 25% means 25/100",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 2
+  },
+  {
+   "latex": "a:b",
+   "say": "a to b",
+   "meaning": "a parts of one thing for every b parts of the other",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 9
+  },
+  {
+   "latex": "::",
+   "say": "is in the same ratio as",
+   "meaning": "a:b :: c:d means a/b = c/d",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 10
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "x\\%\\text{ of }y=\\frac{x}{100}\\times y",
+   "label": "percentage of an amount",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 4
+  },
+  {
+   "latex": "\\text{new}=\\text{old}\\times\\frac{100\\pm r}{100}",
+   "label": "percentage increase / decrease",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 6
+  },
+  {
+   "latex": "\\frac{\\text{new}-\\text{old}}{\\text{old}}\\times100",
+   "label": "percentage change",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 7
+  },
+  {
+   "latex": "\\text{original}=\\frac{\\text{new}}{1\\pm\\frac{r}{100}}",
+   "label": "reverse percentage",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 8
+  },
+  {
+   "latex": "\\frac{a}{b}=\\frac{c}{d}\\ \\Rightarrow\\ ad=bc",
+   "label": "cross-multiplication",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 15
+  },
+  {
+   "latex": "x\\%=\\frac{x}{100}",
+   "label": "Per cent",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 19
+  },
+  {
+   "latex": "\\text{whole}=\\text{part}\\div\\frac{p}{100}",
+   "label": "Whole from a part",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 19
+  },
+  {
+   "latex": "\\text{new}=\\text{old}\\times\\left(1\\pm\\frac{r}{100}\\right)",
+   "label": "Increase / decrease by r%",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 19
+  },
+  {
+   "latex": "a:b\\ \\Rightarrow\\ \\frac{a}{a+b}\\text{ and }\\frac{b}{a+b}\\text{ of the total}",
+   "label": "Ratio as fractions",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 19
+  },
+  {
+   "latex": "\\frac{\\text{part}}{\\text{sum of parts}}\\times100",
+   "label": "Ratio to percentage",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 19
+  },
+  {
+   "latex": "x\\times y=\\text{constant}",
+   "label": "Inverse proportion",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 19
+  },
+  {
+   "latex": "\\frac{\\text{total A}}{\\text{total volume}}\\times100",
+   "label": "Mixing",
+   "ch": 4,
+   "short": "Percentage and ratio",
+   "page": 19
+  }
+ ],
+ "pages": 21
+}

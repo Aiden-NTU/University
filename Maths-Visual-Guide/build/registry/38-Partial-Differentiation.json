@@ -1,0 +1,128 @@
+{
+ "num": 38,
+ "order": 38,
+ "title": "Partial differentiation",
+ "short": "Partial differentiation",
+ "terms": [
+  {
+   "word": "function of two variables",
+   "meaning": "one output from two inputs, like h(x, y): a height for each map position",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 2
+  },
+  {
+   "word": "partial derivative",
+   "meaning": "the derivative with respect to one letter, all the others treated as constants",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 4
+  },
+  {
+   "word": "frozen variable",
+   "meaning": "in a partial derivative, every letter except the one you differentiate by acts like a number",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 4
+  },
+  {
+   "word": "contour map",
+   "meaning": "a map with lines joining points of equal height; lines close together = steep",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 8
+  },
+  {
+   "word": "gradient vector",
+   "meaning": "\u2207f = (\u2202f/\u2202x, \u2202f/\u2202y): points steepest uphill, at right angles to the contours",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 8
+  },
+  {
+   "word": "directional derivative",
+   "meaning": "the slope in any direction: (\u2202f/\u2202x)(east part) + (\u2202f/\u2202y)(north part), a dot product with \u2207f",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 9
+  },
+  {
+   "word": "mixed partial derivatives",
+   "meaning": "\u2202\u00b2f/\u2202x\u2202y: differentiate by one letter then the other; the order doesn't matter",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 10
+  },
+  {
+   "word": "small changes formula",
+   "meaning": "\u03b4z \u2248 (\u2202z/\u2202x)\u03b4x + (\u2202z/\u2202y)\u03b4y: add up each input's effect",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 11
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\frac{\\partial f}{\\partial x}",
+   "say": "partial f by partial x (or del f by del x)",
+   "meaning": "the slope of f when only x changes; every other letter is frozen as a constant",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 4
+  },
+  {
+   "latex": "f_x,\\ f_y",
+   "say": "f sub x, f sub y",
+   "meaning": "short for \u2202f/\u2202x and \u2202f/\u2202y",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 4
+  },
+  {
+   "latex": "\\nabla f",
+   "say": "grad f (or del f)",
+   "meaning": "the vector of partial derivatives; points the steepest way uphill",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 8
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\delta z\\approx\\frac{\\partial z}{\\partial x}\\delta x+\\frac{\\partial z}{\\partial y}\\delta y",
+   "label": "small changes (two variables)",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 11
+  },
+  {
+   "latex": "\\frac{\\partial f}{\\partial x}=f_x",
+   "label": "Partial derivative",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 13
+  },
+  {
+   "latex": "f_{xx}=\\frac{\\partial^2f}{\\partial x^2},\\qquad f_{xy}=\\frac{\\partial^2f}{\\partial y\\,\\partial x}",
+   "label": "Second partials",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 13
+  },
+  {
+   "latex": "\\frac{\\partial^2f}{\\partial y\\,\\partial x}=\\frac{\\partial^2f}{\\partial x\\,\\partial y}",
+   "label": "Mixed partials",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 13
+  },
+  {
+   "latex": "\\nabla f=\\begin{pmatrix}f_x\\\\ f_y\\end{pmatrix}",
+   "label": "Gradient vector",
+   "ch": 38,
+   "short": "Partial differentiation",
+   "page": 13
+  }
+ ],
+ "pages": 15
+}

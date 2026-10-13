@@ -1,0 +1,159 @@
+{
+ "num": 20,
+ "order": 20,
+ "title": "The straight line",
+ "short": "Straight line",
+ "terms": [
+  {
+   "word": "gradient (slope)",
+   "meaning": "how steep a line is: how much y goes up for each 1 that x goes across; m in y = mx + c",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 2
+  },
+  {
+   "word": "y-intercept",
+   "meaning": "c in y = mx + c: the value of y where the line crosses the y-axis (x = 0)",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 2
+  },
+  {
+   "word": "parallel lines",
+   "meaning": "lines with the same gradient; they never meet",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 3
+  },
+  {
+   "word": "perpendicular",
+   "meaning": "meeting at a right angle (90\u00b0); for lines, gradients multiply to \u22121",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 9
+  },
+  {
+   "word": "perpendicular bisector",
+   "meaning": "the line through the midpoint of AB at right angles to AB",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 15
+  },
+  {
+   "word": "midpoint",
+   "meaning": "the point halfway between two points: average the x-coordinates and the y-coordinates",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 16
+  },
+  {
+   "word": "distance between two points",
+   "meaning": "\u221a((x\u2082 \u2212 x\u2081)\u00b2 + (y\u2082 \u2212 y\u2081)\u00b2): Pythagoras on the run and rise",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 16
+  },
+  {
+   "word": "intersection",
+   "meaning": "the point where two lines (or curves) cross: solve their equations simultaneously",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 17
+  },
+  {
+   "word": "collinear",
+   "meaning": "lying on the same straight line",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 19
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "m=\\frac{y_2-y_1}{x_2-x_1}",
+   "label": "gradient through two points",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 4
+  },
+  {
+   "latex": "y-y_1=m(x-x_1)",
+   "label": "line with gradient m through (x\u2081, y\u2081)",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 5
+  },
+  {
+   "latex": "m_1=m_2",
+   "label": "parallel lines",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 9
+  },
+  {
+   "latex": "m_1m_2=-1\\quad\\Leftrightarrow\\quad m_2=-\\frac{1}{m_1}",
+   "label": "perpendicular lines",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 9
+  },
+  {
+   "latex": "M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
+   "label": "midpoint",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 16
+  },
+  {
+   "latex": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+   "label": "distance between two points",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 16
+  },
+  {
+   "latex": "y=mx+c",
+   "label": "Straight line",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 21
+  },
+  {
+   "latex": "y=b\\ \\ (m=0),\\qquad x=a\\ \\ (m\\text{ undefined})",
+   "label": "Horizontal / vertical",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 21
+  },
+  {
+   "latex": "m_1m_2=-1,\\qquad m_2=-\\frac{1}{m_1}",
+   "label": "Perpendicular",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 21
+  },
+  {
+   "latex": "\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
+   "label": "Midpoint",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 21
+  },
+  {
+   "latex": "\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+   "label": "Distance",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 21
+  },
+  {
+   "latex": "m_{AB}=m_{BC}",
+   "label": "Collinear",
+   "ch": 20,
+   "short": "Straight line",
+   "page": 21
+  }
+ ],
+ "pages": 24
+}

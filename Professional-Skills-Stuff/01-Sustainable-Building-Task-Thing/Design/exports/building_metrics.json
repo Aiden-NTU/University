@@ -1,0 +1,64 @@
+{
+ "metrics": {
+  "gross_internal_area_m2": 720.0,
+  "net_room_areas_m2": {
+   "G01": 57.1,
+   "G02": 15.6,
+   "G03": 16.8,
+   "G04": 90.8,
+   "G05": 27.3,
+   "G06": 21.1,
+   "G07": 16.8,
+   "G08": 16.8,
+   "G09": 16.8,
+   "G10": 15.6,
+   "G11": 50.1,
+   "F01": 31.3,
+   "F02": 15.6,
+   "F03": 16.8,
+   "F04": 90.8,
+   "F05": 27.3,
+   "F06": 21.1,
+   "F07": 8.1,
+   "F08": 8.1,
+   "F09": 8.1,
+   "F10": 8.1,
+   "F11": 16.8,
+   "F12": 15.6
+  },
+  "glazing_area_m2": {
+   "N": 35.3,
+   "E": 28.1,
+   "S": 85.5,
+   "W": 46.4
+  },
+  "window_to_wall_ratio": {
+   "N": 0.2,
+   "E": 0.27,
+   "S": 0.49,
+   "W": 0.45
+  },
+  "heated_volume_m3": 2875.0,
+  "envelope_area_m2": 1244.0,
+  "surface_area_to_volume": 0.433,
+  "pv_modules": 114,
+  "pv_kwp": 49.0,
+  "pv_tilt_deg": 25.0,
+  "overhang_m": 1.2,
+  "noon_sun_altitude_deg": {
+   "21 June": 60.5,
+   "21 December": 13.6
+  },
+  "overhang_shadow_depth_m": {
+   "21 June": 2.12,
+   "21 December": 0.29
+  }
+ },
+ "totals": {
+  "fitout_capex_gbp": 88180,
+  "lighting_design_kwh": 3952,
+  "lighting_baseline_kwh": 18660,
+  "lighting_saving_gbp": 3677,
+  "lighting_saving_kgco2e": 2603
+ }
+}

@@ -1,0 +1,279 @@
+{
+ "num": 34,
+ "order": 34,
+ "title": "Gradients of curves",
+ "short": "Gradients",
+ "terms": [
+  {
+   "word": "tangent (to a curve)",
+   "meaning": "the straight line that just touches a curve at one point, going the same way as the curve there",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 2
+  },
+  {
+   "word": "chord",
+   "meaning": "a straight line joining two points on a curve; its gradient is an average rate",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 3
+  },
+  {
+   "word": "numerical gradient",
+   "meaning": "(f(a + h) \u2212 f(a)) \u00f7 h for a small h: an estimate of the gradient at x = a",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 3
+  },
+  {
+   "word": "differentiation",
+   "meaning": "the process of finding the gradient function (derivative) of a function",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 4
+  },
+  {
+   "word": "derivative",
+   "meaning": "the gradient function dy/dx: the exact gradient of the curve at every x",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 4
+  },
+  {
+   "word": "dy/dx notation",
+   "meaning": "dy/dx is one symbol meaning 'the gradient of y as x changes'; the d's never cancel",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 4
+  },
+  {
+   "word": "power rule",
+   "meaning": "the derivative of a x\u207f is a n x\u207f\u207b\u00b9: the power comes down in front and drops by one",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 5
+  },
+  {
+   "word": "derivative of a constant",
+   "meaning": "zero: a flat line has no slope",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 6
+  },
+  {
+   "word": "sum rule (differentiation)",
+   "meaning": "differentiate a sum or difference term by term",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 6
+  },
+  {
+   "word": "standard derivatives",
+   "meaning": "the basic list: constants, powers, ln x, e^(kx), sin, cos, tan",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 9
+  },
+  {
+   "word": "rate of change",
+   "meaning": "how fast one quantity changes as another does: the derivative",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 10
+  },
+  {
+   "word": "gradient at a point",
+   "meaning": "the value of dy/dx when the point's x-coordinate is substituted in",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 12
+  },
+  {
+   "word": "normal (to a curve)",
+   "meaning": "the straight line through a point of a curve at right angles to the tangent there",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 12
+  },
+  {
+   "word": "tangent equation",
+   "meaning": "y \u2212 y\u2081 = f\u2032(a)(x \u2212 a): the line through (a, f(a)) with the curve's gradient there",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 14
+  },
+  {
+   "word": "stationary point",
+   "meaning": "a point where the gradient is zero (the tangent is flat)",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 15
+  },
+  {
+   "word": "turning point",
+   "meaning": "where a curve changes from going up to going down, or down to up",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 15
+  },
+  {
+   "word": "local maximum / minimum",
+   "meaning": "a hilltop / valley bottom: higher / lower than the points just around it",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 15
+  },
+  {
+   "word": "point of inflection (stationary)",
+   "meaning": "a flat 'ledge' where the curve keeps going the same way",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 15
+  },
+  {
+   "word": "second derivative",
+   "meaning": "d\u00b2y/dx\u00b2: the derivative of the derivative; positive at a minimum, negative at a maximum",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 17
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "h",
+   "say": "h",
+   "meaning": "a small step along the x axis",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 3
+  },
+  {
+   "latex": "\\frac{dy}{dx}",
+   "say": "dee y by dee x",
+   "meaning": "the derivative: gradient of y with respect to x",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 4
+  },
+  {
+   "latex": "f'(x)",
+   "say": "f dash of x",
+   "meaning": "the derivative of the function f",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 4
+  },
+  {
+   "latex": "\\delta x",
+   "say": "delta x",
+   "meaning": "a small change in x",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 4
+  },
+  {
+   "latex": "\\dot{y}",
+   "say": "y dot",
+   "meaning": "Newton's notation for the derivative of y with respect to time, dy/dt",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 4
+  },
+  {
+   "latex": "\\sec x",
+   "say": "seck x (secant)",
+   "meaning": "1 \u00f7 cos x",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 9
+  },
+  {
+   "latex": "\\frac{d^2y}{dx^2}",
+   "say": "dee two y by dee x squared",
+   "meaning": "the second derivative",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 17
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "\\frac{d}{dx}\\left(ax^n\\right)=anx^{n-1}",
+   "label": "power rule",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 5
+  },
+  {
+   "latex": "\\frac{dy}{dx}=f'(x)=\\dot{f}(x)",
+   "label": "Notation",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{d}{dx}(c)=0,\\qquad\\frac{d}{dx}(kx)=k",
+   "label": "Constants, kx, sums",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{a}{x^n}=ax^{-n},\\quad\\sqrt{x}=x^{\\frac12},\\quad\\frac{1}{\\sqrt x}=x^{-\\frac12}",
+   "label": "Rewrite first",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{d}{dx}\\ln x=\\frac1x,\\qquad\\frac{d}{dx}e^{kx}=ke^{kx}",
+   "label": "ln and e",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{d}{dx}\\sin bx=b\\cos bx,\\quad\\frac{d}{dx}\\cos bx=-b\\sin bx,\\quad\\frac{d}{dx}\\tan x=\\sec^2x",
+   "label": "Trig (radians)",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "m=f'(a)",
+   "label": "Gradient at x = a",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "y-y_1=f'(a)(x-x_1)",
+   "label": "Tangent at x = a",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "m_N=-\\frac{1}{f'(a)}",
+   "label": "Normal at x = a",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{dy}{dx}=0",
+   "label": "Stationary points",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  },
+  {
+   "latex": "\\frac{d^2y}{dx^2}>0\\ \\text{min},\\quad<0\\ \\text{max},\\quad=0\\ \\text{test fails}",
+   "label": "Second-derivative test",
+   "ch": 34,
+   "short": "Gradients",
+   "page": 18
+  }
+ ],
+ "pages": 20
+}

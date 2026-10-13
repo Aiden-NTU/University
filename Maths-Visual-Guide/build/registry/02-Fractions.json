@@ -1,0 +1,159 @@
+{
+ "num": 2,
+ "order": 2,
+ "title": "Fractions",
+ "short": "Fractions",
+ "terms": [
+  {
+   "word": "fraction",
+   "meaning": "part of a whole, written as top number over bottom number; also means top \u00f7 bottom",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 2
+  },
+  {
+   "word": "numerator",
+   "meaning": "the top number of a fraction: how many parts you have",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 2
+  },
+  {
+   "word": "denominator",
+   "meaning": "the bottom number of a fraction: how many equal parts make one whole",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 2
+  },
+  {
+   "word": "improper fraction",
+   "meaning": "a fraction whose top is bigger than its bottom (more than one whole)",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 2
+  },
+  {
+   "word": "mixed number",
+   "meaning": "a whole number and a fraction together, such as 1 3/4",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 2
+  },
+  {
+   "word": "proper fraction",
+   "meaning": "a fraction less than one whole: top smaller than bottom",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 2
+  },
+  {
+   "word": "negative fraction",
+   "meaning": "a fraction below zero; -a/b = (-a)/b = a/(-b)",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 7
+  },
+  {
+   "word": "fraction of an amount",
+   "meaning": "a/b of N = (N \u00f7 b) \u00d7 a",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 8
+  },
+  {
+   "word": "reciprocal",
+   "meaning": "a fraction flipped upside down: the reciprocal of 4/5 is 5/4, of 4 (= 4/1) is 1/4",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 8
+  },
+  {
+   "word": "equivalent fractions",
+   "meaning": "fractions with the same value, like 1/2 and 2/4: top and bottom multiplied by the same number",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 9
+  },
+  {
+   "word": "simplify a fraction",
+   "meaning": "divide top and bottom by the same number (ideally the HCF) so the numbers are as small as possible",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 10
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "\\frac{a}{b}=a\\div b,\\quad n=\\frac{n}{1}",
+   "label": "Fraction = division",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a}{b}=\\frac{a\\times k}{b\\times k}=\\frac{a\\div k}{b\\div k}",
+   "label": "Equivalent fractions",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "p\\tfrac{a}{b}=\\frac{pb+a}{b}",
+   "label": "Mixed to improper",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a}{b}\\pm\\frac{c}{d}=\\frac{ad\\pm bc}{bd}",
+   "label": "Add / subtract",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a}{b}\\times\\frac{c}{d}=\\frac{ac}{bd}",
+   "label": "Multiply",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a}{b}\\div\\frac{c}{d}=\\frac{a}{b}\\times\\frac{d}{c}=\\frac{ad}{bc}",
+   "label": "Divide",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a}{b}\\to\\frac{b}{a},\\qquad \\frac{a}{b}\\times\\frac{b}{a}=1",
+   "label": "Reciprocal",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a}{b}>\\frac{c}{d}\\iff ad>bc",
+   "label": "Compare",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "-\\frac{a}{b}=\\frac{-a}{b}=\\frac{a}{-b}",
+   "label": "Negative fractions",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  },
+  {
+   "latex": "\\frac{a}{b}\\text{ of }N=\\frac{N}{b}\\times a",
+   "label": "Fraction of an amount",
+   "ch": 2,
+   "short": "Fractions",
+   "page": 15
+  }
+ ],
+ "pages": 20
+}

@@ -1,0 +1,4 @@
+## The contents of this directory is dedicated towards resources I have personally found to be invaluable either due to their unique content, or their sheer size of information in such a sense that they can be relied upon for looking up topics and knowing it is highly likely the book covers it. I source all these books from a variety of places, mostly including :
+
+https://learning.oreilly.com/library (This is what the NTU library uses, in part, to source online book collecctions from - It is free with your NTU account. USE IT! They have audiobooks too.)
+https://openstax.org/ - An outstanding resource for extensive literature on a large array of topics. You will generally find that a single book may well cover over 500 pages of content with a really unique teaching style. 

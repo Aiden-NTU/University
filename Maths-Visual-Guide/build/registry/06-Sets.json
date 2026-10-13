@@ -1,0 +1,333 @@
+{
+ "num": 6,
+ "order": 6,
+ "title": "Sets",
+ "short": "Sets",
+ "terms": [
+  {
+   "word": "set",
+   "meaning": "a collection of distinct things, written inside curly brackets { }",
+   "ch": 6,
+   "short": "Sets",
+   "page": 2
+  },
+  {
+   "word": "element (member)",
+   "meaning": "one of the things in a set",
+   "ch": 6,
+   "short": "Sets",
+   "page": 2
+  },
+  {
+   "word": "universal set",
+   "meaning": "the set of everything under discussion, written \u03be or U",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "word": "intersection",
+   "meaning": "the elements that are in both sets",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "word": "union",
+   "meaning": "all elements in either set (or both), listed once",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "word": "complement",
+   "meaning": "everything in the universal set that is not in the given set",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "word": "Venn diagram",
+   "meaning": "overlapping circles inside a rectangle, showing how sets share elements",
+   "ch": 6,
+   "short": "Sets",
+   "page": 4
+  },
+  {
+   "word": "De Morgan's laws (sets)",
+   "meaning": "(A\u222aB)\u2032 = A\u2032\u2229B\u2032 and (A\u2229B)\u2032 = A\u2032\u222aB\u2032",
+   "ch": 6,
+   "short": "Sets",
+   "page": 9
+  },
+  {
+   "word": "subset",
+   "meaning": "a set whose elements are all inside another set",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "word": "empty set",
+   "meaning": "the set with no elements, written {} or \u2205",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "word": "proper subset",
+   "meaning": "a subset that is not the whole set: A \u2282 B means A \u2286 B and A \u2260 B",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "word": "set-builder notation",
+   "meaning": "{x | rule}: the set of all x that obey the rule",
+   "ch": 6,
+   "short": "Sets",
+   "page": 11
+  },
+  {
+   "word": "interval",
+   "meaning": "all the numbers between two end points",
+   "ch": 6,
+   "short": "Sets",
+   "page": 11
+  },
+  {
+   "word": "natural numbers",
+   "meaning": "the counting numbers 1, 2, 3, ... (\u2115)",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  },
+  {
+   "word": "integers",
+   "meaning": "whole numbers including 0 and negatives (\u2124)",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  },
+  {
+   "word": "rational number",
+   "meaning": "a number that can be written as a fraction of two integers (\u211a)",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  },
+  {
+   "word": "real numbers",
+   "meaning": "all numbers on the number line (\u211d)",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  },
+  {
+   "word": "irrational number",
+   "meaning": "a real number that is not a fraction; its decimals never end or repeat",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\{\\ \\}",
+   "say": "the set of / braces",
+   "meaning": "curly brackets that hold the members of a set",
+   "ch": 6,
+   "short": "Sets",
+   "page": 2
+  },
+  {
+   "latex": "\\in",
+   "say": "is an element of / is in",
+   "meaning": "x \u2208 A means x belongs to set A",
+   "ch": 6,
+   "short": "Sets",
+   "page": 2
+  },
+  {
+   "latex": "\\notin",
+   "say": "is not an element of",
+   "meaning": "x \u2209 A means x is not in A",
+   "ch": 6,
+   "short": "Sets",
+   "page": 2
+  },
+  {
+   "latex": "n(A)",
+   "say": "n of A / the size of A",
+   "meaning": "how many elements are in set A",
+   "ch": 6,
+   "short": "Sets",
+   "page": 2
+  },
+  {
+   "latex": "\\xi",
+   "say": "ksee (or 'the universal set')",
+   "meaning": "everything being talked about",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "latex": "\\cap",
+   "say": "intersection / and",
+   "meaning": "elements in both sets",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "latex": "\\cup",
+   "say": "union / or",
+   "meaning": "elements in either set (or both)",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "latex": "A'",
+   "say": "A complement / not A",
+   "meaning": "everything in \u03be that is not in A",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "latex": "\\subset",
+   "say": "is a subset of",
+   "meaning": "every element of the left set is in the right set",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "latex": "\\varnothing",
+   "say": "the empty set",
+   "meaning": "a set with nothing in it",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "latex": "\\subseteq",
+   "say": "is a subset of (or equal to)",
+   "meaning": "every element of the left set is in the right set",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "latex": "\\mid",
+   "say": "such that",
+   "meaning": "separates the variable from the rule it must obey",
+   "ch": 6,
+   "short": "Sets",
+   "page": 11
+  },
+  {
+   "latex": "[a,b]",
+   "say": "the closed interval from a to b",
+   "meaning": "all numbers from a to b, ends included",
+   "ch": 6,
+   "short": "Sets",
+   "page": 11
+  },
+  {
+   "latex": "(a,b)",
+   "say": "the open interval from a to b",
+   "meaning": "all numbers between a and b, ends excluded",
+   "ch": 6,
+   "short": "Sets",
+   "page": 11
+  },
+  {
+   "latex": "[a,\\infty)",
+   "say": "a to infinity",
+   "meaning": "all real numbers greater than or equal to a",
+   "ch": 6,
+   "short": "Sets",
+   "page": 11
+  },
+  {
+   "latex": "\\mathbb{N}",
+   "say": "N, the natural numbers",
+   "meaning": "counting numbers 1, 2, 3, ...",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  },
+  {
+   "latex": "\\mathbb{Z}",
+   "say": "Z, the integers",
+   "meaning": "whole numbers including negatives and 0",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  },
+  {
+   "latex": "\\mathbb{Q}",
+   "say": "Q, the rational numbers",
+   "meaning": "anything that can be written as a fraction",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  },
+  {
+   "latex": "\\mathbb{R}",
+   "say": "R, the real numbers",
+   "meaning": "every point on the number line",
+   "ch": 6,
+   "short": "Sets",
+   "page": 12
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "n(A')=n(\\xi)-n(A)",
+   "label": "counting a complement",
+   "ch": 6,
+   "short": "Sets",
+   "page": 3
+  },
+  {
+   "latex": "n(A\\cup B)=n(A)+n(B)-n(A\\cap B)",
+   "label": "counting a union (don't count the overlap twice)",
+   "ch": 6,
+   "short": "Sets",
+   "page": 5
+  },
+  {
+   "latex": "(A\\cup B)'=A'\\cap B'",
+   "label": "De Morgan's law for sets",
+   "ch": 6,
+   "short": "Sets",
+   "page": 9
+  },
+  {
+   "latex": "(A\\cap B)'=A'\\cup B'",
+   "label": "De Morgan's law for sets",
+   "ch": 6,
+   "short": "Sets",
+   "page": 9
+  },
+  {
+   "latex": "\\text{number of subsets}=2^n",
+   "label": "subsets of a set with n elements",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "latex": "n(A\\cup B\\cup C)=\\text{singles}-\\text{pairs}+n(A\\cap B\\cap C)",
+   "label": "Three sets",
+   "ch": 6,
+   "short": "Sets",
+   "page": 13
+  }
+ ],
+ "pages": 15
+}

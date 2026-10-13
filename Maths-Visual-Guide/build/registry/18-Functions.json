@@ -1,0 +1,136 @@
+{
+ "num": 18,
+ "order": 18,
+ "title": "Functions",
+ "short": "Functions",
+ "terms": [
+  {
+   "word": "function",
+   "meaning": "a rule that gives exactly one output for each allowed input",
+   "ch": 18,
+   "short": "Functions",
+   "page": 2
+  },
+  {
+   "word": "domain",
+   "meaning": "the set of inputs a function accepts",
+   "ch": 18,
+   "short": "Functions",
+   "page": 4
+  },
+  {
+   "word": "image (range)",
+   "meaning": "the set of all outputs a function can produce",
+   "ch": 18,
+   "short": "Functions",
+   "page": 4
+  },
+  {
+   "word": "restricted domain",
+   "meaning": "a domain deliberately limited, e.g. x \u2265 0, often to make a function one-to-one",
+   "ch": 18,
+   "short": "Functions",
+   "page": 5
+  },
+  {
+   "word": "many-to-one",
+   "meaning": "a function where different inputs can give the same output, like x\u00b2 (2 and \u22122 both give 4)",
+   "ch": 18,
+   "short": "Functions",
+   "page": 6
+  },
+  {
+   "word": "one-to-one",
+   "meaning": "a function where different inputs always give different outputs, like 2x + 3",
+   "ch": 18,
+   "short": "Functions",
+   "page": 6
+  },
+  {
+   "word": "vertical line test",
+   "meaning": "a graph is a function if no vertical line crosses it more than once",
+   "ch": 18,
+   "short": "Functions",
+   "page": 6
+  },
+  {
+   "word": "piecewise function",
+   "meaning": "a function defined by different formulas on different parts of its domain",
+   "ch": 18,
+   "short": "Functions",
+   "page": 7
+  },
+  {
+   "word": "composite function",
+   "meaning": "one function applied to the output of another, written f(g(x)), fg(x) or (f\u2218g)(x)",
+   "ch": 18,
+   "short": "Functions",
+   "page": 8
+  },
+  {
+   "word": "inverse function",
+   "meaning": "f\u207b\u00b9, the function that reverses f: if f(3) = 9 then f\u207b\u00b9(9) = 3",
+   "ch": 18,
+   "short": "Functions",
+   "page": 9
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\mapsto",
+   "say": "maps to",
+   "meaning": "the input on the left is turned into the output on the right",
+   "ch": 18,
+   "short": "Functions",
+   "page": 2
+  },
+  {
+   "latex": "f(x)",
+   "say": "f of x",
+   "meaning": "the output of function f when the input is x",
+   "ch": 18,
+   "short": "Functions",
+   "page": 2
+  },
+  {
+   "latex": "f\\circ g",
+   "say": "f after g (f compose g)",
+   "meaning": "the composite function f(g(x)): g first, then f",
+   "ch": 18,
+   "short": "Functions",
+   "page": 8
+  },
+  {
+   "latex": "f^{-1}",
+   "say": "f inverse",
+   "meaning": "the function that undoes f",
+   "ch": 18,
+   "short": "Functions",
+   "page": 9
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "f(a)=\\text{the rule with every }x\\text{ replaced by }(a)",
+   "label": "Notation",
+   "ch": 18,
+   "short": "Functions",
+   "page": 13
+  },
+  {
+   "latex": "fg(x)=(f\\circ g)(x)=f(g(x))",
+   "label": "Composite",
+   "ch": 18,
+   "short": "Functions",
+   "page": 13
+  },
+  {
+   "latex": "f(f^{-1}(x))=f^{-1}(f(x))=x",
+   "label": "Inverse",
+   "ch": 18,
+   "short": "Functions",
+   "page": 13
+  }
+ ],
+ "pages": 14
+}

@@ -1,0 +1,166 @@
+{
+ "num": 19,
+ "order": 19,
+ "title": "Graphs of functions",
+ "short": "Graphs",
+ "terms": [
+  {
+   "word": "coordinates",
+   "meaning": "the pair (x, y) giving a point's position: x across, then y up",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 2
+  },
+  {
+   "word": "origin",
+   "meaning": "the point (0, 0) where the axes cross",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 2
+  },
+  {
+   "word": "axes",
+   "meaning": "the two number lines of a graph: the x-axis across and the y-axis up (singular: axis)",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 2
+  },
+  {
+   "word": "quadrant",
+   "meaning": "one of the four regions the axes divide the plane into",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 2
+  },
+  {
+   "word": "graph of a function",
+   "meaning": "all the points (x, f(x)) drawn on axes",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 3
+  },
+  {
+   "word": "intercept",
+   "meaning": "where a graph crosses an axis: the y-intercept at x = 0, x-intercepts where y = 0",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 4
+  },
+  {
+   "word": "even function",
+   "meaning": "f(\u2212x) = f(x): the graph is a mirror image across the y-axis (e.g. x\u00b2, x\u2074)",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 5
+  },
+  {
+   "word": "odd function",
+   "meaning": "f(\u2212x) = \u2212f(x): the graph looks the same after a half turn about the origin (e.g. x, x\u00b3)",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 5
+  },
+  {
+   "word": "asymptote",
+   "meaning": "a line a graph gets closer and closer to but never reaches, e.g. the axes for y = 1/x",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 6
+  },
+  {
+   "word": "dominant term",
+   "meaning": "the term that decides a graph's shape in some range: the highest power for large x",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 7
+  },
+  {
+   "word": "transformation",
+   "meaning": "a change to a formula that moves, stretches or flips its graph",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 9
+  },
+  {
+   "word": "vertex",
+   "meaning": "the turning point of a parabola: (h, k) for y = a(x \u2212 h)\u00b2 + k",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 9
+  }
+ ],
+ "symbols": [],
+ "formulas": [
+  {
+   "latex": "(x,\\ y)",
+   "label": "Coordinates",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "f(-x)=f(x)",
+   "label": "Even function",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "f(-x)=-f(x)",
+   "label": "Odd function",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "y=\\frac{b}{x-h}+k:\\quad x=h,\\ y=k",
+   "label": "Asymptotes",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "y=a(x-h)^2+k\\ \\Rightarrow\\ \\text{vertex }(h,k)",
+   "label": "Vertex form",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "y=f(x)+a",
+   "label": "Shift up / down",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "y=f(x+a)",
+   "label": "Shift left / right",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "y=af(x)",
+   "label": "Vertical stretch",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "y=f(ax)",
+   "label": "Horizontal squash",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  },
+  {
+   "latex": "y=-f(x),\\quad y=f(-x)",
+   "label": "Reflections",
+   "ch": 19,
+   "short": "Graphs",
+   "page": 13
+  }
+ ],
+ "pages": 14
+}

@@ -1,0 +1,225 @@
+{
+ "num": 25,
+ "order": 25,
+ "title": "Probability and Bayes",
+ "short": "Probability",
+ "terms": [
+  {
+   "word": "sample space",
+   "meaning": "the set S of every possible outcome",
+   "ch": 25,
+   "short": "Probability",
+   "page": 2
+  },
+  {
+   "word": "event",
+   "meaning": "a set of outcomes you are interested in; a subset of the sample space",
+   "ch": 25,
+   "short": "Probability",
+   "page": 2
+  },
+  {
+   "word": "probability",
+   "meaning": "how likely an event is, from 0 (impossible) to 1 (certain); shaded \u00f7 total when outcomes are equally likely",
+   "ch": 25,
+   "short": "Probability",
+   "page": 2
+  },
+  {
+   "word": "complement rule",
+   "meaning": "p(E doesn't happen) = 1 \u2212 p(E)",
+   "ch": 25,
+   "short": "Probability",
+   "page": 2
+  },
+  {
+   "word": "joint probability",
+   "meaning": "the probability that two events both happen, p(E \u2229 F)",
+   "ch": 25,
+   "short": "Probability",
+   "page": 3
+  },
+  {
+   "word": "addition rule",
+   "meaning": "p(E or F) = p(E) + p(F) \u2212 p(E and F)",
+   "ch": 25,
+   "short": "Probability",
+   "page": 3
+  },
+  {
+   "word": "mutually exclusive",
+   "meaning": "events that cannot both happen: p(E and F) = 0",
+   "ch": 25,
+   "short": "Probability",
+   "page": 3
+  },
+  {
+   "word": "conditional probability",
+   "meaning": "p(E | F): the probability of E once you know F happened; F becomes the new sample space",
+   "ch": 25,
+   "short": "Probability",
+   "page": 4
+  },
+  {
+   "word": "independent events",
+   "meaning": "knowing one happened doesn't change the other's probability; then p(E and F) = p(E) \u00d7 p(F)",
+   "ch": 25,
+   "short": "Probability",
+   "page": 5
+  },
+  {
+   "word": "two-way table",
+   "meaning": "a table counting every combination of two characteristics, with totals in the margins",
+   "ch": 25,
+   "short": "Probability",
+   "page": 8
+  },
+  {
+   "word": "marginal probability",
+   "meaning": "the overall probability of one characteristic, from a margin total",
+   "ch": 25,
+   "short": "Probability",
+   "page": 8
+  },
+  {
+   "word": "Bayes' theorem",
+   "meaning": "p(a|b) = p(b|a) p(a) / p(b): turns one conditional probability round",
+   "ch": 25,
+   "short": "Probability",
+   "page": 10
+  },
+  {
+   "word": "tree diagram",
+   "meaning": "branches for each outcome of each stage; multiply along a path, add between paths",
+   "ch": 25,
+   "short": "Probability",
+   "page": 11
+  },
+  {
+   "word": "law of total probability",
+   "meaning": "p(B) = p(B|A)p(A) + p(B|A\u2032)p(A\u2032): add up every way B can happen",
+   "ch": 25,
+   "short": "Probability",
+   "page": 11
+  },
+  {
+   "word": "prior probability",
+   "meaning": "the probability before new evidence, e.g. p(cancer) = 1%",
+   "ch": 25,
+   "short": "Probability",
+   "page": 14
+  },
+  {
+   "word": "posterior probability",
+   "meaning": "the updated probability after the evidence, e.g. p(cancer | positive) = 7.8%",
+   "ch": 25,
+   "short": "Probability",
+   "page": 14
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "p(E)",
+   "say": "p of E",
+   "meaning": "the probability that event E happens",
+   "ch": 25,
+   "short": "Probability",
+   "page": 2
+  },
+  {
+   "latex": "p(E\\,|\\,F)",
+   "say": "p of E given F",
+   "meaning": "probability of E, knowing that F has happened",
+   "ch": 25,
+   "short": "Probability",
+   "page": 4
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "p(E\\cup F)=p(E)+p(F)-p(E\\cap F)",
+   "label": "addition rule (OR)",
+   "ch": 25,
+   "short": "Probability",
+   "page": 3
+  },
+  {
+   "latex": "p(E\\,|\\,F)=\\frac{p(E\\cap F)}{p(F)}",
+   "label": "conditional probability",
+   "ch": 25,
+   "short": "Probability",
+   "page": 4
+  },
+  {
+   "latex": "p(a\\,|\\,b)=\\frac{p(b\\,|\\,a)\\,p(a)}{p(b)}",
+   "label": "Bayes' theorem",
+   "ch": 25,
+   "short": "Probability",
+   "page": 10
+  },
+  {
+   "latex": "p(B)=p(B\\,|\\,A)\\,p(A)+p(B\\,|\\,A')\\,p(A')",
+   "label": "law of total probability",
+   "ch": 25,
+   "short": "Probability",
+   "page": 11
+  },
+  {
+   "latex": "p(E)=\\frac{\\text{outcomes in }E}{\\text{all outcomes}}",
+   "label": "Probability",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  },
+  {
+   "latex": "p(E')=1-p(E)",
+   "label": "Complement",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  },
+  {
+   "latex": "p(A\\cup B)=p(A)+p(B)-p(A\\cap B)",
+   "label": "Addition rule (OR)",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  },
+  {
+   "latex": "p(A\\cap B)=0,\\qquad p(A\\cup B)=p(A)+p(B)",
+   "label": "Mutually exclusive",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  },
+  {
+   "latex": "p(A\\,|\\,B)=\\frac{p(A\\cap B)}{p(B)}",
+   "label": "Conditional",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  },
+  {
+   "latex": "p(A\\cap B)=p(B)\\,p(A\\,|\\,B)=p(A)\\,p(B\\,|\\,A)",
+   "label": "Multiplication rule (AND)",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  },
+  {
+   "latex": "p(A\\cap B)=p(A)\\,p(B),\\qquad p(A\\,|\\,B)=p(A)",
+   "label": "Independent",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  },
+  {
+   "latex": "p(A\\,|\\,B)=\\frac{p(B\\,|\\,A)\\,p(A)}{p(B)}",
+   "label": "Bayes' theorem",
+   "ch": 25,
+   "short": "Probability",
+   "page": 15
+  }
+ ],
+ "pages": 16
+}

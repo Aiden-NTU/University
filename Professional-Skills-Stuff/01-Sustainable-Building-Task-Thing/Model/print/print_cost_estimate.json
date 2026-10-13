@@ -1,0 +1,485 @@
+{
+ "rows": [
+  {
+   "part": "building_1to100_1_ground_floor.stl",
+   "group": "building",
+   "process": "FDM PLA",
+   "amount": "174 g",
+   "gbp": 3.4775990445688794,
+   "hours": 9.659997346024664,
+   "size_mm": [
+    240.0,
+    144.0,
+    38.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "building_1to100_2_first_floor.stl",
+   "group": "building",
+   "process": "FDM PLA",
+   "amount": "173 g",
+   "gbp": 3.4598395622723475,
+   "hours": 9.610665450756521,
+   "size_mm": [
+    240.0,
+    156.0,
+    38.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "building_1to100_3_roof.stl",
+   "group": "building",
+   "process": "FDM PLA",
+   "amount": "271 g",
+   "gbp": 5.424402333001161,
+   "hours": 15.067784258336555,
+   "size_mm": [
+    240.0,
+    156.0,
+    25.4
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "building_1to100_3_roof_pv_dark_blue.stl",
+   "group": "building",
+   "process": "FDM PLA",
+   "amount": "15 g",
+   "gbp": 0.30700183462749364,
+   "hours": 0.8527828739652601,
+   "size_mm": [
+    219.1,
+    127.4,
+    15.2
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "building_1to100_4_cycle_hub.stl",
+   "group": "building",
+   "process": "FDM PLA",
+   "amount": "25 g",
+   "gbp": 0.49937006061018757,
+   "hours": 1.3871390572505211,
+   "size_mm": [
+    60.0,
+    96.0,
+    36.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "building_1to100_5_cycle_hub_green_roof.stl",
+   "group": "building",
+   "process": "FDM PLA",
+   "amount": "10 g",
+   "gbp": 0.1916544,
+   "hours": 0.5323733333333334,
+   "size_mm": [
+    56.0,
+    92.0,
+    1.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "building_1to100_5_cycle_hub_roof.stl",
+   "group": "building",
+   "process": "FDM PLA",
+   "amount": "14 g",
+   "gbp": 0.274339584,
+   "hours": 0.7620543999999999,
+   "size_mm": [
+    60.0,
+    96.0,
+    3.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "site_1to1000_1_terrain_green.stl",
+   "group": "site",
+   "process": "FDM PLA",
+   "amount": "216 g",
+   "gbp": 4.3293709743090245,
+   "hours": 12.026030484191734,
+   "size_mm": [
+    239.0,
+    239.0,
+    13.3
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "site_1to1000_2_roads_paths_grey.stl",
+   "group": "site",
+   "process": "FDM PLA",
+   "amount": "4 g",
+   "gbp": 0.07322282139829236,
+   "hours": 0.2033967261063677,
+   "size_mm": [
+    239.0,
+    239.0,
+    9.3
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "site_1to1000_3_existing_buildings_white.stl",
+   "group": "site",
+   "process": "FDM PLA",
+   "amount": "18 g",
+   "gbp": 0.3645349026797263,
+   "hours": 1.0125969518881286,
+   "size_mm": [
+    188.4,
+    145.6,
+    14.6
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "site_1to1000_4_trees_dark_green.stl",
+   "group": "site",
+   "process": "FDM PLA",
+   "amount": "41 g",
+   "gbp": 0.8197158249282733,
+   "hours": 2.276988402578537,
+   "size_mm": [
+    236.8,
+    236.8,
+    26.3
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "site_1to1000_5_proposal_orange.stl",
+   "group": "site",
+   "process": "FDM PLA",
+   "amount": "5 g",
+   "gbp": 0.09310879218400542,
+   "hours": 0.2586355338444595,
+   "size_mm": [
+    92.0,
+    28.4,
+    11.3
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F02_wcs.stl",
+   "group": "trays_fdm",
+   "process": "FDM PLA",
+   "amount": "4 g",
+   "gbp": 0.07113162627871165,
+   "hours": 0.19758785077419902,
+   "size_mm": [
+    34.6,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G02_wcs_incl_accessible.stl",
+   "group": "trays_fdm",
+   "process": "FDM PLA",
+   "amount": "4 g",
+   "gbp": 0.07113162627871165,
+   "hours": 0.19758785077419902,
+   "size_mm": [
+    34.6,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G05_makerspace.stl",
+   "group": "trays_fdm",
+   "process": "FDM PLA",
+   "amount": "8 g",
+   "gbp": 0.16127772590196696,
+   "hours": 0.44799368306101933,
+   "size_mm": [
+    34.8,
+    75.7,
+    10.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G07_furniture_store.stl",
+   "group": "trays_fdm",
+   "process": "FDM PLA",
+   "amount": "4 g",
+   "gbp": 0.08728825070953371,
+   "hours": 0.24246736308203806,
+   "size_mm": [
+    37.5,
+    42.8,
+    20.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G08_plant_room.stl",
+   "group": "trays_fdm",
+   "process": "FDM PLA",
+   "amount": "7 g",
+   "gbp": 0.13395466123254487,
+   "hours": 0.3720962812015135,
+   "size_mm": [
+    37.5,
+    42.6,
+    20.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G09_edge_server_room.stl",
+   "group": "trays_fdm",
+   "process": "FDM PLA",
+   "amount": "7 g",
+   "gbp": 0.14203072064744568,
+   "hours": 0.39452977957623797,
+   "size_mm": [
+    37.5,
+    42.8,
+    20.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G10_showers_changing.stl",
+   "group": "trays_fdm",
+   "process": "FDM PLA",
+   "amount": "7 g",
+   "gbp": 0.13220183900858146,
+   "hours": 0.3672273305793929,
+   "size_mm": [
+    34.8,
+    42.8,
+    20.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F01_breakout_co_working_lounge.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "7.5 ml",
+   "gbp": 1.2014102963101965,
+   "hours": null,
+   "size_mm": [
+    75.4,
+    90.0,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F03_kitchenette.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "4.7 ml",
+   "gbp": 0.7452543329773064,
+   "hours": null,
+   "size_mm": [
+    37.5,
+    42.8,
+    14.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F04_quiet_study_library.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "19.1 ml",
+   "gbp": 3.0481099279778485,
+   "hours": null,
+   "size_mm": [
+    117.5,
+    75.7,
+    18.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F05_staff_office.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "3.3 ml",
+   "gbp": 0.532603368796414,
+   "hours": null,
+   "size_mm": [
+    34.8,
+    75.7,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F07_group_study_pod_1.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "1.1 ml",
+   "gbp": 0.17699288826571602,
+   "hours": null,
+   "size_mm": [
+    17.5,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F08_group_study_pod_2.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "1.1 ml",
+   "gbp": 0.17699288826571602,
+   "hours": null,
+   "size_mm": [
+    17.5,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F09_group_study_pod_3.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "1.1 ml",
+   "gbp": 0.17699288826571602,
+   "hours": null,
+   "size_mm": [
+    17.5,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F10_group_study_pod_4.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "1.1 ml",
+   "gbp": 0.17699288826571602,
+   "hours": null,
+   "size_mm": [
+    17.5,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F11_smart_building_control_room.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "2.2 ml",
+   "gbp": 0.3501423743749648,
+   "hours": null,
+   "size_mm": [
+    37.5,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "F12_meeting_room.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "2.0 ml",
+   "gbp": 0.32592780351724,
+   "hours": null,
+   "size_mm": [
+    34.6,
+    42.6,
+    9.0
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G01_entrance_atrium_cafe.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "8.4 ml",
+   "gbp": 1.349937997474695,
+   "hours": null,
+   "size_mm": [
+    75.4,
+    90.6,
+    10.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G03_wellbeing_prayer_room.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "3.3 ml",
+   "gbp": 0.5248340482234956,
+   "hours": null,
+   "size_mm": [
+    37.5,
+    42.6,
+    9.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G04_flexible_teaching_hall.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "14.9 ml",
+   "gbp": 2.3848932158592695,
+   "hours": null,
+   "size_mm": [
+    117.5,
+    75.7,
+    11.5
+   ],
+   "fits": 1.0
+  },
+  {
+   "part": "G11_cycle_hub.stl",
+   "group": "trays_sla",
+   "process": "SLA resin",
+   "amount": "7.0 ml",
+   "gbp": 1.1209664322437713,
+   "hours": null,
+   "size_mm": [
+    55.5,
+    87.8,
+    24.5
+   ],
+   "fits": 1.0
+  }
+ ],
+ "totals": {
+  "building": {
+   "gbp": 13.63420681908007,
+   "hours": 37.87279671966685
+  },
+  "site": {
+   "gbp": 5.679953315499322,
+   "hours": 15.777648098609227
+  },
+  "trays_fdm": {
+   "gbp": 0.7990164500574961,
+   "hours": 2.2194901390485997
+  },
+  "trays_sla": {
+   "gbp": 12.292051350818067,
+   "hours": 0.0
+  }
+ },
+ "total_gbp": 32.40522793545496
+}

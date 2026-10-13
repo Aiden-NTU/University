@@ -1,0 +1,133 @@
+{
+ "num": 33,
+ "order": 33,
+ "title": "Polar coordinates",
+ "short": "Polar",
+ "terms": [
+  {
+   "word": "polar coordinates",
+   "meaning": "(r, \u03b8): distance r from the origin and angle \u03b8 anticlockwise from the positive x axis",
+   "ch": 33,
+   "short": "Polar",
+   "page": 2
+  },
+  {
+   "word": "polar to Cartesian",
+   "meaning": "x = r cos \u03b8, y = r sin \u03b8",
+   "ch": 33,
+   "short": "Polar",
+   "page": 3
+  },
+  {
+   "word": "quadrant correction",
+   "meaning": "after \u03b8 = tan\u207b\u00b9(y/x): add 180\u00b0 (\u03c0) in quadrants 2 and 3, add 360\u00b0 (2\u03c0) in quadrant 4; points on the axes are read off the sketch",
+   "ch": 33,
+   "short": "Polar",
+   "page": 5
+  },
+  {
+   "word": "polar curve",
+   "meaning": "the path traced by r = f(\u03b8) as \u03b8 turns: the pen is r from the centre at angle \u03b8",
+   "ch": 33,
+   "short": "Polar",
+   "page": 6
+  },
+  {
+   "word": "cardioid",
+   "meaning": "the heart-shaped polar curve r = a(1 + cos \u03b8)",
+   "ch": 33,
+   "short": "Polar",
+   "page": 7
+  },
+  {
+   "word": "converting to polar",
+   "meaning": "replace x by r cos \u03b8 and y by r sin \u03b8, then make r the subject",
+   "ch": 33,
+   "short": "Polar",
+   "page": 8
+  },
+  {
+   "word": "polar to Cartesian equation",
+   "meaning": "swap r cos \u03b8 \u2192 x, r sin \u03b8 \u2192 y, r\u00b2 \u2192 x\u00b2 + y\u00b2; multiply by r first if needed",
+   "ch": 33,
+   "short": "Polar",
+   "page": 9
+  },
+  {
+   "word": "double angle formulas",
+   "meaning": "sin 2A = 2 sin A cos A; cos 2A = cos\u00b2A \u2212 sin\u00b2A = 2cos\u00b2A \u2212 1 = 1 \u2212 2sin\u00b2A",
+   "ch": 33,
+   "short": "Polar",
+   "page": 10
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "(r,\\theta)",
+   "say": "r, theta",
+   "meaning": "a point in polar coordinates: radius then angle",
+   "ch": 33,
+   "short": "Polar",
+   "page": 2
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "x=r\\cos\\theta,\\quad y=r\\sin\\theta",
+   "label": "polar to Cartesian",
+   "ch": 33,
+   "short": "Polar",
+   "page": 3
+  },
+  {
+   "latex": "r=\\sqrt{x^2+y^2},\\quad\\theta=\\tan^{-1}\\frac yx\\ (+\\text{quadrant fix})",
+   "label": "Cartesian to polar",
+   "ch": 33,
+   "short": "Polar",
+   "page": 4
+  },
+  {
+   "latex": "x^2+y^2=r^2,\\qquad \\tan\\theta=\\frac yx",
+   "label": "polar and Cartesian links",
+   "ch": 33,
+   "short": "Polar",
+   "page": 7
+  },
+  {
+   "latex": "\\sin2A=2\\sin A\\cos A,\\quad\\cos2A=\\cos^2A-\\sin^2A",
+   "label": "double angle",
+   "ch": 33,
+   "short": "Polar",
+   "page": 10
+  },
+  {
+   "latex": "x=r\\cos\\theta,\\qquad y=r\\sin\\theta",
+   "label": "Polar \u2192 Cartesian",
+   "ch": 33,
+   "short": "Polar",
+   "page": 11
+  },
+  {
+   "latex": "r=\\sqrt{x^2+y^2}",
+   "label": "Distance",
+   "ch": 33,
+   "short": "Polar",
+   "page": 11
+  },
+  {
+   "latex": "\\theta=\\tan^{-1}\\frac yx",
+   "label": "Angle",
+   "ch": 33,
+   "short": "Polar",
+   "page": 11
+  },
+  {
+   "latex": "\\sin2A=2\\sin A\\cos A,\\quad \\cos2A=\\cos^2A-\\sin^2A",
+   "label": "Double angle",
+   "ch": 33,
+   "short": "Polar",
+   "page": 11
+  }
+ ],
+ "pages": 12
+}

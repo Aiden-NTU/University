@@ -1,0 +1,177 @@
+{
+ "num": 28,
+ "order": 28,
+ "title": "Introduction to trigonometry",
+ "short": "Trigonometry",
+ "terms": [
+  {
+   "word": "hypotenuse",
+   "meaning": "the longest side of a right-angled triangle, opposite the right angle",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 2
+  },
+  {
+   "word": "opposite / adjacent",
+   "meaning": "the side across from the angle \u03b8 / the side next to \u03b8 that isn't the hypotenuse",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 2
+  },
+  {
+   "word": "Pythagoras' theorem",
+   "meaning": "in a right-angled triangle, hypotenuse\u00b2 = (one short side)\u00b2 + (other short side)\u00b2",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 3
+  },
+  {
+   "word": "Pythagoras in 3D",
+   "meaning": "the diagonal of a box: d\u00b2 = a\u00b2 + b\u00b2 + c\u00b2",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 5
+  },
+  {
+   "word": "equation of a circle",
+   "meaning": "(x \u2212 a)\u00b2 + (y \u2212 b)\u00b2 = r\u00b2: centre (a, b), radius r",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 5
+  },
+  {
+   "word": "similar triangles",
+   "meaning": "triangles with the same angles: one is a zoomed copy of the other, so side ratios match",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 6
+  },
+  {
+   "word": "sine, cosine, tangent",
+   "meaning": "the ratios opp/hyp, adj/hyp and opp/adj of a right-angled triangle, fixed by the angle",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 6
+  },
+  {
+   "word": "SOHCAHTOA",
+   "meaning": "memory aid: Sin = Opp/Hyp, Cos = Adj/Hyp, Tan = Opp/Adj",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 6
+  },
+  {
+   "word": "inverse trig functions",
+   "meaning": "sin\u207b\u00b9, cos\u207b\u00b9, tan\u207b\u00b9 (arcsin, arccos, arctan): given the ratio, they give back the angle",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 8
+  },
+  {
+   "word": "exact trig values",
+   "meaning": "sin, cos, tan of 30\u00b0, 45\u00b0, 60\u00b0 written with roots, from the two special triangles",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 12
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\theta",
+   "say": "theta",
+   "meaning": "a common letter for an unknown angle",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 2
+  },
+  {
+   "latex": "\\sin\\theta",
+   "say": "sine theta (say 'sign')",
+   "meaning": "opp \u00f7 hyp for the angle \u03b8",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 6
+  },
+  {
+   "latex": "\\sin^{-1}",
+   "say": "inverse sine, or arcsine",
+   "meaning": "the angle whose sine is ...",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 8
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "h^2=o^2+a^2",
+   "label": "Pythagoras",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 3
+  },
+  {
+   "latex": "(x-a)^2+(y-b)^2=r^2",
+   "label": "circle, centre (a, b), radius r",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 5
+  },
+  {
+   "latex": "\\sin\\theta=\\frac{o}{h}",
+   "label": "sine",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 6
+  },
+  {
+   "latex": "\\cos\\theta=\\frac{a}{h}",
+   "label": "cosine",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 6
+  },
+  {
+   "latex": "\\tan\\theta=\\frac{o}{a}",
+   "label": "tangent",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 6
+  },
+  {
+   "latex": "a^2+b^2=c^2",
+   "label": "Pythagoras",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 13
+  },
+  {
+   "latex": "d^2=a^2+b^2+c^2",
+   "label": "Pythagoras in 3D",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 13
+  },
+  {
+   "latex": "\\sin\\theta=\\frac{O}{H},\\quad\\cos\\theta=\\frac{A}{H},\\quad\\tan\\theta=\\frac{O}{A}",
+   "label": "SOHCAHTOA",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 13
+  },
+  {
+   "latex": "\\theta=\\sin^{-1}\\frac{O}{H},\\ \\cos^{-1}\\frac{A}{H},\\ \\tan^{-1}\\frac{O}{A}",
+   "label": "Inverse trig",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 13
+  },
+  {
+   "latex": "\\sin30^\\circ=\\tfrac12,\\ \\sin45^\\circ=\\tfrac{1}{\\sqrt2},\\ \\sin60^\\circ=\\tfrac{\\sqrt3}{2}",
+   "label": "Exact values",
+   "ch": 28,
+   "short": "Trigonometry",
+   "page": 13
+  }
+ ],
+ "pages": 14
+}

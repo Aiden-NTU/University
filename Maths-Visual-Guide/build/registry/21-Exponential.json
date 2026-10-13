@@ -1,0 +1,156 @@
+{
+ "num": 21,
+ "order": 21,
+ "title": "The exponential function",
+ "short": "Exponentials",
+ "terms": [
+  {
+   "word": "exponential function",
+   "meaning": "a function with the variable in the power, like 2\u02e3 or e\u02e3",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 2
+  },
+  {
+   "word": "exponential growth",
+   "meaning": "increase by the same multiplier (bigger than 1) each step",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 4
+  },
+  {
+   "word": "exponential decay",
+   "meaning": "decrease by the same multiplier (between 0 and 1) each step",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 4
+  },
+  {
+   "word": "compound interest",
+   "meaning": "interest added each period and then earning interest itself: amount = A \u00d7 (1 + rate)\u1d57",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 5
+  },
+  {
+   "word": "e",
+   "meaning": "the number 2.71828..., the limit of (1 + 1/n)\u207f; the natural base for growth and decay",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 6
+  },
+  {
+   "word": "time constant",
+   "meaning": "for e^(\u2212t/\u03c4), the time \u03c4 in which the quantity drops to 1/e \u2248 37% of its value",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 7
+  },
+  {
+   "word": "half-life",
+   "meaning": "the time it takes for a decaying quantity to halve",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 8
+  },
+  {
+   "word": "doubling time",
+   "meaning": "the time it takes for a growing quantity to double",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 8
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "e",
+   "say": "e (Euler's number)",
+   "meaning": "2.71828..., the base of natural growth",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 6
+  },
+  {
+   "latex": "\\to\\infty",
+   "say": "tends to infinity",
+   "meaning": "gets bigger and bigger without end",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 6
+  },
+  {
+   "latex": "\\exp(x)",
+   "say": "exp of x",
+   "meaning": "another way to write e\u02e3",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 6
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "y=A\\times b^{\\,x}",
+   "label": "Exponential model",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "y=Ae^{kx}",
+   "label": "e form",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "\\times\\left(1\\pm\\frac{r}{100}\\right)\\text{ per step}",
+   "label": "Percentage change",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "A\\left(1+\\frac rn\\right)^{nt}",
+   "label": "Compound interest",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "e=\\lim_{n\\to\\infty}\\left(1+\\frac1n\\right)^n\\approx2.718",
+   "label": "The number e",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "y=A+Be^{-kt}\\ \\to\\ A",
+   "label": "Levelling off",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "i=Ie^{-t/\\tau}",
+   "label": "Time constant",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "y=A\\left(\\tfrac12\\right)^{t/T}",
+   "label": "Half-life",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  },
+  {
+   "latex": "y=A\\times2^{t/T}",
+   "label": "Doubling time",
+   "ch": 21,
+   "short": "Exponentials",
+   "page": 11
+  }
+ ],
+ "pages": 12
+}

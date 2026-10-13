@@ -1,0 +1,147 @@
+{
+ "num": 26,
+ "order": 26,
+ "title": "The Normal distribution",
+ "short": "Normal distribution",
+ "terms": [
+  {
+   "word": "distribution",
+   "meaning": "the pattern of how often each possible value occurs",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 2
+  },
+  {
+   "word": "uniform distribution",
+   "meaning": "every value equally likely: a flat histogram",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 2
+  },
+  {
+   "word": "normal distribution",
+   "meaning": "the symmetric bell-shaped distribution you get when many small random effects add up",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 2
+  },
+  {
+   "word": "bell curve",
+   "meaning": "the Normal distribution's graph: symmetric, one central peak, tails fading to zero",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 4
+  },
+  {
+   "word": "standard Normal distribution",
+   "meaning": "the Normal distribution with mean 0 and standard deviation 1",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 4
+  },
+  {
+   "word": "probability density",
+   "meaning": "the height of a smooth distribution curve; areas under it are probabilities",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 5
+  },
+  {
+   "word": "z-score",
+   "meaning": "how many standard deviations a value is above (+) or below (\u2212) the mean: z = (x \u2212 \u03bc)/\u03c3",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 6
+  },
+  {
+   "word": "Normal table",
+   "meaning": "a table of \u03a6(z), the area to the left of z under the standard Normal curve",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 6
+  },
+  {
+   "word": "inverse Normal",
+   "meaning": "working backwards from an area (a percentage) to the z-score or x-value that gives it",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 12
+  },
+  {
+   "word": "kurtosis",
+   "meaning": "how peaky or flat a distribution is compared with the Normal (0 for Normal)",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 13
+  },
+  {
+   "word": "normal probability plot",
+   "meaning": "sorted data plotted against the z-scores Normal data would have; straight means Normal",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 14
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "\\Phi(z)",
+   "say": "fie of z (capital phi)",
+   "meaning": "area under the standard Normal curve to the left of z",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 6
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "f(x)=\\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac12\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}",
+   "label": "Normal curve",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 4
+  },
+  {
+   "latex": "z=\\frac{x-\\mu}{\\sigma}",
+   "label": "z-score",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 6
+  },
+  {
+   "latex": "x=\\mu+z\\sigma,\\qquad \\mu=x-z\\sigma,\\qquad \\sigma=\\frac{x-\\mu}{z}",
+   "label": "Back from z",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 15
+  },
+  {
+   "latex": "p(X<x)=\\Phi(z)",
+   "label": "Below a value",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 15
+  },
+  {
+   "latex": "p(X>x)=1-\\Phi(z)",
+   "label": "Above a value",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 15
+  },
+  {
+   "latex": "p(a<X<b)=\\Phi(z_b)-\\Phi(z_a)",
+   "label": "Between two values",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 15
+  },
+  {
+   "latex": "\\Phi(-z)=1-\\Phi(z),\\qquad \\Phi(0)=0.5",
+   "label": "Negative z",
+   "ch": 26,
+   "short": "Normal distribution",
+   "page": 15
+  }
+ ],
+ "pages": 16
+}

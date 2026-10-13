@@ -1,0 +1,186 @@
+{
+ "num": 17,
+ "order": 17,
+ "title": "Sequences and series",
+ "short": "Sequences & series",
+ "terms": [
+  {
+   "word": "sequence",
+   "meaning": "an ordered list of numbers following a rule, e.g. 2, 6, 10, 14, ...",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 2
+  },
+  {
+   "word": "series",
+   "meaning": "the sum of the terms of a sequence, e.g. 2 + 6 + 10 + 14",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 2
+  },
+  {
+   "word": "term",
+   "meaning": "one number in a sequence; the nth term is the one in position n",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 2
+  },
+  {
+   "word": "arithmetic progression (A.P.)",
+   "meaning": "a sequence where you add the same number d each time",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 2
+  },
+  {
+   "word": "common difference",
+   "meaning": "d, the fixed amount added each time in an arithmetic progression",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 2
+  },
+  {
+   "word": "sigma notation",
+   "meaning": "\u03a3 with a start value below and a stop value above: add up the expression for every counter value",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 6
+  },
+  {
+   "word": "geometric progression (G.P.)",
+   "meaning": "a sequence where you multiply by the same number r each time",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 7
+  },
+  {
+   "word": "common ratio",
+   "meaning": "r, the fixed multiplier in a geometric progression (any term \u00f7 the one before)",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 7
+  },
+  {
+   "word": "modulus (absolute value)",
+   "meaning": "the size of a number ignoring its sign, written |x|; |\u22120.5| = 0.5",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 10
+  },
+  {
+   "word": "converge",
+   "meaning": "a never-ending sum converges if its total settles towards a fixed number",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 10
+  }
+ ],
+ "symbols": [
+  {
+   "latex": "u_n",
+   "say": "u sub n",
+   "meaning": "the nth term of a sequence",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 2
+  },
+  {
+   "latex": "S_n",
+   "say": "S sub n",
+   "meaning": "the sum of the first n terms",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 4
+  },
+  {
+   "latex": "\\sum",
+   "say": "sigma (sum)",
+   "meaning": "add up the expression for each value of the counter from the bottom number to the top",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 6
+  },
+  {
+   "latex": "S_\\infty",
+   "say": "S infinity",
+   "meaning": "the sum of all the terms of a never-ending series",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 10
+  },
+  {
+   "latex": "|r|",
+   "say": "mod r (the modulus of r)",
+   "meaning": "the size of r ignoring its sign: |\u22123| = 3",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 10
+  }
+ ],
+ "formulas": [
+  {
+   "latex": "u_n=a+(n-1)d",
+   "label": "nth term of an arithmetic progression",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 3
+  },
+  {
+   "latex": "S_n=\\frac{(a+l)}{2}\\,n",
+   "label": "sum of an arithmetic progression (first a, last l, n terms)",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 4
+  },
+  {
+   "latex": "S_n=\\frac n2\\big(2a+(n-1)d\\big)",
+   "label": "sum of an arithmetic progression (n terms, difference d)",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 5
+  },
+  {
+   "latex": "u_n=ar^{n-1}",
+   "label": "nth term of a geometric progression",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 7
+  },
+  {
+   "latex": "S_n=\\frac{a(1-r^n)}{1-r}",
+   "label": "sum of the first n terms of a geometric progression",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 8
+  },
+  {
+   "latex": "S_\\infty=\\frac{a}{1-r}\\quad(|r|<1)",
+   "label": "sum to infinity of a geometric progression",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 10
+  },
+  {
+   "latex": "n=\\frac{l-a}{d}+1",
+   "label": "Number of terms",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 14
+  },
+  {
+   "latex": "\\sum_{i=1}^{n}f(i)=f(1)+f(2)+\\dots+f(n)",
+   "label": "Sigma",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 14
+  },
+  {
+   "latex": "1+3+5+\\dots+(2n-1)=n^2",
+   "label": "Odd numbers",
+   "ch": 17,
+   "short": "Sequences & series",
+   "page": 14
+  }
+ ],
+ "pages": 15
+}
