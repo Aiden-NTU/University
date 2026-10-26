@@ -6,6 +6,7 @@ Start with [[Original Scope and Table of Contents]], then follow the mandatory m
 - [[00 Glossary MOC|Glossary]]
 - [[91 Practice Questions MOC|Practice Questions]]
 - [[94 Review Sheets MOC|Review Sheets]]
+- [[95 MOC - CPython Cheat Sheets|CPython Cheat Sheets]]
 - [[96 Sources MOC|Sources and Further Reading]]
 - [[90 MOC - Algorithms Handbook|Algorithms Handbook]]
 

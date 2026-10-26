@@ -82,6 +82,13 @@
    "page": 10
   },
   {
+   "word": "power set",
+   "meaning": "P(S): the set of all subsets of S, including \u2205 and S; |P(S)| = 2^n",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
    "word": "set-builder notation",
    "meaning": "{x | rule}: the set of all x that obey the rule",
    "ch": 6,
@@ -317,6 +324,13 @@
   {
    "latex": "\\text{number of subsets}=2^n",
    "label": "subsets of a set with n elements",
+   "ch": 6,
+   "short": "Sets",
+   "page": 10
+  },
+  {
+   "latex": "|P(S)|=2^{|S|}",
+   "label": "size of the power set",
    "ch": 6,
    "short": "Sets",
    "page": 10

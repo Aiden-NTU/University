@@ -3,20 +3,20 @@
   "site_model_1to1000_4colour": [
    {
     "index": 1,
-    "seconds": 41224.0,
-    "grams": 306.39,
+    "seconds": 45882.0,
+    "grams": 349.82,
     "filaments": [
      [
       "1",
-      203.5
+      183.26
      ],
      [
       "2",
-      39.31
+      106.88
      ],
      [
       "3",
-      44.73
+      40.83
      ],
      [
       "4",
@@ -30,24 +30,24 @@
   "site_model_1to1000_4colour_halves": [
    {
     "index": 1,
-    "seconds": 21522.0,
-    "grams": 167.75,
+    "seconds": 24605.0,
+    "grams": 192.59,
     "filaments": [
      [
       "1",
-      114.43
+      104.56
      ],
      [
       "2",
-      10.8
+      48.1
      ],
      [
       "3",
-      28.22
+      25.37
      ],
      [
       "4",
-      14.3
+      14.56
      ]
     ],
     "plate": "Site north half (4 colours)",
@@ -55,20 +55,20 @@
    },
    {
     "index": 2,
-    "seconds": 16747.0,
-    "grams": 146.82,
+    "seconds": 20263.0,
+    "grams": 172.17,
     "filaments": [
      [
       "1",
-      102.41
+      93.34
      ],
      [
       "2",
-      29.78
+      65.08
      ],
      [
       "3",
-      14.63
+      13.75
      ]
     ],
     "plate": "Site south half (4 colours)",
@@ -78,12 +78,12 @@
   "site_model_1to1000_single_colour": [
    {
     "index": 1,
-    "seconds": 23387.0,
-    "grams": 247.75,
+    "seconds": 23766.0,
+    "grams": 265.33,
     "filaments": [
      [
       "1",
-      247.75
+      265.33
      ]
     ],
     "plate": "Site 1:1000 (one colour, paint after)",
@@ -93,7 +93,7 @@
   "building_1to100": [
    {
     "index": 1,
-    "seconds": 16233.0,
+    "seconds": 16148.0,
     "grams": 204.84,
     "filaments": [
      [
@@ -106,12 +106,12 @@
    },
    {
     "index": 2,
-    "seconds": 14480.0,
-    "grams": 177.07,
+    "seconds": 14570.0,
+    "grams": 177.97,
     "filaments": [
      [
       "1",
-      177.07
+      177.97
      ]
     ],
     "plate": "First floor - white",
@@ -119,12 +119,12 @@
    },
    {
     "index": 3,
-    "seconds": 13121.0,
-    "grams": 194.8,
+    "seconds": 13764.0,
+    "grams": 194.79,
     "filaments": [
      [
       "2",
-      194.8
+      194.79
      ]
     ],
     "plate": "Roofs - grey",
@@ -160,7 +160,7 @@
   "furniture_trays_1to100": [
    {
     "index": 1,
-    "seconds": 11032.0,
+    "seconds": 11030.0,
     "grams": 36.91,
     "filaments": [
      [
@@ -173,12 +173,12 @@
    },
    {
     "index": 2,
-    "seconds": 8755.0,
-    "grams": 38.76,
+    "seconds": 8836.0,
+    "grams": 39.29,
     "filaments": [
      [
       "1",
-      38.76
+      39.29
      ]
     ],
     "plate": "Furniture trays 2 - light grey",
@@ -203,20 +203,20 @@
   "site_model_1to1000_4colour": [
    {
     "index": 1,
-    "seconds": 41622.0,
-    "grams": 316.7,
+    "seconds": 46362.0,
+    "grams": 361.96,
     "filaments": [
      [
       "1",
-      205.77
+      186.47
      ],
      [
       "2",
-      41.52
+      109.98
      ],
      [
       "3",
-      49.0
+      45.1
      ],
      [
       "4",
@@ -230,24 +230,24 @@
   "site_model_1to1000_4colour_halves": [
    {
     "index": 1,
-    "seconds": 21783.0,
-    "grams": 173.8,
+    "seconds": 24929.0,
+    "grams": 200.13,
     "filaments": [
      [
       "1",
-      115.98
+      106.84
      ],
      [
       "2",
-      11.75
+      49.76
      ],
      [
       "3",
-      30.66
+      27.86
      ],
      [
       "4",
-      15.41
+      15.67
      ]
     ],
     "plate": "Site north half (4 colours)",
@@ -255,20 +255,20 @@
    },
    {
     "index": 2,
-    "seconds": 16904.0,
-    "grams": 150.76,
+    "seconds": 20483.0,
+    "grams": 177.6,
     "filaments": [
      [
       "1",
-      103.41
+      95.05
      ],
      [
       "2",
-      31.28
+      67.36
      ],
      [
       "3",
-      16.07
+      15.19
      ]
     ],
     "plate": "Site south half (4 colours)",
@@ -278,12 +278,12 @@
   "site_model_1to1000_single_colour": [
    {
     "index": 1,
-    "seconds": 23394.0,
-    "grams": 247.75,
+    "seconds": 23762.0,
+    "grams": 265.32,
     "filaments": [
      [
       "1",
-      247.75
+      265.32
      ]
     ],
     "plate": "Site 1:1000 (one colour, paint after)",
@@ -306,12 +306,12 @@
    },
    {
     "index": 2,
-    "seconds": 14488.0,
-    "grams": 177.07,
+    "seconds": 14571.0,
+    "grams": 177.97,
     "filaments": [
      [
       "1",
-      177.07
+      177.97
      ]
     ],
     "plate": "First floor - white",
@@ -319,7 +319,7 @@
    },
    {
     "index": 3,
-    "seconds": 13432.0,
+    "seconds": 13841.0,
     "grams": 194.8,
     "filaments": [
      [
@@ -360,7 +360,7 @@
   "furniture_trays_1to100": [
    {
     "index": 1,
-    "seconds": 11049.0,
+    "seconds": 11039.0,
     "grams": 36.91,
     "filaments": [
      [
@@ -373,12 +373,12 @@
    },
    {
     "index": 2,
-    "seconds": 8772.0,
-    "grams": 38.76,
+    "seconds": 8851.0,
+    "grams": 39.29,
     "filaments": [
      [
       "1",
-      38.76
+      39.29
      ]
     ],
     "plate": "Furniture trays 2 - light grey",
@@ -386,7 +386,7 @@
    },
    {
     "index": 3,
-    "seconds": 5134.0,
+    "seconds": 5128.0,
     "grams": 22.13,
     "filaments": [
      [

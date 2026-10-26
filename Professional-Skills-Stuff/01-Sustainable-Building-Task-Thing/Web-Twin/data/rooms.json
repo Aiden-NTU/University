@@ -8,8 +8,8 @@
   "ffl_m_aod": 55.45
  },
  "assumptions": {
-  "elec_gbp_per_kwh": 0.25,
-  "grid_kgco2e_per_kwh": 0.177,
+  "elec_gbp_per_kwh": 0.245,
+  "grid_kgco2e_per_kwh": 0.131,
   "uf": 0.6,
   "mf": 0.8,
   "baseline_lm_per_w": 60.0
@@ -28,7 +28,7 @@
    "G09": 16.8,
    "G10": 15.6,
    "G11": 50.1,
-   "F01": 31.3,
+   "F01": 39.7,
    "F02": 15.6,
    "F03": 16.8,
    "F04": 90.8,
@@ -70,11 +70,11 @@
   }
  },
  "totals": {
-  "fitout_capex_gbp": 88180,
-  "lighting_design_kwh": 3952,
-  "lighting_baseline_kwh": 18660,
-  "lighting_saving_gbp": 3677,
-  "lighting_saving_kgco2e": 2603
+  "fitout_capex_gbp": 88270,
+  "lighting_design_kwh": 4021,
+  "lighting_baseline_kwh": 18923,
+  "lighting_saving_gbp": 3651,
+  "lighting_saving_kgco2e": 1952
  },
  "rooms": [
   {
@@ -174,13 +174,13 @@
    },
    "lighting_saving": {
     "kwh": 930,
-    "gbp": 232,
-    "kgco2e": 165
+    "gbp": 228,
+    "kgco2e": 122
    },
    "fitout_capex_gbp": 5140,
    "unpriced_items": 0,
    "kwh_per_year": 384,
-   "running_gbp_per_year": 96,
+   "running_gbp_per_year": 94,
    "items": [
     {
      "item": "Stacking chair",
@@ -211,7 +211,7 @@
      "unit_cost_gbp": 700.0,
      "capex_gbp": 700.0,
      "kwh_per_year": 120,
-     "running_gbp_per_year": 30,
+     "running_gbp_per_year": 29,
      "sustainability_note": "Auto-off via booking system",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -233,7 +233,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 270.0,
      "kwh_per_year": 259,
-     "running_gbp_per_year": 65,
+     "running_gbp_per_year": 63,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -306,13 +306,13 @@
    },
    "lighting_saving": {
     "kwh": 209,
-    "gbp": 52,
-    "kgco2e": 37
+    "gbp": 51,
+    "kgco2e": 27
    },
    "fitout_capex_gbp": 2850,
    "unpriced_items": 0,
    "kwh_per_year": 118,
-   "running_gbp_per_year": 30,
+   "running_gbp_per_year": 29,
    "items": [
     {
      "item": "Basin vanity",
@@ -343,7 +343,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 90.0,
      "kwh_per_year": 115,
-     "running_gbp_per_year": 29,
+     "running_gbp_per_year": 28,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -416,7 +416,7 @@
    "lighting_saving": {
     "kwh": 129,
     "gbp": 32,
-    "kgco2e": 23
+    "kgco2e": 17
    },
    "fitout_capex_gbp": 1450,
    "unpriced_items": 0,
@@ -463,7 +463,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 90.0,
      "kwh_per_year": 46,
-     "running_gbp_per_year": 12,
+     "running_gbp_per_year": 11,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -536,13 +536,13 @@
    },
    "lighting_saving": {
     "kwh": 3022,
-    "gbp": 756,
-    "kgco2e": 535
+    "gbp": 740,
+    "kgco2e": 396
    },
    "fitout_capex_gbp": 10240,
    "unpriced_items": 0,
    "kwh_per_year": 1396,
-   "running_gbp_per_year": 349,
+   "running_gbp_per_year": 342,
    "items": [
     {
      "item": "Stacking chair",
@@ -562,7 +562,7 @@
      "unit_cost_gbp": 3000.0,
      "capex_gbp": 3000.0,
      "kwh_per_year": 312,
-     "running_gbp_per_year": 78,
+     "running_gbp_per_year": 76,
      "sustainability_note": "",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -595,7 +595,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 1080.0,
      "kwh_per_year": 1078,
-     "running_gbp_per_year": 270,
+     "running_gbp_per_year": 264,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -668,13 +668,13 @@
    },
    "lighting_saving": {
     "kwh": 673,
-    "gbp": 168,
-    "kgco2e": 119
+    "gbp": 165,
+    "kgco2e": 88
    },
    "fitout_capex_gbp": 9530,
    "unpriced_items": 0,
    "kwh_per_year": 622,
-   "running_gbp_per_year": 156,
+   "running_gbp_per_year": 152,
    "items": [
     {
      "item": "Indoor air quality sensor",
@@ -694,7 +694,7 @@
      "unit_cost_gbp": 6000.0,
      "capex_gbp": 6000.0,
      "kwh_per_year": 200,
-     "running_gbp_per_year": 50,
+     "running_gbp_per_year": 49,
      "sustainability_note": "",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -705,7 +705,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 360.0,
      "kwh_per_year": 276,
-     "running_gbp_per_year": 69,
+     "running_gbp_per_year": 68,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -727,7 +727,7 @@
      "unit_cost_gbp": 700.0,
      "capex_gbp": 1400.0,
      "kwh_per_year": 144,
-     "running_gbp_per_year": 36,
+     "running_gbp_per_year": 35,
      "sustainability_note": "",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -799,8 +799,8 @@
    },
    "lighting_saving": {
     "kwh": 124,
-    "gbp": 31,
-    "kgco2e": 22
+    "gbp": 30,
+    "kgco2e": 16
    },
    "fitout_capex_gbp": 150,
    "unpriced_items": 0,
@@ -972,12 +972,12 @@
    "lighting_saving": {
     "kwh": 17,
     "gbp": 4,
-    "kgco2e": 3
+    "kgco2e": 2
    },
    "fitout_capex_gbp": 150,
    "unpriced_items": 5,
    "kwh_per_year": 6,
-   "running_gbp_per_year": 2,
+   "running_gbp_per_year": 1,
    "items": [
     {
      "item": "Battery storage",
@@ -1008,7 +1008,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 90.0,
      "kwh_per_year": 6,
-     "running_gbp_per_year": 2,
+     "running_gbp_per_year": 1,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -1105,12 +1105,12 @@
    "lighting_saving": {
     "kwh": 64,
     "gbp": 16,
-    "kgco2e": 11
+    "kgco2e": 8
    },
    "fitout_capex_gbp": 5085,
    "unpriced_items": 1,
    "kwh_per_year": 105144,
-   "running_gbp_per_year": 26286,
+   "running_gbp_per_year": 25760,
    "items": [
     {
      "item": "Coolant distribution unit",
@@ -1152,7 +1152,7 @@
      "unit_cost_gbp": 1200.0,
      "capex_gbp": 4800.0,
      "kwh_per_year": 105120,
-     "running_gbp_per_year": 26280,
+     "running_gbp_per_year": 25754,
      "sustainability_note": "IT load = heat source for the heat pump",
      "cost_status": "indicative - replace with sourced quote"
     }
@@ -1202,13 +1202,13 @@
    },
    "lighting_saving": {
     "kwh": 220,
-    "gbp": 55,
-    "kgco2e": 39
+    "gbp": 54,
+    "kgco2e": 29
    },
    "fitout_capex_gbp": 3850,
    "unpriced_items": 0,
    "kwh_per_year": 107,
-   "running_gbp_per_year": 27,
+   "running_gbp_per_year": 26,
    "items": [
     {
      "item": "Changing bench",
@@ -1239,7 +1239,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 90.0,
      "kwh_per_year": 104,
-     "running_gbp_per_year": 26,
+     "running_gbp_per_year": 25,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -1322,13 +1322,13 @@
    },
    "lighting_saving": {
     "kwh": 581,
-    "gbp": 145,
-    "kgco2e": 103
+    "gbp": 142,
+    "kgco2e": 76
    },
    "fitout_capex_gbp": 12755,
    "unpriced_items": 0,
    "kwh_per_year": 519,
-   "running_gbp_per_year": 130,
+   "running_gbp_per_year": 127,
    "items": [
     {
      "item": "Two-tier cycle rack",
@@ -1348,7 +1348,7 @@
      "unit_cost_gbp": 3500.0,
      "capex_gbp": 3500.0,
      "kwh_per_year": 400,
-     "running_gbp_per_year": 100,
+     "running_gbp_per_year": 98,
      "sustainability_note": "",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -1359,7 +1359,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 135.0,
      "kwh_per_year": 115,
-     "running_gbp_per_year": 29,
+     "running_gbp_per_year": 28,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -1380,7 +1380,7 @@
    "id": "F01",
    "name": "Breakout & Co-working Lounge",
    "level": "FF",
-   "area_m2": 31.3,
+   "area_m2": 39.7,
    "use": "Informal lounge and co-working around the atrium.",
    "notes": [
     "Sawtooth north-lights give glare-free daylight deep into the plan",
@@ -1440,22 +1440,22 @@
     ]
    ],
    "lighting": {
-    "fittings": 5,
-    "design_w": 160,
-    "design_w_per_m2": 5.1,
-    "design_kwh": 173,
-    "baseline_w": 326,
-    "baseline_kwh": 978
+    "fittings": 7,
+    "design_w": 224,
+    "design_w_per_m2": 5.6,
+    "design_kwh": 242,
+    "baseline_w": 414,
+    "baseline_kwh": 1241
    },
    "lighting_saving": {
-    "kwh": 805,
-    "gbp": 201,
-    "kgco2e": 142
+    "kwh": 999,
+    "gbp": 245,
+    "kgco2e": 131
    },
-   "fitout_capex_gbp": 3570,
+   "fitout_capex_gbp": 3660,
    "unpriced_items": 0,
-   "kwh_per_year": 176,
-   "running_gbp_per_year": 44,
+   "kwh_per_year": 245,
+   "running_gbp_per_year": 60,
    "items": [
     {
      "item": "Armchair",
@@ -1504,11 +1504,11 @@
     {
      "item": "LED panel 600x600",
      "spec": "4000 lm, 32 W, DALI-2 dimmable, 50,000 h",
-     "qty": 5,
+     "qty": 7,
      "unit_cost_gbp": 45.0,
-     "capex_gbp": 225.0,
-     "kwh_per_year": 173,
-     "running_gbp_per_year": 43,
+     "capex_gbp": 315.0,
+     "kwh_per_year": 242,
+     "running_gbp_per_year": 59,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -1600,13 +1600,13 @@
    },
    "lighting_saving": {
     "kwh": 232,
-    "gbp": 58,
-    "kgco2e": 41
+    "gbp": 57,
+    "kgco2e": 30
    },
    "fitout_capex_gbp": 2850,
    "unpriced_items": 0,
    "kwh_per_year": 95,
-   "running_gbp_per_year": 24,
+   "running_gbp_per_year": 23,
    "items": [
     {
      "item": "Basin vanity",
@@ -1709,13 +1709,13 @@
    },
    "lighting_saving": {
     "kwh": 424,
-    "gbp": 106,
-    "kgco2e": 75
+    "gbp": 104,
+    "kgco2e": 56
    },
    "fitout_capex_gbp": 5425,
    "unpriced_items": 0,
    "kwh_per_year": 254,
-   "running_gbp_per_year": 64,
+   "running_gbp_per_year": 62,
    "items": [
     {
      "item": "Stacking chair",
@@ -1790,7 +1790,7 @@
      "unit_cost_gbp": 1800.0,
      "capex_gbp": 1800.0,
      "kwh_per_year": 150,
-     "running_gbp_per_year": 38,
+     "running_gbp_per_year": 37,
      "sustainability_note": "Reduces single-use plastic",
      "cost_status": "indicative - replace with sourced quote"
     }
@@ -1841,13 +1841,13 @@
    },
    "lighting_saving": {
     "kwh": 4005,
-    "gbp": 1001,
-    "kgco2e": 709
+    "gbp": 981,
+    "kgco2e": 525
    },
    "fitout_capex_gbp": 10230,
    "unpriced_items": 0,
    "kwh_per_year": 734,
-   "running_gbp_per_year": 183,
+   "running_gbp_per_year": 180,
    "items": [
     {
      "item": "Bookcase",
@@ -1900,7 +1900,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 1080.0,
      "kwh_per_year": 726,
-     "running_gbp_per_year": 182,
+     "running_gbp_per_year": 178,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -1970,13 +1970,13 @@
    },
    "lighting_saving": {
     "kwh": 942,
-    "gbp": 236,
-    "kgco2e": 167
+    "gbp": 231,
+    "kgco2e": 123
    },
    "fitout_capex_gbp": 2210,
    "unpriced_items": 0,
    "kwh_per_year": 199,
-   "running_gbp_per_year": 50,
+   "running_gbp_per_year": 49,
    "items": [
     {
      "item": "Stacking chair",
@@ -2029,7 +2029,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 360.0,
      "kwh_per_year": 197,
-     "running_gbp_per_year": 49,
+     "running_gbp_per_year": 48,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2100,7 +2100,7 @@
    "lighting_saving": {
     "kwh": 162,
     "gbp": 40,
-    "kgco2e": 29
+    "kgco2e": 21
    },
    "fitout_capex_gbp": 150,
    "unpriced_items": 0,
@@ -2175,8 +2175,8 @@
    },
    "lighting_saving": {
     "kwh": 298,
-    "gbp": 74,
-    "kgco2e": 53
+    "gbp": 73,
+    "kgco2e": 39
    },
    "fitout_capex_gbp": 1405,
    "unpriced_items": 0,
@@ -2201,7 +2201,7 @@
      "unit_cost_gbp": 700.0,
      "capex_gbp": 700.0,
      "kwh_per_year": 104,
-     "running_gbp_per_year": 26,
+     "running_gbp_per_year": 25,
      "sustainability_note": "Auto-off via booking system",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2223,7 +2223,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 135.0,
      "kwh_per_year": 67,
-     "running_gbp_per_year": 17,
+     "running_gbp_per_year": 16,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2295,8 +2295,8 @@
    },
    "lighting_saving": {
     "kwh": 298,
-    "gbp": 74,
-    "kgco2e": 53
+    "gbp": 73,
+    "kgco2e": 39
    },
    "fitout_capex_gbp": 1405,
    "unpriced_items": 0,
@@ -2321,7 +2321,7 @@
      "unit_cost_gbp": 700.0,
      "capex_gbp": 700.0,
      "kwh_per_year": 104,
-     "running_gbp_per_year": 26,
+     "running_gbp_per_year": 25,
      "sustainability_note": "Auto-off via booking system",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2343,7 +2343,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 135.0,
      "kwh_per_year": 67,
-     "running_gbp_per_year": 17,
+     "running_gbp_per_year": 16,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2415,8 +2415,8 @@
    },
    "lighting_saving": {
     "kwh": 298,
-    "gbp": 74,
-    "kgco2e": 53
+    "gbp": 73,
+    "kgco2e": 39
    },
    "fitout_capex_gbp": 1405,
    "unpriced_items": 0,
@@ -2441,7 +2441,7 @@
      "unit_cost_gbp": 700.0,
      "capex_gbp": 700.0,
      "kwh_per_year": 104,
-     "running_gbp_per_year": 26,
+     "running_gbp_per_year": 25,
      "sustainability_note": "Auto-off via booking system",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2463,7 +2463,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 135.0,
      "kwh_per_year": 67,
-     "running_gbp_per_year": 17,
+     "running_gbp_per_year": 16,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2535,8 +2535,8 @@
    },
    "lighting_saving": {
     "kwh": 298,
-    "gbp": 74,
-    "kgco2e": 53
+    "gbp": 73,
+    "kgco2e": 39
    },
    "fitout_capex_gbp": 1405,
    "unpriced_items": 0,
@@ -2561,7 +2561,7 @@
      "unit_cost_gbp": 700.0,
      "capex_gbp": 700.0,
      "kwh_per_year": 104,
-     "running_gbp_per_year": 26,
+     "running_gbp_per_year": 25,
      "sustainability_note": "Auto-off via booking system",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2583,7 +2583,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 135.0,
      "kwh_per_year": 67,
-     "running_gbp_per_year": 17,
+     "running_gbp_per_year": 16,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2656,13 +2656,13 @@
    },
    "lighting_saving": {
     "kwh": 562,
-    "gbp": 140,
-    "kgco2e": 99
+    "gbp": 138,
+    "kgco2e": 74
    },
    "fitout_capex_gbp": 3795,
    "unpriced_items": 0,
    "kwh_per_year": 601,
-   "running_gbp_per_year": 150,
+   "running_gbp_per_year": 147,
    "items": [
     {
      "item": "Stacking chair",
@@ -2704,7 +2704,7 @@
      "unit_cost_gbp": 2400.0,
      "capex_gbp": 2400.0,
      "kwh_per_year": 461,
-     "running_gbp_per_year": 115,
+     "running_gbp_per_year": 113,
      "sustainability_note": "Shows live building energy data",
      "cost_status": "indicative - replace with sourced quote"
     },
@@ -2796,13 +2796,13 @@
    },
    "lighting_saving": {
     "kwh": 408,
-    "gbp": 102,
-    "kgco2e": 72
+    "gbp": 100,
+    "kgco2e": 53
    },
    "fitout_capex_gbp": 2225,
    "unpriced_items": 0,
    "kwh_per_year": 152,
-   "running_gbp_per_year": 38,
+   "running_gbp_per_year": 37,
    "items": [
     {
      "item": "Task chair",
@@ -2844,7 +2844,7 @@
      "unit_cost_gbp": 45.0,
      "capex_gbp": 225.0,
      "kwh_per_year": 78,
-     "running_gbp_per_year": 20,
+     "running_gbp_per_year": 19,
      "sustainability_note": "~125 lm/W vs ~60 lm/W fluorescent baseline",
      "cost_status": "indicative - replace with sourced quote"
     },

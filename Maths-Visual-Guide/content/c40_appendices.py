@@ -13,8 +13,8 @@ from content.errata import ERRATA
 from content.kit import L, R, W, flow
 from content.toc import CHAPTERS, PARTS
 
-ORDER = 39
-NUM = 39
+ORDER = 40
+NUM = 40
 TITLE = "The back of the book"
 SHORT = "Back of the book"
 SLUG = "Appendices"
@@ -45,7 +45,8 @@ def load_registry():
     regs = []
     for p in sorted(glob.glob(os.path.join(REG, "*.json"))):
         d = json.load(open(p))
-        if d["order"] < ORDER:
+        # Skip the pocket-cards chapter (review only) and this appendix itself.
+        if d["order"] < ORDER and d["order"] != 39:
             regs.append(d)
     regs.sort(key=lambda d: d["order"])
     return regs

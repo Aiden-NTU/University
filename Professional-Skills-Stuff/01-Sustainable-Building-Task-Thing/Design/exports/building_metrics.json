@@ -13,7 +13,7 @@
    "G09": 16.8,
    "G10": 15.6,
    "G11": 50.1,
-   "F01": 31.3,
+   "F01": 39.7,
    "F02": 15.6,
    "F03": 16.8,
    "F04": 90.8,
@@ -55,10 +55,10 @@
   }
  },
  "totals": {
-  "fitout_capex_gbp": 88180,
-  "lighting_design_kwh": 3952,
-  "lighting_baseline_kwh": 18660,
-  "lighting_saving_gbp": 3677,
-  "lighting_saving_kgco2e": 2603
+  "fitout_capex_gbp": 88270,
+  "lighting_design_kwh": 4021,
+  "lighting_baseline_kwh": 18923,
+  "lighting_saving_gbp": 3651,
+  "lighting_saving_kgco2e": 1952
  }
 }

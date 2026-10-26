@@ -11,6 +11,7 @@ from collections import Counter
 import building as B
 import config as C
 
+LED_LUMENS = 4000.0          # per 600 x 600 panel (catalogue: led_panel)
 ALWAYS_ON = {"server_rack"}
 NO_IAQ = {"G06", "F06", "G07", "G08", "G09", "G11"}
 
@@ -29,9 +30,8 @@ def _num(v, default=0.0):
 
 def lighting(room, area, cat):
     panel = cat["led_panel"]
-    lm = 4000.0
     need_lm = room["lux"] * area / (C.LIGHT_UF * C.LIGHT_MF)
-    n = max(1, math.ceil(need_lm / lm))
+    n = max(1, math.ceil(need_lm / LED_LUMENS))
     w = n * _num(panel["power_w"])
     hours = room["hours"]
     design_kwh = w * hours * room["daylight"] * room["occupancy"] / 1000
@@ -45,8 +45,9 @@ def build():
     cat = catalogue()
     rows, rooms = [], []
     for room in B.ROOMS:
-        area = B.room_floor_poly(room).area
-        counts = Counter(k for k, _, _ in B.furniture(room["id"]))
+        area = B.room_floor(room).area
+        # Placeables without catalogue_type are visual/physical props, not costed fit-out.
+        counts = Counter(k for k, _, _ in B.furniture(room["id"]) if not k.startswith("__placeable__"))
         light = lighting(room, area, cat)
         counts["led_panel"] = light["fittings"]
         counts["pir_lux_sensor"] = max(1, math.ceil(area / 40))

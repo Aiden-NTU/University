@@ -1,0 +1,157 @@
+/* Print design for the Design Outline. Page size, fonts, colours and spacing live here;
+   src/book.py adds only the running header text and the binding margins. */
+
+@font-face { font-family: "Source Serif 4"; src: url(../../src/fonts/SourceSerif4-Regular.otf); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Source Serif 4"; src: url(../../src/fonts/SourceSerif4-It.otf); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Source Serif 4"; src: url(../../src/fonts/SourceSerif4-Semibold.otf); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Source Serif 4"; src: url(../../src/fonts/SourceSerif4-SemiboldIt.otf); font-weight: 600; font-style: italic; }
+@font-face { font-family: "Source Serif 4"; src: url(../../src/fonts/SourceSerif4-Bold.otf); font-weight: 700; font-style: normal; }
+@font-face { font-family: "Source Sans 3"; src: url(../../src/fonts/SourceSans3-Regular.otf); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Source Sans 3"; src: url(../../src/fonts/SourceSans3-It.otf); font-weight: 400; font-style: italic; }
+@font-face { font-family: "Source Sans 3"; src: url(../../src/fonts/SourceSans3-Semibold.otf); font-weight: 600; font-style: normal; }
+@font-face { font-family: "Source Sans 3"; src: url(../../src/fonts/SourceSans3-Bold.otf); font-weight: 700; font-style: normal; }
+@font-face { font-family: "Montserrat"; src: url(../../src/fonts/Montserrat-Medium.otf); font-weight: 500; }
+@font-face { font-family: "Montserrat"; src: url(../../src/fonts/Montserrat-Bold.otf); font-weight: 700; }
+@font-face { font-family: "Comfortaa"; src: url(../../src/fonts/Comfortaa-Bold.otf); font-weight: 700; }
+
+:root {
+  --ink: #1f2933;
+  --muted: #5f6b76;
+  --accent: #2a6f73;
+  --wood: #c8742c;
+  --rule: #c9d2d8;
+  --tint: #eef4f4;
+}
+
+/* ---------- Pages ---------- */
+@page {
+  size: A4;
+  margin-top: 22mm;
+  margin-bottom: 20mm;
+  @top-left { font: 500 7pt Montserrat; color: var(--muted); letter-spacing: 0.04em; vertical-align: bottom; padding-bottom: 4mm; }
+  @top-right { content: string(chapter); font: 500 7pt Montserrat; color: var(--muted); vertical-align: bottom; padding-bottom: 4mm; }
+  @bottom-right { content: counter(page); font: 600 8.5pt "Source Sans 3"; color: var(--muted); }
+}
+@page :left {
+  @bottom-right { content: none; }
+  @bottom-left { content: counter(page); font: 600 8.5pt "Source Sans 3"; color: var(--muted); }
+}
+@page cover {
+  margin: 0;
+  @top-left { content: none; } @top-right { content: none; }
+  @bottom-left { content: none; } @bottom-right { content: none; }
+}
+
+html {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: var(--ink);
+  text-align: justify;
+  hyphens: auto;
+}
+body { margin: 0; }
+p { margin: 0 0 2.6mm; orphans: 3; widows: 3; }
+a { color: inherit; text-decoration: none; }
+strong { font-weight: 600; }
+ul, ol { margin: 0 0 2.6mm; padding-left: 6mm; }
+li { margin-bottom: 1mm; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: 8.5pt; background: var(--tint); padding: 0 1mm; }
+pre { background: var(--tint); padding: 3mm; font-size: 8pt; white-space: pre-wrap; text-align: left; }
+hr { border: 0; border-top: 0.5pt solid var(--rule); margin: 5mm 0; }
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h4 { font-family: Montserrat, sans-serif; text-align: left; hyphens: manual; break-after: avoid; }
+section.chapter { break-before: page; }
+h1 {
+  string-set: chapter content(text);
+  font-weight: 700; font-size: 21pt; line-height: 1.15; color: var(--ink);
+  margin: 6mm 0 7mm; padding-bottom: 4mm; border-bottom: 2pt solid var(--accent);
+}
+h1 .num { display: block; font-size: 10pt; color: var(--wood); letter-spacing: 0.08em; margin-bottom: 2mm; }
+section.numbered.chapter:not(.appendix) h1 .num::before { content: "SECTION "; }
+h2 { font-weight: 700; font-size: 12.5pt; color: var(--accent); margin: 7mm 0 2.5mm; }
+h2 .num { color: var(--wood); margin-right: 2mm; }
+h3 { font-family: "Source Sans 3", sans-serif; font-weight: 700; font-size: 10.5pt; margin: 5mm 0 1.5mm; }
+.byline { font: italic 9pt "Source Sans 3"; color: var(--muted); margin: -4mm 0 6mm; text-align: left; }
+
+/* ---------- Figures and tables ---------- */
+figure { margin: 4mm 0 5mm; break-inside: avoid; text-align: center; }
+figure img { max-width: 100%; max-height: 135mm; }
+figcaption, caption {
+  font: 8.5pt/1.35 "Source Sans 3", sans-serif; color: var(--muted); text-align: left; hyphens: manual;
+}
+figcaption { margin-top: 2mm; }
+.label { font-weight: 700; color: var(--ink); margin-right: 1mm; }
+
+table {
+  width: 100%; border-collapse: collapse; margin: 3mm 0 5mm;
+  font: 8.5pt/1.3 "Source Sans 3", sans-serif; text-align: left; hyphens: manual;
+}
+caption { caption-side: top; padding-bottom: 1.5mm; }
+thead th { font-weight: 700; border-bottom: 1pt solid var(--ink); padding: 1.2mm 1.5mm; vertical-align: bottom; }
+tbody td { padding: 1mm 1.5mm; border-bottom: 0.4pt solid var(--rule); vertical-align: top; }
+tbody tr:nth-child(even) td { background: var(--tint); }
+tbody tr:last-child td { border-bottom: 1pt solid var(--ink); }
+tr { break-inside: avoid; }
+section.appendix table { font-size: 7.5pt; }
+
+/* Callout boxes:  !!! note "Title"  /  !!! tip  /  !!! warning */
+.admonition {
+  background: var(--tint); border-left: 3pt solid var(--accent); padding: 3mm 4mm 1mm;
+  margin: 3mm 0 5mm; break-inside: avoid; font-size: 9.5pt;
+}
+.admonition.warning { border-left-color: var(--wood); background: #fbf3ea; }
+.admonition-title { font: 700 8pt Montserrat; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); margin-bottom: 1.5mm; }
+.admonition.warning .admonition-title { color: var(--wood); }
+/* Placeholder for a teammate's section: deliberately obvious so it is not printed by mistake */
+.admonition.contribute { background: white; border: 1pt dashed var(--wood); border-left: 3pt solid var(--wood); }
+.admonition.contribute .admonition-title { color: var(--wood); }
+.admonition.contribute .admonition-title::before { content: "To write · "; }
+a.xref { color: var(--accent); }
+
+blockquote { margin: 3mm 8mm; font-style: italic; color: var(--muted); }
+.footnote { font-size: 8.5pt; color: var(--muted); }
+.footnote hr { width: 30%; margin-left: 0; }
+.error { color: #b00020; font-weight: 700; }
+
+/* ---------- Cover ---------- */
+.cover { page: cover; height: 297mm; position: relative; text-align: left; hyphens: manual; }
+.cover-band {
+  background: var(--accent); color: white; padding: 9mm 22mm 7mm;
+  font: 600 9pt "Source Sans 3"; letter-spacing: 0.06em; text-transform: uppercase;
+  display: flex; justify-content: space-between;
+}
+.cover-body { padding: 13mm 22mm 0; }
+.cover-module { font: 500 9pt Montserrat; color: var(--wood); letter-spacing: 0.08em; text-transform: uppercase; }
+.cover-title { font: 700 40pt/1.05 Comfortaa; color: var(--ink); border: 0; margin: 4mm 0 2mm; padding: 0; string-set: chapter ""; }
+.cover-zig { width: 120mm; height: 5mm; display: block; }
+.cover-zig path { stroke: var(--wood); stroke-width: 1.4; }
+.cover-subtitle { font: 400 14pt/1.35 "Source Serif 4"; color: var(--muted); margin: 4mm 0 8mm; max-width: 150mm; }
+.cover-image { height: 104mm; background-size: cover; background-position: center; margin: 0; }
+.cover-credit { font: 6.5pt "Source Sans 3"; color: var(--muted); padding: 1mm 22mm 0; text-align: right; }
+.cover-foot { padding: 7mm 22mm 0; }
+.cover-doc { font: 700 16pt Montserrat; color: var(--accent); }
+.cover-team-name { font: 600 11pt "Source Sans 3"; margin: 1mm 0 3mm; }
+.cover-team { width: 100%; margin: 0 0 5mm; font-size: 9pt; }
+.cover-team th { border-bottom: 0.8pt solid var(--ink); }
+.cover-team td.role { color: var(--muted); }
+.cover-team tbody tr:nth-child(even) td { background: none; }
+.todo { color: #a0a9b2; font-style: italic; }
+.cover-meta { font: 8pt "Source Sans 3"; color: var(--muted); }
+
+/* ---------- Contents ---------- */
+.toc { break-before: page; }
+.toc-title { string-set: chapter "Contents"; }
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc li { margin: 0; text-align: left; }
+.toc li.l1 { font: 600 10.5pt "Source Sans 3"; margin-top: 3.2mm; }
+.toc li.l2 { font: 400 9.5pt "Source Sans 3"; padding-left: 9mm; margin-top: 0.8mm; }
+.toc .num { display: inline-block; width: 9mm; color: var(--wood); }
+.toc li.l2 .num { width: 10mm; }
+.toc li.appendix .num { width: 24mm; }
+.toc a::after { content: leader(".") target-counter(attr(href url), page); color: var(--muted); }
+
+/* ---------- References ---------- */
+.references .ref { padding-left: 8mm; text-indent: -8mm; text-align: left; font-size: 9.5pt; margin-bottom: 2.2mm; hyphens: manual; }
+.references .ref a { word-break: break-all; }

@@ -113,7 +113,8 @@ def cover(ch):
     points = [
         "Each section starts with a {b:boxed RULE} (or a numbered PROCEDURE) that says exactly what "
         "to do, then {o:worked examples}, then a picture only if it helps. Every chapter ends with "
-        "a {g:rules page} listing all its rules, and the {r:Formula Pages} at the back collect them all.",
+        "a {g:rules page} listing all its rules, the {r:Exam Pocket Cards} (Chapter 39) for the "
+        "handful of facts that unlock each topic, and the {r:Formula Pages} at the back collect them all.",
         "In worked examples, each line changes {o:only one thing}. The part that changed is marked, "
         "and a {r:handwritten note} says why you are allowed to do it.",
         "Before you are asked to trust a rule, it is {g:tested with real numbers} so you can watch "

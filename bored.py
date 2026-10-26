@@ -83,7 +83,7 @@ for v,i in enumerate(fruits):
 
 
 
-def isangry(bob, jerry):
+def isangry(bob, jerry): ## You could merge the args into a tuple then iterate the tuple for the counter but i have forgotten how to collect **args...
     angry_count = 0
     if bob == "angry":
         angry_count += 1
@@ -96,6 +96,26 @@ def isangry(bob, jerry):
     return text
 
 
+
+def isangryImproved(*args): ## Collect args..
+    angry_count = args.count("angry") ## Args is a tuple so it has the supplied count from __builtins__
+
+    text = "Both are angry" if angry_count == 2 else "One is angry" ## Ok technically this doesn't work if the supplied args is > 2, but you can use slots...
+    return text
+
+## Or we could use kwargs with a sort of slot behaviour. Unfortunately true slots only works on class attributes but this has the same higher level effect..
+
+
+def isangryimprovedkwargs(**kwargs):
+    allowed_keys = {"bob", "jerry"}
+    extra_keys = kwargs.keys() - allowed_keys
+    if extra_keys:
+        raise TypeError
+
+    emotion = [str(val).lower() for val in kwargs.values()]
+    angry_count = emotion.count("angry")
+    txt = "Both are angry" if angry_count == 2 else "One is angry" if angry_count == 1 else "None are angry"
+    return txt
 
 def somesillysquarefunctionthing(x):
     for i in range(1, 10):

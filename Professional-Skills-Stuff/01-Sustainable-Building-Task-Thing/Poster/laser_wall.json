@@ -1,0 +1,264 @@
+{
+  "wall": {
+    "kerf_mm": 0.15,
+    "height_mm": 110,
+    "max_height_mm": 140,
+    "sheet_mm": [
+      420,
+      297
+    ]
+  },
+  "cards": [
+    {
+      "wall": "south",
+      "type": "title",
+      "place": "start",
+      "title": "The Heat Exchange",
+      "tagline": "A net-zero learning hub on the Students' Car Park, NTU Clifton"
+    },
+    {
+      "wall": "south",
+      "type": "stats",
+      "items": [
+        {
+          "value": "{gia_m2} m\u00b2",
+          "label": "of floor space"
+        },
+        {
+          "value": "{pv_kwp} kWp",
+          "label": "solar power"
+        },
+        {
+          "value": "{rooms}",
+          "label": "rooms"
+        },
+        {
+          "value": "-{lighting_saving_pct}%",
+          "label": "lighting energy"
+        }
+      ]
+    },
+    {
+      "wall": "south",
+      "type": "note",
+      "icon": "house",
+      "title": "What is it?",
+      "text": "A two-storey timber learning hub: a cafe and entrance atrium, a flexible teaching hall, a makerspace, a library and study pods, an edge server room and a cycle hub, all on what is now a car park."
+    },
+    {
+      "wall": "south",
+      "type": "note",
+      "icon": "pin",
+      "title": "Where",
+      "text": "Students' Car Park, Clifton Campus, Nottingham NG11 8NS. {lat}\u00b0 N, {lon}\u00b0 {lon_dir}. Ground floor {ffl} m above sea level."
+    },
+    {
+      "wall": "south",
+      "type": "note",
+      "icon": "arrow",
+      "title": "Peek inside",
+      "text": "Lift any wall straight up out of its slot to see the site model. All four are the same size; the label on the hidden strip says which side each one belongs on."
+    },
+    {
+      "wall": "south",
+      "type": "quote",
+      "text": "Every number on these walls comes from the same model as the building behind them."
+    },
+    {
+      "wall": "south",
+      "type": "qr",
+      "place": "end",
+      "url": "https://aiden12343.github.io/heat-exchange-twin/",
+      "caption": "Scan me to walk inside!",
+      "size_mm": 44
+    },
+    {
+      "wall": "east",
+      "type": "title",
+      "place": "start",
+      "title": "Energy",
+      "tagline": "Why it's called The Heat Exchange",
+      "size_mm": 10
+    },
+    {
+      "wall": "east",
+      "type": "steps",
+      "title": "Where the heat comes from",
+      "steps": [
+        "{server_racks} server racks run day and night at about {server_kw} kW each",
+        "Rear-door heat exchangers catch their waste heat in water",
+        "A water-source heat pump lifts it to 45-55 \u00b0C",
+        "A thermal store holds it until the rooms need it",
+        "MVHR keeps 85-90% of the heat in the stale air it swaps for fresh"
+      ]
+    },
+    {
+      "wall": "east",
+      "type": "stats",
+      "items": [
+        {
+          "value": "{server_heat_mwh} MWh",
+          "label": "server heat a year"
+        },
+        {
+          "value": "{pv_modules}",
+          "label": "solar panels"
+        },
+        {
+          "value": "{co2_saving_kg} kg",
+          "label": "CO\u2082e saved on lights"
+        },
+        {
+          "value": "\u00a3{lighting_saving_gbp}",
+          "label": "saved a year"
+        }
+      ]
+    },
+    {
+      "wall": "east",
+      "type": "note",
+      "icon": "server",
+      "title": "Computers that heat the building",
+      "text": "Most buildings pay to throw server heat away. Here the edge server room is the boiler: about {server_heat_mwh} MWh a year of heat that would otherwise be wasted."
+    },
+    {
+      "wall": "east",
+      "type": "note",
+      "icon": "solar",
+      "title": "Sun on the roof",
+      "text": "{pv_modules} panels ({pv_kwp} kWp) face south at {pv_tilt}\u00b0 on the sawtooth roof, with more on carports over the parking that stays. A battery keeps midday sun for the evening."
+    },
+    {
+      "wall": "east",
+      "type": "note",
+      "icon": "bolt",
+      "title": "Light only where it's needed",
+      "text": "{led_panels} LED panels and {light_sensors} occupancy + daylight sensors use about {lighting_design_kwh} kWh a year, against {lighting_baseline_kwh} kWh for old fluorescent tubes left on."
+    },
+    {
+      "wall": "east",
+      "type": "note",
+      "icon": "wind",
+      "title": "Fresh air, measured",
+      "text": "{iaq_sensors} sensors track CO\u2082, temperature and humidity in every room, so ventilation runs when people are there, not by the clock."
+    },
+    {
+      "wall": "east",
+      "type": "note",
+      "icon": "sun",
+      "title": "Shade that knows the seasons",
+      "text": "Noon sun is {sun_june}\u00b0 high in June but {sun_december}\u00b0 in December, so the {overhang_m} m overhang shades {shade_june} m of the glass below it in summer but only {shade_december} m in winter."
+    },
+    {
+      "wall": "north",
+      "type": "title",
+      "place": "start",
+      "title": "The building",
+      "tagline": "{length_m} x {depth_m} m, {storeys} storeys, {height_m} m to the roof peaks",
+      "size_mm": 10
+    },
+    {
+      "wall": "north",
+      "type": "plan"
+    },
+    {
+      "wall": "north",
+      "type": "rooms"
+    },
+    {
+      "wall": "north",
+      "type": "note",
+      "icon": "leaf",
+      "title": "Built from timber",
+      "text": "Cross-laminated timber walls and floors lock up carbon instead of emitting it. The outer wall is 360 mm: 100 mm CLT, 220 mm wood-fibre insulation and 40 mm cladding."
+    },
+    {
+      "wall": "north",
+      "type": "note",
+      "icon": "sawtooth",
+      "title": "A sawtooth roof",
+      "text": "Each tooth carries solar panels on its south slope and glass on its north face, bringing soft, glare-free daylight deep into the first floor."
+    },
+    {
+      "wall": "north",
+      "type": "note",
+      "icon": "house",
+      "title": "Glass where it helps",
+      "text": "Glazing is {wwr_s}% of the south wall and {wwr_w}% of the west, but just {wwr_e}% east and {wwr_n}% north. {volume_m3} m\u00b3 heated inside {envelope_m2} m\u00b2 of envelope."
+    },
+    {
+      "wall": "west",
+      "type": "title",
+      "place": "start",
+      "title": "Site & people",
+      "tagline": "A car park that becomes a landscape",
+      "size_mm": 10
+    },
+    {
+      "wall": "west",
+      "type": "note",
+      "icon": "tree",
+      "title": "Greener ground",
+      "text": "Meadow, a rain garden and a pond replace tarmac, with new paths across the site. The parking that stays sits under solar carports."
+    },
+    {
+      "wall": "west",
+      "type": "note",
+      "icon": "bike",
+      "title": "Arrive by bike",
+      "text": "The cycle hub has {bike_spaces} spaces in two-tier racks, e-bike charging lockers, showers and changing rooms, all under a living green roof."
+    },
+    {
+      "wall": "west",
+      "type": "note",
+      "icon": "drop",
+      "title": "Rain that flushes",
+      "text": "Rainwater from the roofs is stored and pumped to flush dual-flush WCs, and a refill station cuts plastic bottles."
+    },
+    {
+      "wall": "west",
+      "type": "note",
+      "icon": "book",
+      "title": "A building that teaches",
+      "text": "The makerspace has a laser cutter and 3D printers, and the Smart Building Control Room shows the building's live energy data to students."
+    },
+    {
+      "wall": "west",
+      "type": "text",
+      "icon": "globe",
+      "title": "UN Sustainable Development Goals",
+      "text": "Mainly 7 clean energy, 9 innovation, 12 responsible consumption and 13 climate action; also 4 quality education and 11 sustainable cities."
+    },
+    {
+      "wall": "west",
+      "type": "steps",
+      "title": "How we made this model",
+      "steps": [
+        "Real ground heights from Environment Agency LiDAR, plus OpenStreetMap",
+        "One Python model of the building drives every output",
+        "Printed on NTU's Bambu printers: {print_hours} h and {print_grams} g of PLA",
+        "A walk-through web twin and a Google Earth model",
+        "These walls, laser-engraved from the same files"
+      ]
+    },
+    {
+      "wall": "west",
+      "type": "note",
+      "icon": "ruler",
+      "title": "Honest numbers",
+      "text": "Fit-out is costed at about \u00a3{fitout_k}k from indicative prices. Plant such as the heat pump and battery is still to be sized by an energy model."
+    },
+    {
+      "wall": "west",
+      "type": "text",
+      "title": "Data credits",
+      "text": "Environment Agency LiDAR (OGL v3). OpenStreetMap contributors (ODbL). Imagery: Esri, Maxar, Earthstar Geographics."
+    },
+    {
+      "wall": "west",
+      "type": "team",
+      "title": "Made by",
+      "names": []
+    }
+  ]
+}

@@ -18,9 +18,9 @@
    "part": "building_1to100_2_first_floor.stl",
    "group": "building",
    "process": "FDM PLA",
-   "amount": "173 g",
-   "gbp": 3.4598395622723475,
-   "hours": 9.610665450756521,
+   "amount": "174 g",
+   "gbp": 3.476604161959738,
+   "hours": 9.657233783221495,
    "size_mm": [
     240.0,
     156.0,
@@ -102,12 +102,12 @@
    "part": "site_1to1000_1_terrain_green.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "200 g",
-   "gbp": 3.9921934772574756,
-   "hours": 11.08942632571521,
+   "amount": "175 g",
+   "gbp": 3.5065990881487408,
+   "hours": 9.74055302263539,
    "size_mm": [
-    229.0,
-    229.0,
+    214.0,
+    214.0,
     13.2
    ],
    "fits": 1.0
@@ -116,13 +116,13 @@
    "part": "site_1to1000_2_roads_paths_grey.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "3 g",
-   "gbp": 0.06959188367938834,
-   "hours": 0.19331078799830095,
+   "amount": "67 g",
+   "gbp": 1.3302751719110346,
+   "hours": 3.6952088108639844,
    "size_mm": [
     229.0,
     229.0,
-    8.8
+    14.0
    ],
    "fits": 1.0
   },
@@ -130,12 +130,12 @@
    "part": "site_1to1000_3_existing_buildings_white.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "17 g",
-   "gbp": 0.33486112702282306,
-   "hours": 0.9301697972856195,
+   "amount": "15 g",
+   "gbp": 0.30060698168770195,
+   "hours": 0.8350193935769498,
    "size_mm": [
-    178.8,
-    140.6,
+    164.3,
+    133.6,
     14.6
    ],
    "fits": 1.0
@@ -144,13 +144,13 @@
    "part": "site_1to1000_4_trees_dark_green.stl",
    "group": "site",
    "process": "FDM PLA",
-   "amount": "35 g",
-   "gbp": 0.7067361379943916,
-   "hours": 1.9631559388733102,
+   "amount": "31 g",
+   "gbp": 0.6137142202109811,
+   "hours": 1.7047617228082808,
    "size_mm": [
-    226.7,
-    226.7,
-    24.3
+    214.0,
+    214.0,
+    23.0
    ],
    "fits": 1.0
   },
@@ -270,12 +270,12 @@
    "part": "F01_breakout_co_working_lounge.stl",
    "group": "trays_sla",
    "process": "SLA resin",
-   "amount": "7.5 ml",
-   "gbp": 1.2014102963101965,
+   "amount": "8.0 ml",
+   "gbp": 1.2854735437177143,
    "hours": null,
    "size_mm": [
     75.4,
-    90.0,
+    90.6,
     9.0
    ],
    "fits": 1.0
@@ -465,21 +465,21 @@
  ],
  "totals": {
   "building": {
-   "gbp": 12.992530467737033,
-   "hours": 36.09036241038064
+   "gbp": 13.009295067424425,
+   "hours": 36.136930742845614
   },
   "site": {
-   "gbp": 5.196491418138084,
-   "hours": 14.434698383716903
+   "gbp": 5.844304254142464,
+   "hours": 16.234178483729064
   },
   "trays_fdm": {
    "gbp": 0.7990164500574961,
    "hours": 2.2194901390485997
   },
   "trays_sla": {
-   "gbp": 12.292051350818067,
+   "gbp": 12.376114598225584,
    "hours": 0.0
   }
  },
- "total_gbp": 31.28008968675068
+ "total_gbp": 32.02873036984997
 }

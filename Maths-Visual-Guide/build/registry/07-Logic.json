@@ -61,6 +61,13 @@
    "page": 7
   },
   {
+   "word": "contingency",
+   "meaning": "a statement that is sometimes true and sometimes false in its truth table",
+   "ch": 7,
+   "short": "Logic",
+   "page": 7
+  },
+  {
    "word": "implication (if... then)",
    "meaning": "P \u21d2 Q: false only when P is true but Q is false",
    "ch": 7,

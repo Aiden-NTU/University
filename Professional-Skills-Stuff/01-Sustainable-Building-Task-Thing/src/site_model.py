@@ -18,6 +18,7 @@ from shapely.ops import unary_union
 
 import building as B
 import config as C
+import placeables as P
 from geom import EMPTY, box, heightfield_solid, prism, union
 
 ROAD_WIDTH = {"motorway": 10, "trunk": 9, "primary": 8, "secondary": 7, "tertiary": 6.5,
@@ -164,6 +165,29 @@ def window_box():
     return cx - half, cy - half, cx + half, cy + half
 
 
+@lru_cache
+def wall_frame():
+    """Rim and wall slot round the printed site, in print mm (x, y from the model centre, z up from the bed).
+
+    The rim is one level all round, just above the highest ground it replaces, so all four
+    poster walls stand at the same height.
+    """
+    xs, ys, dtm, _, _ = _crop(*window_box())
+    k = 1000 / C.SITE_SCALE                                   # print mm per model metre
+    half = (xs[-1] - xs[0]) / 2 * k
+    lip, slot = C.SITE_FRAME_LIP_MM, C.WALL_PLY_MM + C.SITE_WALL_SLOT_CLEARANCE_MM
+    band = 2 * lip + slot
+    n = int(np.ceil(band / k))
+    edge = np.ones(dtm.shape, bool)
+    edge[n:-n, n:-n] = False
+    ground = (dtm[edge].max() - dtm.min()) * k + C.SITE_BASE_MM
+    top = float(np.ceil(ground + 0.75))
+    floor = top - C.SITE_WALL_SLOT_DEPTH_MM
+    if floor < 1.5:
+        raise ValueError(f"wall slot leaves only {floor:.1f} mm under it; make SITE_WALL_SLOT_DEPTH_MM shallower")
+    return dict(half=half, lip=lip, slot=slot, band=band, top=top, floor=floor, depth=C.SITE_WALL_SLOT_DEPTH_MM)
+
+
 def _crop(x0, y0, x1, y1):
     xs, ys, dtm, dsm = rasters()
     ix = np.where((xs >= x0) & (xs <= x1))[0]
@@ -210,6 +234,15 @@ def site_print_solids():
             cx, cy = cp.centroid.x, cp.centroid.y
             gz = dtm_all[np.searchsorted(ys_all, cy), np.searchsorted(xs_all, cx)]
             proposal += prism(cp.intersection(win), gz - 1.0, gz + carport_h)
+    def ground_at(x, y):
+        iy = np.searchsorted(ys_all, y).clip(0, len(ys_all) - 1)
+        ix = np.searchsorted(xs_all, x).clip(0, len(xs_all) - 1)
+        return float(dtm_all[iy, ix])
+    # Site placeables share the proposal's orange print layer. This keeps the existing
+    # four-filament Bambu workflow intact while still including the object in every export.
+    for _, asset, solid in P.site_assets(ground_at, for_print=True):
+        if asset.print_layer in (None, "proposal"):
+            proposal += solid
     proposal = proposal ^ box(xs[0], ys[0], base_z, xs[-1], ys[-1], base_z + 500)
 
     top, _ = canopy_top(dtm, dsm, sl)
@@ -221,6 +254,16 @@ def site_print_solids():
     roads = roads - ctx - proposal
 
     terrain = terrain - roads - ctx - proposal
+
+    # Grey rim with the poster-wall slot; it replaces whatever was in the outermost band.
+    fr, m = wall_frame(), C.SITE_SCALE / 1000
+    rim_out = rect(xs[0], ys[0], xs[-1], ys[-1])
+    slot = rim_out.buffer(-fr["lip"] * m, join_style=2).difference(rim_out.buffer(-(fr["lip"] + fr["slot"]) * m, join_style=2))
+    band = prism(rim_out.difference(rim_out.buffer(-fr["band"] * m, join_style=2)), base_z - 1, base_z + 500)
+    rim = (prism(rim_out.difference(rim_out.buffer(-fr["band"] * m, join_style=2)), base_z, base_z + fr["top"] * m)
+           - prism(slot, base_z + fr["floor"] * m, base_z + fr["top"] * m + 1))
+    terrain, ctx, trees, proposal = (p - band for p in (terrain, ctx, trees, proposal))
+    roads = (roads - band) + rim
     return dict(terrain=terrain, roads=roads, context=ctx, trees=trees, proposal=proposal), base_z
 
 

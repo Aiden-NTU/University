@@ -56,6 +56,12 @@ SITE_BASE_MM = 3.0           # solid base under lowest terrain point
 SITE_SPLIT_Y_MM = -2.0       # east-west cut for the two-part site print (model mm from centre): misses the proposal and every building
 SITE_VERTICAL_EXAGGERATION = 1.0
 TREE_CANOPY_CAP_M = 18.0
+# The site has a raised rim with a slot round its edge; the four laser-cut poster walls stand in it.
+WALL_PLY_MM = 3.0                    # measure the actual plywood sheet: the slot is sized from it
+SITE_FRAME_LIP_MM = 2.0              # PLA either side of the slot
+SITE_WALL_SLOT_CLEARANCE_MM = 0.5    # slot width = ply + this
+SITE_WALL_SLOT_DEPTH_MM = 9.0
+SITE_WALL_END_CLEARANCE_MM = 0.5     # walls are this much shorter than a tight pinwheel fit
 ROAD_INLAY_MM = 0.6          # depth of separate-colour road/path layer
 
 BUILDING_SCALE = 100         # 1:100 dollhouse model
@@ -73,8 +79,8 @@ FDM_G_PER_HOUR = 18.0        # rough Bambu throughput on detailed parts
 RESIN_SUPPORT_FACTOR = 1.35  # supports, raft and wastage
 
 # --- Running-cost assumptions (state these in the Design Outline and cite a source) --------
-ELEC_GBP_PER_KWH = 0.25      # verify: DESNZ "Prices of fuels purchased by non-domestic consumers"
-GRID_KGCO2E_PER_KWH = 0.177  # verify: DESNZ/DEFRA GHG conversion factors (current year)
+ELEC_GBP_PER_KWH = 0.245     # DESNZ Quarterly Energy Prices Sept 2026: non-domestic average incl. CCL, Q2 2026 (24.51 p)
+GRID_KGCO2E_PER_KWH = 0.131  # DESNZ GHG conversion factors 2026: UK electricity generated, 0.13096 kgCO2e/kWh
 LIGHT_UF = 0.6               # utilisation factor (lumen method)
 LIGHT_MF = 0.8               # maintenance factor
 BASELINE_LM_PER_W = 60.0     # business-as-usual fluorescent fittings, no controls

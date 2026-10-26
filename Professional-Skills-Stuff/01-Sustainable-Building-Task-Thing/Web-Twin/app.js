@@ -137,7 +137,7 @@ async function loadBuilding() {
     if (glassy) { o.material.depthWrite = false; o.renderOrder = 2; }
     (S.groups[lvl] || (S.groups[lvl] = [])).push(o);
     if (['floor', 'slab', 'stair', 'plinth', 'annexwall'].includes(kind)) S.walkables.push(o);
-    if (['extwall', 'intwall', 'glass', 'annexwall', 'annexglass', 'balustrade', 'furn', 'carport'].includes(kind)) S.colliders.push(o);
+    if (['extwall', 'intwall', 'glass', 'annexwall', 'annexglass', 'balustrade', 'furn', 'carport', 'landscape_asset'].includes(kind)) S.colliders.push(o);
     if (kind === 'floor' || kind === 'furn') S.pickables.push(o);
   });
   scene.add(gltf.scene);

@@ -1,0 +1,174 @@
+[
+  {
+    "key": "ntu_brief",
+    "authors": ["Nottingham Trent University"],
+    "year": "no date",
+    "title": "UNIT 1 Project: Sustainable Design. Project guide",
+    "type": "report",
+    "place": "Nottingham",
+    "publisher": "Nottingham Trent University",
+    "detail": "Foundation Year module guide, unpublished"
+  },
+  {
+    "key": "un2015",
+    "authors": ["United Nations"],
+    "year": 2015,
+    "title": "Transforming our world: the 2030 Agenda for Sustainable Development",
+    "type": "report",
+    "place": "New York",
+    "publisher": "United Nations",
+    "detail": "General Assembly resolution A/RES/70/1",
+    "url": "https://sdgs.un.org/2030agenda",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "ntu_greenflag2026",
+    "authors": ["Nottingham Trent University"],
+    "year": 2026,
+    "title": "NTU's green campuses recognised with prestigious Green Flag Award",
+    "type": "webpage",
+    "url": "https://www.ntu.ac.uk/studenthub/news/2026/07/ntus-green-campuses-recognised-with-prestigious-green-flag-award",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "pvgis",
+    "authors": ["European Commission Joint Research Centre"],
+    "year": "no date",
+    "title": "Photovoltaic Geographical Information System (PVGIS)",
+    "type": "software",
+    "version": "version 5.3",
+    "medium": "Online tool",
+    "url": "https://re.jrc.ec.europa.eu/pvg_tools/en/",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "desnz_ghg2026",
+    "authors": ["Department for Energy Security and Net Zero"],
+    "year": 2026,
+    "title": "Greenhouse gas reporting: conversion factors 2026",
+    "type": "report",
+    "place": "London",
+    "publisher": "DESNZ",
+    "url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2026",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "desnz_qep2026",
+    "authors": ["Department for Energy Security and Net Zero"],
+    "year": 2026,
+    "title": "Quarterly Energy Prices: September 2026",
+    "type": "report",
+    "place": "London",
+    "publisher": "DESNZ",
+    "url": "https://assets.publishing.service.gov.uk/media/6aba2810fe72ed1e2b02f0e7/Quarterly_Energy_Prices_September_2026.pdf",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "adm2015",
+    "authors": ["HM Government"],
+    "year": 2015,
+    "title": "The Building Regulations 2010. Approved Document M: Access to and use of buildings. Volume 2: Buildings other than dwellings",
+    "type": "legislation",
+    "edition": "2015 edition incorporating 2020 amendments",
+    "place": "London",
+    "publisher": "HM Government",
+    "url": "https://www.gov.uk/government/publications/access-to-and-use-of-buildings-approved-document-m",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "adb2019",
+    "authors": ["HM Government"],
+    "year": 2019,
+    "title": "The Building Regulations 2010. Approved Document B: Fire safety. Volume 2: Buildings other than dwellings",
+    "type": "legislation",
+    "edition": "2019 edition with 2020 and 2022 amendments",
+    "place": "London",
+    "publisher": "HM Government",
+    "url": "https://www.gov.uk/government/publications/fire-safety-approved-document-b",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "g99",
+    "authors": ["Energy Networks Association"],
+    "year": 2023,
+    "title": "Engineering Recommendation G99: Requirements for the connection of generation equipment in parallel with public distribution networks",
+    "type": "standard",
+    "place": "London",
+    "publisher": "ENA",
+    "url": "https://www.nationalgrid.co.uk/our-businesses/national-grid-electricity-distribution/network-information/generation-and-storage/g99",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "kenoteq",
+    "authors": ["Kenoteq"],
+    "year": "no date",
+    "title": "K-Briq",
+    "type": "webpage",
+    "url": "https://www.kenoteq.com/k-briq",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "hempcrete",
+    "authors": ["UK Hempcrete"],
+    "year": "no date",
+    "title": "Building with hempcrete",
+    "type": "webpage",
+    "url": "https://www.ukhempcrete.com/building-with-hempcrete/",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "eu2023_1791",
+    "authors": ["European Parliament and Council of the European Union"],
+    "year": 2023,
+    "title": "Directive (EU) 2023/1791 of 13 September 2023 on energy efficiency and amending Regulation (EU) 2023/955 (recast)",
+    "type": "legislation",
+    "publisher": "Official Journal of the European Union",
+    "detail": "L 231, 20 September 2023, pp. 1–111",
+    "url": "https://eur-lex.europa.eu/eli/dir/2023/1791/oj",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "churkina2020",
+    "authors": ["Churkina, G.", "Organschi, A.", "Reyer, C.P.O.", "Ruff, A.", "Vinke, K.", "Liu, Z.", "Reck, B.K.", "Graedel, T.E.", "Schellnhuber, H.J."],
+    "year": 2020,
+    "title": "Buildings as a global carbon sink",
+    "type": "article",
+    "journal": "Nature Sustainability",
+    "volume": 3,
+    "issue": 4,
+    "pages": "269–276",
+    "url": "https://doi.org/10.1038/s41893-019-0462-4",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "osm",
+    "authors": ["OpenStreetMap contributors"],
+    "year": "no date",
+    "title": "OpenStreetMap",
+    "type": "dataset",
+    "medium": "Online map data",
+    "url": "https://www.openstreetmap.org/copyright",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "terraprinter",
+    "authors": ["Terra Printer"],
+    "year": "no date",
+    "title": "Terra Printer",
+    "type": "software",
+    "medium": "Online tool",
+    "detail": "Terrain and map export for 3D modelling",
+    "url": "https://terraprinter.com",
+    "accessed": "20 October 2026"
+  },
+  {
+    "key": "bcis_indicative",
+    "authors": ["Royal Institution of Chartered Surveyors"],
+    "year": "no date",
+    "title": "BCIS: Building Cost Information Service (indicative education building cost rates)",
+    "type": "webpage",
+    "detail": "Used as a published £/m² benchmark for a hypothetical budget; team applied approximately £2,800/m² GIA",
+    "url": "https://www.rics.org/uk/products/data-products/bcis/",
+    "accessed": "20 October 2026"
+  }
+]

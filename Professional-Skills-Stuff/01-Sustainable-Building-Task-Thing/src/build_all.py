@@ -1,4 +1,5 @@
-"""Rebuild everything from open data: site download, print STLs, print cost, room schedule, web twin.
+"""Rebuild everything from open data: site download, print STLs, print cost, room schedule, web twin,
+Google Earth, Bambu print jobs, the laser-engraved poster walls and the Design Outline PDF.
 
     python src/build_all.py            # full rebuild (downloads are cached in Site/raw)
     python src/build_all.py --skip-print
@@ -8,9 +9,11 @@ import sys
 import time
 
 import bambu
+import book
 import config as C
 import earth_export
 import fetch_site
+import laser_wall
 import print_cost
 import print_export
 import schedule
@@ -35,3 +38,5 @@ if __name__ == "__main__":
     step("Google Earth KMZ", earth_export.export)
     if "--skip-print" not in sys.argv and shutil.which("flatpak"):
         step("Bambu Studio sliced print files", bambu.build_all)
+    step("laser-engraved poster walls", laser_wall.build)
+    step("Design Outline PDF (Book/)", book.build)

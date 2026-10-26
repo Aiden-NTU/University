@@ -14,7 +14,8 @@ SLUG = "Logic"
 ACCENT = C.ORANGE
 REQUIRES = ["set", "union", "intersection", "complement", "inequality-symbols", "venn-diagram"]
 INTRODUCES = ["statement", "truth-value", "logical-not", "logical-and", "logical-or", "xor", "truth-table",
-              "implication", "converse", "contrapositive", "iff", "de-morgan", "quantifiers"]
+              "implication", "converse", "contrapositive", "iff", "de-morgan", "quantifiers",
+              "tautology", "contingency", "contradiction"]
 
 PAPER = "#f8fafc"
 WIRE = "#37474f"
@@ -339,11 +340,13 @@ def de_morgan(ch):
     ch.formula(r"\neg(A\vee B)=\neg A\wedge\neg B", "De Morgan's law")
     f.p("{h:Programming use:} \"not (logged_in and paid)\" is the same test as \"not logged_in or not "
         "paid\". Handy when tidying up conditions.", 13.5, C.BROWN, gap=10)
-    rule_box(f, "equivalence, tautology, contradiction", [
+    rule_box(f, "equivalence, tautology, contingency, contradiction", [
         "Two statements are {B:logically equivalent} ($\\equiv$) when their final columns match in "
         "every row.",
         "A {B:tautology} is true in every row, whatever the letters are. Example: $A\\vee\\neg A$.",
         "A {B:contradiction} is false in every row. Example: $A\\wedge\\neg A$.",
+        "A {B:contingency} is neither: the final column has at least one T and at least one F. "
+        "Most everyday statements are contingencies (\"it rains today\").",
         "De Morgan: $\\neg(A\\wedge B)\\equiv\\neg A\\vee\\neg B$ and $\\neg(A\\vee B)\\equiv\\neg A\\wedge\\neg B$. "
         "NOT goes inside and swaps $\\wedge$ with $\\vee$.",
     ], C.ORANGE, tag="DEFINITION")
@@ -351,15 +354,19 @@ def de_morgan(ch):
     ch.term("logically equivalent", "two statements with the same truth value in every row (≡)")
     ch.term("tautology", "a statement that is true in every row of its truth table, e.g. A ∨ ¬A")
     ch.term("contradiction", "a statement that is false in every row of its truth table, e.g. A ∧ ¬A")
+    ch.term("contingency", "a statement that is sometimes true and sometimes false in its truth table")
     f.p("{b:Example.}  One letter, so 2 rows:", 14, gap=6)
-    y = f.reserve(80)
+    y = f.reserve(100)
     pg = f.pg
-    table(pg, L + 30, y, [r"A", r"\neg A", r"A\vee\neg A", r"A\wedge\neg A"],
-          [(a, not a, a or not a, a and not a) for a in (True, False)], colw=80, hl={2, 3})
-    pg.note(L + 360, y + 2, "all T: tautology", C.GREEN, 15)
-    pg.note(L + 360, y + 30, "all F: contradiction", C.RED, 15)
+    table(pg, L + 30, y, [r"A", r"\neg A", r"A\vee\neg A", r"A\wedge\neg A", r"A"],
+          [(a, not a, a or not a, a and not a, a) for a in (True, False)], colw=68, hl={2, 3, 4})
+    pg.note(L + 380, y + 2, "all T: tautology", C.GREEN, 14)
+    pg.note(L + 380, y + 28, "all F: contradiction", C.RED, 14)
+    pg.note(L + 380, y + 54, "mix of T/F: contingency", C.ORANGE, 14)
     ch.check([a or not a for a in (True, False)], [True, True])
     ch.check([a and not a for a in (True, False)], [False, False])
+    f.p("{B:Exam habit:} build the truth table, then classify the final column: all T / all F / mixed.",
+        13.5, C.BROWN, gap=6)
 
 
 def promise(ch):
@@ -611,7 +618,8 @@ def summary(ch):
         ("Precedence", None, "$\\neg$, then $\\wedge$, then $\\vee$, then $\\Rightarrow$, then $\\Leftrightarrow$; "
          "brackets first"),
         ("Equivalent", None, "same final column in every row ($\\equiv$)"),
-        ("Tautology, contradiction", None, "always T (e.g. $A\\vee\\neg A$); always F (e.g. $A\\wedge\\neg A$)"),
+        ("Tautology / contingency / contradiction", None,
+         "final column all T / mixed T and F / all F. Exams ask you to classify after the table."),
         ("De Morgan", r"\neg(A\wedge B)=\neg A\vee\neg B", "and $\\neg(A\\vee B)=\\neg A\\wedge\\neg B$"),
         ("Implication", r"P\Rightarrow Q\equiv\neg P\vee Q", "F only when P is T and Q is F"),
         ("Negating an if", r"\neg(P\Rightarrow Q)\equiv P\wedge\neg Q", None),

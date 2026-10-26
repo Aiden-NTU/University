@@ -37,7 +37,7 @@ Snapmaker and the SLS printer. The furniture prints fine on the Bambu printers.
 Suggested email:
 
 > Hi, for my Sustainable Design project I have a 1:100 / 1:1000 architectural model to print in
-> PLA (about 1 kg in total). The files are already sliced, and every job finishes within a lab day.
+> PLA (about 1.1 kg in total). The files are already sliced, and every job finishes within a lab day.
 > The 1:1000 site would be 3 jobs on the RISE X1E over two days (two of them use 4 colours in the
 > AMS), and the 1:100 building would be 7 jobs on the City X1C over four days. Can I book time and
 > run the jobs from a microSD card, or should I send you Bambu Studio project files? Do you supply
@@ -85,19 +85,19 @@ and filament before committing to the long jobs.
 
 | File | What | Colour (AMS slot) | Time | PLA |
 |---|---|---|---|---|
-| `site_model_1to1000_4colour_halves_plate2_...` | Site, south half (the plan) | green 1, light grey 2, dark green 3, orange 4 | 4.7 h | 147 g |
-| `site_model_1to1000_4colour_halves_plate1_...` | Site, north half (the plan) | as above | 6.0 h | 168 g |
-| `site_model_1to1000_4colour` | Site in one piece, only if overnight printing is allowed | as above | 11.5 h | 306 g |
-| `site_model_1to1000_single_colour` | Site in one piece, one colour (paint after) | any 1 | 6.5 h | 248 g |
+| `site_model_1to1000_4colour_halves_plate2_...` | Site, south half (the plan) | green 1, light grey 2, dark green 3, orange 4 | 5.6 h | 172 g |
+| `site_model_1to1000_4colour_halves_plate1_...` | Site, north half (the plan) | as above | 6.8 h | 193 g |
+| `site_model_1to1000_4colour` | Site in one piece, only if overnight printing is allowed | as above | 12.7 h | 350 g |
+| `site_model_1to1000_single_colour` | Site in one piece, one colour (paint after) | any 1 | 6.6 h | 265 g |
 | `building_1to100_plate1_...` | Ground floor + cycle hub | white 1 | 4.5 h | 205 g |
-| `building_1to100_plate2_...` | First floor | white 1 | 4.0 h | 177 g |
+| `building_1to100_plate2_...` | First floor | white 1 | 4.0 h | 178 g |
 | `building_1to100_plate3_...` | Main roof + cycle-hub roof | light grey 2 | 3.7 h | 195 g |
 | `building_1to100_plate4_...` | PV strips | dark blue 3 | 0.9 h | 22 g |
 | `building_1to100_plate5_...` | Green roof | green 4 | 0.3 h | 9 g |
 | `furniture_trays_1to100_plate1-3_...` | 21 room furniture trays | light grey 1 | 6.9 h total | 98 g |
 
-The whole model (4-colour site in two halves + building + furniture) comes to **about 1 kg of PLA,
-about 31 h of printing and about GBP 20** at GBP 20/kg. Print the site only one way: halves,
+The whole model (4-colour site in two halves + building + furniture) comes to **about 1.1 kg of PLA,
+about 33 h of printing and about GBP 21** at GBP 20/kg. Print the site only one way: halves,
 one piece or one colour.
 
 The `plates/` folder has a picture of every job as it sits on the bed. The same picture appears on

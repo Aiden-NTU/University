@@ -17,6 +17,7 @@ from shapely.geometry import Polygon
 
 import building as B
 import config as C
+import placeables as P
 import schedule
 import site_model as S
 from geom import box, prism, profile_x, to_trimesh, union
@@ -98,14 +99,27 @@ def export_building(out):
     _add(scene, "RF__green", ax["green"], "green")
     for room in B.ROOMS:
         z0 = B.LEVEL_Z[room["level"]]
-        floor = prism(B.room_floor_poly(room), z0, z0 + B.FINISH)
+        floor = prism(B.room_floor(room), z0, z0 + B.FINISH)
         _add(scene, f"{room['level']}__floor__{room['id']}", floor, "floor",
              FLOOR_COLOURS.get(room["id"], (0.78, 0.72, 0.60)))
-        furn = union([m for _, m, _ in B.room_items(room)])
+        # The original room fit-out is one efficient mesh. Registry assets remain separate
+        # so their declared colour survives into the web twin and Google Earth model.
+        z0 = B.LEVEL_Z[room["level"]]
+        furn = union([m.translate((0, 0, z0 + B.FINISH)) for _, m, _ in B.legacy_furniture(room["id"])])
         _add(scene, f"{room['level']}__furn__{room['id']}", furn, "furn")
+        for placement, asset, solid in P.room_assets(room["id"]):
+            _add(scene, f"{room['level']}__furn__{room['id']}__{placement.id}",
+                 solid.translate((0, 0, z0 + B.FINISH)), "furn", asset.colour)
     posts, cpv = carport_geometry()
     _add(scene, "SITE__carport", posts, "carport")
     _add(scene, "SITE__carportpv", cpv, "pv")
+    xs, ys, dtm, _ = S.rasters()
+    def ground_relative_to_ffl(x, y):
+        iy = np.searchsorted(ys, y).clip(0, len(ys) - 1)
+        ix = np.searchsorted(xs, x).clip(0, len(xs) - 1)
+        return float(dtm[iy, ix] - C.FFL)
+    for placement, asset, solid in P.site_assets(ground_relative_to_ffl):
+        _add(scene, f"SITE__landscape_asset__{placement.id}", solid, "landscape_asset", asset.colour)
     (out / "building.glb").write_bytes(trimesh.exchange.gltf.export_glb(scene, include_normals=False))
 
 

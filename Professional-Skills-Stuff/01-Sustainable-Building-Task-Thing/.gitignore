@@ -5,3 +5,11 @@ Site/raw/
 *.json
 *.jpg
 Model/bambu/work/
+Book/build/
+!src/placeables.json
+!Poster/laser_wall.json
+!Book/book.json
+!Book/references.json
+!Book/images/**
+!Book/figures/auto/*.jpg
+!Design/exports/pvgis.json

@@ -4,7 +4,7 @@
 
 | Where | Printer | Prints | Card folder | Printing time |
 |---|---|---|---|---|
-| **Clifton**, RISE laboratory | Bambu Lab **X1E** (has the AMS) | The 1:1000 site model in two halves, plus the small green roof as a test job | `sd_card_Clifton_RISE_X1E/` | about 11 h over 2 days |
+| **Clifton**, RISE laboratory | Bambu Lab **X1E** (has the AMS) | The 1:1000 site model in two halves, plus the small green roof as a test job | `sd_card_Clifton_RISE_X1E/` | about 13 h over 2 days |
 | **City**, 3D Printing Studio | Bambu Lab **X1C** | The 1:100 building and its furniture | `sd_card_City_X1C/` | about 20 h over 4 days |
 
 **Why this split:**
@@ -24,7 +24,7 @@ onto that campus's microSD card.
 
 ## Clifton (RISE lab, X1E): two days
 
-In one piece, the 4-colour site takes 11.5 hours, which means printing overnight. About 5 of
+In one piece, the 4-colour site takes 12.9 hours, which means printing overnight. About 5 of
 those hours are colour changes. The printer swaps colour around 190 times, at roughly 1.5
 minutes each, and the swaps happen on almost every layer however small the model is. So the
 site is printed as **two halves, each a separate job that fits in one lab day**.
@@ -39,9 +39,9 @@ Load the AMS first: **green, light grey, dark green, orange**.
 | Day | Start | File on the card | Colour | Takes | Done by | Notes |
 |---|---|---|---|---|---|---|
 | **A** | 09:30 | `01_building_..._green_roof_green` | green | 18 min | 09:50 | Test job: watch it all. It uses the same green as the grass |
-| | 10:00 | `02_site_..._south_half_4_colours` | all 4 | 4.7 h | 14:45 | The campus buildings half |
-| **B** | 09:30 | `03_site_..._north_half_4_colours` | all 4 | 6.1 h | 15:40 | Your building, carports and pond. Start by 10:30 at the latest |
-| (instead) | 10:00 | `alt_site_model_1to1000_single_colour` | 1 (white) | 6.5 h | 16:30 | Plan C: the whole site in one piece and one colour, painted afterwards. Use it if the halves keep failing or you can only get one day |
+| | 10:00 | `02_site_..._south_half_4_colours` | all 4 | 5.7 h | 15:45 | The campus buildings half |
+| **B** | 09:30 | `03_site_..._north_half_4_colours` | all 4 | 6.9 h | 16:25 | Your building, carports and pond. Start by 10:00 at the latest |
+| (instead) | 10:00 | `alt_site_model_1to1000_single_colour` | 1 (white) | 6.6 h | 16:35 | Plan C: the whole site in one piece and one colour, painted afterwards. Use it if the halves keep failing or you can only get one day |
 
 The two days don't need to be back to back.
 
@@ -51,6 +51,8 @@ every time it changes colour. That's normal, and the times above include it.
 **Joining the halves:**
 - Glue both halves to a stiff board (foam board or thin MDF, about 250 x 250 mm). Push the cut
   edges together on the board. The board is also what you carry it on.
+- Keep glue out of the grey rim's slot round the edge: the plywood poster walls stand in it.
+  Line the slot up across the join so the east and west walls drop in cleanly.
 - Lift it by the board, never by the model. The trees are the fragile part.
 
 ## City (3D Printing Studio, X1C): four days
@@ -94,12 +96,12 @@ between them. Glue the PV strips and the green roof on **after** the trip, not b
 
 | Colour | Needed for | Amount |
 |---|---|---|
-| Green | Grass (+ the green roof) | 219 g + 9 g |
-| Light grey | Roads, paths and existing buildings | 43 g |
-| Dark green | Trees | 47 g |
-| Orange | Your building and carports on the site | 15 g |
+| Green | Grass (+ the green roof) | 202 g + 9 g |
+| Light grey | Roads, paths, existing buildings and the wall rim | 117 g |
+| Dark green | Trees | 43 g |
+| Orange | Your building and carports on the site | 16 g |
 
-For the one-colour site instead, you need 248 g of any one colour.
+For the one-colour site instead, you need 265 g of any one colour.
 
 **City (X1C):**
 

@@ -1,0 +1,22 @@
+{
+  "title": "The Heat Exchange",
+  "subtitle": "A student learning hub on the Clifton Campus car park",
+  "document": "Design Outline",
+  "module": "Unit 1 Project: Sustainable Design",
+  "course": "Foundation Year",
+  "institution": "Nottingham Trent University",
+  "team_name": "",
+  "lab_leader": "",
+  "authors": [
+    { "name": "", "student_id": "", "role": "Project Manager" },
+    { "name": "", "student_id": "", "role": "Design Lead" },
+    { "name": "", "student_id": "", "role": "Sustainability & Research Lead" },
+    { "name": "", "student_id": "", "role": "Visual Communications Lead" },
+    { "name": "", "student_id": "", "role": "Cost & Resource Coordinator" }
+  ],
+  "date": "",
+  "version": "",
+  "cover_image": "images/cover.jpg",
+  "cover_credit": "The proposal placed on its site in Google Earth Pro. Image: Google Earth.",
+  "double_sided": true
+}

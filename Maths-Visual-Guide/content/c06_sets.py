@@ -19,7 +19,7 @@ REQUIRES = ["reading-maths", "inequality-symbols", "fraction", "negative-numbers
             "decimal-point", "addition", "subtraction"]
 INTRODUCES = ["set", "element", "set-notation", "union", "intersection", "complement", "set-difference",
               "venn-diagram", "subset", "empty-set", "set-builder", "interval-notation", "number-sets",
-              "irrational-numbers"]
+              "irrational-numbers", "power-set"]
 
 HOOP_A = C.PINK
 HOOP_B = C.TEAL
@@ -441,10 +441,15 @@ def subsets(ch):
         "$\\varnothing$ is a subset of every set.",
         "A set with $n$ elements has $2^n$ subsets (each element is either in or out), "
         "and $2^n-1$ proper subsets.",
+        "The set of {B:all} subsets of $S$ is called the {B:power set} $P(S)$ or $\\mathcal{P}(S)$. "
+        "So $|P(S)|=2^{|S|}$. For $S=\\{a,b,c\\}$, $P(S)$ has 8 members and always includes "
+        "$\\varnothing$ and $S$ itself.",
     ], C.ORANGE)
     ch.symbol(r"\subseteq", "is a subset of (or equal to)", "every element of the left set is in the right set")
     ch.term("proper subset", "a subset that is not the whole set: A ⊂ B means A ⊆ B and A ≠ B")
+    ch.term("power set", "P(S): the set of all subsets of S, including ∅ and S; |P(S)| = 2^n")
     ch.formula(r"\text{number of subsets}=2^n", "subsets of a set with n elements")
+    ch.formula(r"|P(S)|=2^{|S|}", "size of the power set")
     f.p("{b:Example.}  The subsets of $\\{a,b,c\\}$:", 14, gap=4)
     step(f, r"\varnothing,\ \{a\},\{b\},\{c\},\ \{a,b\},\{a,c\},\{b,c\},\ \{a,b,c\}", "", size=16)
     step(f, r"2^3=\grn{8}\text{ subsets},\quad 8-1=\grn{7}\text{ proper}", "the last one is the set itself",
@@ -581,7 +586,8 @@ def summary(ch):
         ("De Morgan", r"(A\cup B)'=A'\cap B'", "and $(A\\cap B)'=A'\\cup B'$"),
         ("Subsets", None, "$A\\subseteq B$: may be equal; $A\\subset B$: proper (B has more); "
          "$\\varnothing$ is a subset of every set"),
-        ("Number of subsets", r"\text{number of subsets}=2^n", "$n$ elements; $2^n-1$ proper subsets"),
+        ("Number of subsets / power set", r"|P(S)|=2^{|S|}",
+         "$P(S)$ is the set of all subsets of $S$ (including $\\varnothing$ and $S$); $2^n-1$ proper"),
         ("Set-builder", None, "$\\{x\\mid\\text{rule}\\}$: the set of all x such that the rule holds"),
         ("Intervals", None, "$[a,b]$, $(a,b)$, $[a,\\infty)$: square = end included, round = end left out; "
          "∞ always round"),

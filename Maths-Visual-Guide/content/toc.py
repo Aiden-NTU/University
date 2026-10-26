@@ -24,6 +24,7 @@ CHAPTERS = {
     31: "Solving triangles", 32: "Vectors", 33: "Polar coordinates",
     34: "Gradients of curves", 35: "Chain, product, quotient", 36: "Integration and areas",
     37: "Parts and substitution", 38: "Partial differentiation",
+    39: "Exam pocket cards",
 }
 
 LECTURES = [

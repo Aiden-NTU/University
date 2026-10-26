@@ -8,8 +8,17 @@ lighting with daylight and occupancy control.
 Everything is generated from code. Change a number in `src/config.py`, run one command, and
 the print files, cost estimate, room schedule, web twin and Google Earth model all update together.
 
+For an explanation of the source model, generated outputs and safe ways to change them, see the
+[project guide](docs/PROJECT_GUIDE.md).
+
+To add reusable sofas, screens or site props without editing Python, use the
+[placeable-assets guide](docs/PLACEABLE_ASSETS.md). To add to the laser-engraved poster wall,
+use the [laser wall guide](docs/LASER_WALL.md). To write a section of the Design Outline, use the
+[Design Outline guide](docs/DESIGN_OUTLINE.md).
+
 | Output | Where |
 |---|---|
+| **Design Outline (A4 PDF with citations, costs and SDGs)** | `Book/The_Heat_Exchange_Design_Outline.pdf` (written in `Book/chapters/`) |
 | **Print-ready files (just copy to the printer)** | `Model/bambu/` (see its README) |
 | Real slicer time, grams and cost | `Model/bambu/slice_report.md` |
 | Raw STLs: 1:1000 site, 1:100 building, furniture trays | `Model/print/` |
@@ -43,8 +52,8 @@ contains print-ready files sliced by Bambu Studio for NTU's Bambu Lab printers: 
 Printing Studio and the X1E (with AMS) in the RISE laboratory. Copy the matching folder to a
 microSD card and press print. No software is needed on a university laptop.
 
-The whole model prints on Bambu FDM printers in PLA: about 1 kg, about 32 h of printing, and
-**about GBP 20** at GBP 20/kg (the real slicer figures are in `Model/bambu/slice_report.md`).
+The whole model prints on Bambu FDM printers in PLA: about 1.1 kg, about 33 h of printing, and
+**about GBP 21** at GBP 20/kg (the real slicer figures are in `Model/bambu/slice_report.md`).
 The Formlabs resin printer is not needed. Its software (PreForm) has no Linux version, and the
 furniture prints fine on a standard 0.4 mm nozzle at 0.12 mm layers. The resin-ready STLs in
 `Model/print/trays_sla/` are still there if a technician offers. **Ask the NTU print service what
@@ -59,6 +68,9 @@ What the parts are:
   - Roads are 0.6 mm inlays.
   - There are 4 colours if the printer has an AMS (Bambu's automatic filament changer), plus a
     one-colour version to paint by hand.
+  - A grey rim round the edge has a 3.5 mm slot that holds the four engraved plywood poster
+    walls (see the [laser wall guide](docs/LASER_WALL.md)). The slot width follows
+    `WALL_PLY_MM` in `src/config.py`, so measure the ply before printing.
 - **Building 1:100:**
   - Ground floor, first floor and roof lift off each other on 1.8 mm locating pegs (with 0.4 mm hole clearance).
   - The cycle hub has a green roof.
@@ -78,7 +90,8 @@ the design, run `python src/bambu.py`. It needs Bambu Studio from Flathub:
 Place the site model next to the building. The orange block on the site model is the same
 building at 1:1000. Stack the ground floor, first floor and roof on their pegs, and put the cycle
 hub at the east end. Lift the roof and first floor off to show the furniture trays and the
-stair or atrium void.
+stair or atrium void. Drop the four poster walls into the site model's rim slot, engraved face
+out, in label order (south, east, north, west); lift any one out to show the model inside.
 
 ## 3. Web twin and QR code
 
@@ -104,6 +117,9 @@ The web twin is plain static files: three.js loaded from a CDN, with no build st
 - **QR for the poster:** `python src/make_qr.py https://<user>.github.io/<repo>/` writes
   `Poster/web_twin_qr.svg` (use the SVG so it stays sharp at A2) and a PNG. Print it at least
   40 mm square and test it from across a table.
+- **Laser-engraved poster walls:** four removable plywood walls that stand in a slot round the
+  site model, with the poster (and the QR code) engraved into them. Teammates add cards in
+  `Poster/laser_wall.json` without code; see the [laser wall guide](docs/LASER_WALL.md).
 
 If you add `?debug` to the URL, the page exposes `window.twin` for scripted testing.
 
@@ -142,20 +158,25 @@ show what needs checking. For the Design Outline (Harvard referencing):
 
 - [ ] Replace each catalogue price with a real supplier price, including the URL and access date.
       Plant items (heat pump, PV, batteries, MVHR) need a quote or a published GBP/kW benchmark.
-- [ ] Electricity price (GBP 0.25/kWh) and carbon factor (0.177 kgCO2e/kWh): cite the current
-      Ofgem cap or a non-domestic tariff, and the **DESNZ GHG conversion factors** for this year.
+- [x] Electricity price and carbon factor: GBP 0.245/kWh (DESNZ Quarterly Energy Prices, Sept
+      2026, non-domestic average incl. CCL) and 0.131 kgCO2e/kWh (DESNZ GHG conversion factors
+      2026). Both are cited in the Design Outline.
 - [ ] Construction cost: GBP/m2 for an education building from BCIS or RICS, applied to 720 m2 GIA.
 - [ ] Energy model:
       - fabric heat loss (choose U-values);
       - space heating demand;
       - how much of that the server waste heat covers (each 3 kW rack gives roughly 26 MWh/yr of heat);
-      - **PVGIS** yield for 49 kWp at 25 deg facing south at this location;
-      - the annual net balance.
+      - [x] **PVGIS** yield for 49 kWp at 25 deg facing south: about 46.9 MWh/yr (cached in
+        `Design/exports/pvgis.json`, refreshed automatically if the PV layout changes);
+      - the annual net balance. The servers use about 2.2 times what the PV generates, so the
+        net-zero claim depends on this model.
       Plot the results with Python graphs, which the brief encourages for computing students.
 - [ ] The west facade has a 0.45 window-to-wall ratio, which is an afternoon overheating risk.
       Either reduce it or justify it, for example with vertical fins or the atrium stack ventilation.
-- [ ] SDG write-up: primary 7, 9, 12 and 13; secondary 4 and 11.
-- [ ] A4 Design Outline and A2 poster, using the renders in `Design/renders/` and the QR code.
+- [ ] Design Outline: the starter draft in `Book/` already covers every section, including the
+      SDG mapping, costs and references. Each role fills in its dashed "To write" boxes and adds
+      names to `Book/book.json` (see the [Design Outline guide](docs/DESIGN_OUTLINE.md)).
+- [ ] A2 poster, using the renders in `Design/renders/` and the QR code.
 
 ## Data credits
 

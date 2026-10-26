@@ -10,10 +10,11 @@ generated from the tables in this file, so changing a dimension here updates all
 """
 import math
 
-from shapely.geometry import Polygon, box as rect
+from shapely.geometry import MultiPolygon, Polygon, box as rect
 from shapely.ops import unary_union
 
 import config as C
+import placeables as P
 from geom import EMPTY, box, cylinder, prism, profile_x, union
 
 L, D = C.LENGTH, C.DEPTH
@@ -247,7 +248,9 @@ def slab(level):
     if level == "GF":
         return box(0, 0, -S, L, D, 0)
     z0 = LEVEL_Z[level]
-    return box(0, -OH, z0 - S, L, D, z0) - prism(VOID, z0 - S - 1, z0 + 1)
+    # The slab keeps a wall-thick edge under the external walls so the first-floor piers at the
+    # atrium corner bear on something (and the 1:100 first floor has no part printed in mid-air).
+    return box(0, -OH, z0 - S, L, D, z0) - prism(VOID.intersection(rect(T, T, L, D)), z0 - S - 1, z0 + 1)
 
 
 def _tooth_profile(k, z0=ROOF_Z):
@@ -402,8 +405,8 @@ def _cluster(cx, cy, w, d, seats_x=True):
     return items
 
 
-def furniture(room_id):
-    """List of (catalogue_type, Manifold, printable) for a room, z = 0 at top of floor finish."""
+def legacy_furniture(room_id):
+    """Built-in furniture kept for the original design; new items live in placeables.json."""
     it = []
     add = lambda kind, m, printable=True: it.append((kind, m, printable))  # noqa: E731
     if room_id == "G01":
@@ -528,6 +531,26 @@ def furniture(room_id):
     return it
 
 
+def furniture(room_id):
+    """List of (catalogue_type, Manifold, printable) for a room, z = 0 at top of floor finish.
+
+    In addition to the original built-in fit-out, this reads enabled room placements from
+    ``placeables.json``. This single list drives the schedule, printable furniture tray and
+    web-twin room model.
+    """
+    unknown = {p.room for p in P.registry()[1] if p.target == "room"} - {r["id"] for r in ROOMS}
+    if unknown:
+        raise ValueError(f"placeables.json uses unknown room code(s) {', '.join(sorted(unknown))}; "
+                         f"choose from {', '.join(r['id'] for r in ROOMS)}")
+    items = legacy_furniture(room_id)
+    for placement, asset, solid in P.room_assets(room_id):
+        # An asset without a catalogue type is still a valid visual/printable object. The
+        # private marker tells schedule.py not to invent a misleading unpriced cost row.
+        kind = asset.catalogue_type or f"__placeable__{placement.id}"
+        items.append((kind, solid, asset.printable))
+    return items
+
+
 # ---------------------------------------------------------------------------------------
 # Trays (floor finish + fused furniture) and room geometry
 # ---------------------------------------------------------------------------------------
@@ -544,16 +567,21 @@ def _clear_floor(level):
     return inner.difference(blocked)
 
 
-def room_floor_poly(room, clearance=0.0):
+def room_floor(room, clearance=0.0):
+    """Whole usable floor of a room; a MultiPolygon where the void/lift split it (F01)."""
     if room["id"] == "G11":
         p = rect(AX0, AY0 + T, AX1 - T, AY1 - T)
     else:
         p = room["poly"].intersection(_clear_floor(room["level"]))
     if clearance:
         p = p.buffer(-clearance, join_style=2)
-    if p.geom_type != "Polygon":
-        p = max((g for g in getattr(p, "geoms", []) if g.geom_type == "Polygon"), key=lambda g: g.area)
-    return p
+    parts = [g for g in getattr(p, "geoms", [p]) if g.geom_type == "Polygon" and g.area > 0.25]
+    return parts[0] if len(parts) == 1 else MultiPolygon(parts)
+
+
+def room_floor_poly(room, clearance=0.0):
+    """Largest piece of the room floor, for places that need a single outline."""
+    return max(getattr(f := room_floor(room, clearance), "geoms", [f]), key=lambda g: g.area)
 
 
 def room_items(room):
@@ -564,9 +592,17 @@ def room_items(room):
 def tray(room, clearance_m=0.05):
     """Printable SLA insert: thin floor plate with that room's furniture fused on top."""
     z0 = LEVEL_Z[room["level"]]
-    poly = room_floor_poly(room, clearance_m)
-    plate = prism(poly, z0, z0 + FINISH)
-    furn = [m for _, m, pr in room_items(room) if pr]
+    plate = prism(room_floor(room, clearance_m), z0, z0 + FINISH)
+    base = plate.project()
+    furn = []
+    for kind, m, printable in room_items(room):
+        if not printable:
+            continue
+        foot = m.project()
+        if (foot - base).area() > 0.5 * foot.area() or m.bounding_box()[2] > z0 + FINISH + 1e-3:
+            raise ValueError(f"{room['id']}: printable '{kind}' is off the tray floor and would print "
+                             "in mid-air; move it inside the room or set printable to false")
+        furn.append(m)
     return union([plate] + furn)
 
 
@@ -579,7 +615,7 @@ def massing():
 def metrics():
     """Areas and ratios used in the design outline and the energy model."""
     gia = 2 * L * D - VOID.area + C.ANNEX_W * C.ANNEX_D
-    net = {r["id"]: round(room_floor_poly(r).area, 1) for r in ROOMS}
+    net = {r["id"]: round(room_floor(r).area, 1) for r in ROOMS}
     glazing = {f: 0.0 for f in "NESW"}
     for lv, face, a0, a1, sill, head in OPENINGS:
         if (lv, face, a0) not in DOOR_OPENINGS:
